@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="title">Aymane Tajani | CV</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Inclusion des bibliothèques i18next -->
   <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
@@ -725,7 +725,7 @@
   </footer>
 
   <!-- Main script -->
-  <script src="js/script.js"></script>
+  <script src="./js/script.js"></script>
   <!-- i18next initialization script -->
   <script>
     // Initialize i18next
@@ -736,7 +736,7 @@
         fallbackLng: 'fr',
         debug: true,
         backend: {
-          loadPath: '/locales/{{lng}}/translation.json'
+          loadPath: './locales/{{lng}}/translation.json'  // Changed from '/locales/' to './locales/'
         }
       }, function(err, t) {
         // Set initial active state
