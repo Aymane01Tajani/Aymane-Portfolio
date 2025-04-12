@@ -353,87 +353,26 @@ body {
     padding-bottom: 10px;
 }
 
-.project-content {
+/* Certifications Section */
+.certifications .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 15px;
+}
+
+.certifications .card {
+    background: linear-gradient(145deg, #ffffff, #f5f7fa);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 25px;  /* Standardized spacing between text and image */
-}
-
-.project-text {
-    width: 100%;
-    text-align: left;
-}
-
-.project-image-card {
-    width: 150px;  /* Standardized size */
-    height: 150px;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;  /* Standardized top margin */
-    transition: all 0.3s cubic-bezier(0.17, 0.85, 0.438, 0.99);
-    position: relative;
-    overflow: hidden;
-}
-
-.project-image-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.2),
-        transparent
-    );
-    transition: 0.5s;
-}
-
-.project-image-card:hover::before {
-    left: 100%;
-}
-
-.project-image-card:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-image-card img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.project-image-card:hover img {
-    transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    .project-content {
-        gap: 20px;
-    }
-
-    .project-image-card {
-        width: 120px;
-        height: 120px;
-        margin-top: 10px;
-    }
-}
-
-/* Certifications Section */
-.certifications .card {
-    text-align: left;
-    padding: 25px;
-    background: linear-gradient(145deg, #ffffff, #f5f7fa);
+    opacity: 1;  /* Changed from 0 to 1 */
+    transform: none;  /* Removed initial transform */
+    visibility: visible;  /* Changed from hidden to visible */
 }
 
 .certifications .card p {
@@ -454,41 +393,105 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;  /* Standardized spacing between text and image */
+    gap: 20px;
+    width: 100%;
 }
 
 .certification-text {
     width: 100%;
+    text-align: left;
+}
+
+.certification-image-card {
+    width: 180px;
+    height: 130px;
+    margin: 10px auto;
+}
+
+.certification-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    margin: 15px 0;
 }
 
 .certification-image-card {
     width: 200px;
     height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.certification-image-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
     background: #ffffff;
     border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-.certification-image-card:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.certification-image-card img {
-    max-width: 100%;
-    max-height: 100%;
+.certification-image-inner img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    transition: transform 0.3s ease;
 }
 
-.certification-image-card:hover img {
-    transform: scale(1.1);
+@media (max-width: 768px) {
+    .certifications .cards {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .certification-content {
+        gap: 15px;
+    }
+
+    .certification-text {
+        font-size: 0.95em;
+    }
+
+    .certification-image-card {
+        width: 150px;
+        height: 110px;
+    }
+
+    .certification-image-wrapper {
+        margin: 10px 0;
+    }
+
+    .certification-image-card {
+        width: 160px;
+        height: 120px;
+    }
+
+    .certification-image-inner {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications .cards {
+        padding: 5px;
+    }
+    
+    .certification-image-card {
+        width: 130px;
+        height: 100px;
+    }
+
+    .certification-image-card {
+        width: 140px;
+        height: 100px;
+    }
+
+    .certification-text {
+        font-size: 0.9em;
+    }
 }
 
 /* Languages Section */
@@ -1087,6 +1090,121 @@ body, html {
     transform: translateY(0);
 }
 
+/* Common image card styles */
+.image-card-base {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+    position: relative;
+    overflow: hidden;
+}
+
+.education-image-card,
+.experience-image-card,
+.project-image-card,
+.certification-image-card {
+    composes: image-card-base;
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+}
+
+.certification-image-card {
+    width: 200px;  /* Override for certification cards */
+    height: 150px;
+}
+
+/* Common shimmer effect for all cards */
+.image-card-base::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.image-card-base:hover::before {
+    left: 100%;
+}
+
+.image-card-base:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-card-base img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.image-card-base:hover img {
+    transform: scale(1.1);
+}
+
+/* Common content styles */
+.content-base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.text-base {
+    width: 100%;
+    text-align: left;
+}
+
+.education-content,
+.experience-content,
+.project-content,
+.certification-content {
+    composes: content-base;
+}
+
+.education-text,
+.experience-text,
+.project-text,
+.certification-text {
+    composes: text-base;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .content-base {
+        gap: 20px;
+    }
+
+    .image-card-base {
+        width: 120px;
+        height: 120px;
+        margin-top: 10px;
+    }
+
+    .certification-image-card {
+        width: 140px;
+        height: 100px;
+    }
+
+    .text-base {
+        text-align: center;
+    }
+}
+
 .education-content {
     display: flex;
     justify-content: space-between;
@@ -1100,19 +1218,6 @@ body, html {
 
 .education-image-card {
     flex-shrink: 0;
-    width: 150px;  /* Standardized size */
-    height: 150px;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 15px;  /* Standardized top margin */
-    position: relative;
-    overflow: hidden;
 }
 
 .education-image-card::before {
@@ -1315,4 +1420,124 @@ body, html {
         height: 120px;
         margin-top: 10px;
     }
+}
+
+.certification-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.certification-text {
+    width: 100%;
+    text-align: left;
+}
+
+.certification-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    margin-top: 15px;
+}
+
+.certification-image-card {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.certification-image-card:hover {
+    transform: rotateY(10deg) translateY(-10px);
+}
+
+.certification-image-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.certification-image-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.certification-image-card:hover .certification-image-inner {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.certification-image-card:hover .certification-image-inner::before {
+    left: 100%;
+}
+
+.certification-image-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.certification-image-card:hover .certification-image-inner img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .certification-image-card {
+        width: 160px;
+        height: 120px;
+    }
+    
+    .certification-content {
+        gap: 15px;
+    }
+}
+
+.certification-id {
+    display: inline-block;
+    color: #3498db;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.certification-id::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3498db;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.certification-id:hover {
+    color: #2980b9;
+}
+
+.certification-id:hover::after {
+    transform: scaleX(1);
 }
