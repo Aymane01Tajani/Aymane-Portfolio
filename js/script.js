@@ -91,6 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Enhanced navigation highlighting
     updateNavigation();
+
+    // Set initial language button state
+    const currentLang = i18next.language || 'fr';
+    updateLanguageButtons(currentLang);
 });
 
 // Smooth scroll with dynamic speed
@@ -134,3 +138,22 @@ function updateNavigation() {
 
 // Add scroll event listener for navigation highlighting
 window.addEventListener('scroll', updateNavigation);
+
+// Handle language button active states
+function changeLanguage(lng) {
+  i18next.changeLanguage(lng, () => {
+    updateContent();
+    updateLanguageButtons(lng);
+  });
+}
+
+function updateLanguageButtons(currentLang) {
+  document.querySelectorAll('.language-switcher button').forEach(button => {
+    const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+    if (lang === currentLang) {
+      button.style.background = '#3498db';  // Blue for active
+    } else {
+      button.style.background = '#2c3e50';  // Grey for inactive
+    }
+  });
+}

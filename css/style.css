@@ -123,7 +123,7 @@ body {
 .hero-text {
     text-align: center;
     color: #2c3e50;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -570,8 +570,9 @@ body {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    padding: 40px;
+    padding: 40px 20px;
     background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    overflow: hidden;
 }
 
 .contact .card h2 {
@@ -581,6 +582,7 @@ body {
 .contact .card p {
     margin: 15px 0;
     font-size: 1.1em;
+    word-break: break-word;
 }
 
 .contact .card a {
@@ -618,10 +620,19 @@ body {
     margin: 20px 0;
     padding: 10px;
     transition: transform 0.3s ease;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact-item:hover {
     transform: translateX(10px);
+}
+
+.contact-item p {
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
 }
 
 .contact-icon {
@@ -636,10 +647,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);
     animation: pulseScale 2s ease-in-out infinite;
-}
-
-.contact-item p {
-    margin: 0;
+    flex-shrink: 0;
 }
 
 .cv-download {
@@ -684,6 +692,63 @@ body {
     transform: rotate(45deg);
     animation: shimmer 3s linear infinite;
     pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .contact .card {
+        padding: 20px 15px;
+        margin: 10px;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact-item p {
+        text-align: center;
+        min-width: 0;
+        width: 100%;
+    }
+
+    .contact .card a {
+        display: inline-block;
+        word-break: break-word;
+    }
+
+    .qr-code-card {
+        padding: 15px;
+    }
+
+    .qr-code-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .cv-download {
+        margin-top: 20px;
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact .card {
+        padding: 15px 10px;
+    }
+
+    .contact-item {
+        padding: 8px;
+    }
+
+    .qr-code-image {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /* QR Code Card */
@@ -1209,7 +1274,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 25px;  /* Standardized spacing between text and image */
+    gap: 25px;
 }
 
 .education-text {
@@ -1218,6 +1283,18 @@ body, html {
 
 .education-image-card {
     flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.17, 0.85, 0.438, 0.99);
 }
 
 .education-image-card::before {
@@ -1236,24 +1313,24 @@ body, html {
     transition: 0.5s;
 }
 
+.education-image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .education-image-card:hover::before {
     left: 100%;
 }
 
-.education-image-card:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 .education-image-card img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
 .education-image-card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -1540,4 +1617,44 @@ body, html {
 
 .certification-id:hover::after {
     transform: scaleX(1);
+}
+
+.language-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.language-switcher button {
+    background: #2c3e50;  /* Default grey color */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-transform: none;
+    font-weight: 500;
+}
+
+.language-switcher button:hover {
+    transform: translateY(-2px);
+}
+
+.language-switcher button.active {
+    background: #3498db;  /* Blue color for active state */
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-bottom: 15px;
+    }
+    
+    .language-switcher button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
 }

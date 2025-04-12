@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aymane Tajani | CV</title>
+  <title data-i18n="title">Aymane Tajani | CV</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Inclusion des bibliothèques i18next -->
+  <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+  <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
 <body>
   <!-- Header / Hero Section -->
   <header class="hero">
     <nav class="top-nav">
       <ul>
-        <li><a href="#profile">Profil</a></li>
-        <li><a href="#education">Éducation</a></li>
-        <li><a href="#experiences">Expériences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#languages">Langues</a></li>
-        <li><a href="#interests">Intérêts</a></li>
-        <li><a href="#contact">Coordonnées</a></li>
+        <li><a href="#profile" data-i18n="nav.profile">Profil</a></li>
+        <li><a href="#education" data-i18n="nav.education">Éducation</a></li>
+        <li><a href="#experiences" data-i18n="nav.experiences">Expériences</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+        <li><a href="#languages" data-i18n="nav.languages">Langues</a></li>
+        <li><a href="#interests" data-i18n="nav.interests">Intérêts</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Coordonnées</a></li>
       </ul>
     </nav>
     <div class="hero-content">
+      <!-- Language switcher -->
+      <div class="language-switcher">
+        <button onclick="changeLanguage('fr')" class="active">Français</button>
+        <button onclick="changeLanguage('en')">English</button>
+      </div>
       <div class="hero-text">
-        <h1>AYMANE TAJANI</h1>
-        <p class="tagline">Full Stack Developer | Mobile Developer | Problem Solver | Tech Enthusiast</p>
+        <h1 data-i18n="hero.title">AYMANE TAJANI</h1>
+        <p class="tagline" data-i18n="hero.tagline">Full Stack Developer | Mobile Developer | Problem Solver | Tech Enthusiast</p>
       </div>
       <div class="hero-image-card">
         <img src="assets/images/hero-background.jpg" alt="Hero Background">
@@ -39,17 +48,13 @@
     <div class="container">
       <div class="profile-container">
         <div class="card profile-text">
-          <h2>Profile</h2>
-          <p>
-            Futur ingénieur d’états en cinquième année en Ingénierie Informatique et Réseaux avec spécialisation en MIAGE à l'EMSI. Créatif, dynamique, et collaboratif, je travaille avec efficacité au sein d'équipes et suis capable de m'adapter à des contextes techniques variés .
+          <h2 data-i18n="profile.title">Profile</h2>
+          <p data-i18n="profile.content">
+            Futur ingénieur d’états en cinquième année en Ingénierie Informatique et Réseaux avec spécialisation en MIAGE à l'EMSI. Créatif, dynamique, et collaboratif, je travaille avec efficacité au sein d'équipes et suis capable de m'adapter à des contextes techniques variés.
           </p>
         </div>
         <div class="profile-image">
-          <img
-            src="assets/images/profile-placeholder.jpg"
-            alt="Aymane Tajani"
-            class="profile-pic"
-          />
+          <img src="assets/images/profile-placeholder.jpg" alt="Aymane Tajani" class="profile-pic" />
         </div>
       </div>
     </div>
@@ -58,16 +63,15 @@
   <!-- Education Section -->
   <section id="education" class="section education">
     <div class="container">
-      <h2>FORMATIONS ACADEMIQUE</h2>
+      <h2 data-i18n="education.title">FORMATIONS ACADEMIQUE</h2>
       <div class="cards">
         <div class="card">
           <div class="education-content">
             <div class="education-text">
-              <h3>5ème année Ingénierie Informatique et Réseau (MIAGE)</h3>
-              <p>
-                <strong>École:</strong> École MAROCCAINE DES SCIENCES D'INGENIEURS
-                <br />
-                <strong>Durée:</strong> Oct 2021 - Juill 2025
+              <h3 data-i18n="education.item1.title">5ème année Ingénierie Informatique et Réseau (MIAGE)</h3>
+              <p data-i18n="education.item1.details">
+                <strong data-i18n="education.item1.schoolLabel">École:</strong> École MAROCCAINE DES SCIENCES D'INGENIEURS<br />
+                <strong data-i18n="education.item1.durationLabel">Durée:</strong> Oct 2021 - Juill 2025
               </p>
             </div>
             <div class="education-image-card">
@@ -78,11 +82,10 @@
         <div class="card">
           <div class="education-content">
             <div class="education-text">
-              <h3>2 ANS EN CPGE - Classes préparatoires scientifiques (MP)</h3>
-              <p>
-                <strong>École:</strong> Yassamine Californie
-                <br />
-                <strong>Durée:</strong> Sept 2019 - Mai 2021
+              <h3 data-i18n="education.item2.title">2 ANS EN CPGE - Classes préparatoires scientifiques (MP)</h3>
+              <p data-i18n="education.item2.details">
+                <strong data-i18n="education.item2.schoolLabel">École:</strong> Yassamine Californie<br />
+                <strong data-i18n="education.item2.durationLabel">Durée:</strong> Sept 2019 - Mai 2021
               </p>
             </div>
             <div class="education-image-card">
@@ -93,11 +96,10 @@
         <div class="card">
           <div class="education-content">
             <div class="education-text">
-              <h3>BACCALAURÉAT OPTION SCIENCES PHYSIQUES</h3>
-              <p>
-                <strong>École:</strong> LYCÉE ABDELKHALEK TORRES
-                <br />
-                <strong>Date:</strong> Juin 2019
+              <h3 data-i18n="education.item3.title">BACCALAURÉAT OPTION SCIENCES PHYSIQUES</h3>
+              <p data-i18n="education.item3.details">
+                <strong data-i18n="education.item3.schoolLabel">École:</strong> LYCÉE ABDELKHALEK TORRES<br />
+                <strong data-i18n="education.item3.dateLabel">Date:</strong> Juin 2019
               </p>
             </div>
           </div>
@@ -109,23 +111,20 @@
   <!-- Professional Experiences Section -->
   <section id="experiences" class="section experiences">
     <div class="container">
-      <h2>EXPÉRIENCES</h2>
+      <h2 data-i18n="experiences.title">EXPÉRIENCES</h2>
       <div class="cards">
         <div class="card">
           <div class="experience-content">
             <div class="experience-text">
-              <h3>Conception & Développement d'une Solution Mobile de Prise des Commandes de Vente Pharmaceutique Connectée à Sage X3.</h3>
-              <p>
-                <strong>Entreprise:</strong> Aberdeen Services 
-                <br />
-                <strong>Type:</strong> Stage (Sur site)
-                <br />
-                <strong>Durée:</strong> Mars 2025 - Sept 2025
-                <br />
-                <strong>Détails:</strong> 
-                Développement des Web Services GraphQL sur Sage X3 et  intégration avec une Application mobile Flutter.
-                <br />
-                <strong>Région:</strong> Casablanca, Maroc
+              <h3 data-i18n="experiences.item1.title">
+                Conception & Développement d'une Solution Mobile de Prise des Commandes de Vente Pharmaceutique Connectée à Sage X3.
+              </h3>
+              <p data-i18n="experiences.item1.details">
+                <strong data-i18n="experiences.item1.companyLabel">Entreprise:</strong> Aberdeen Services<br />
+                <strong data-i18n="experiences.item1.typeLabel">Type:</strong> Stage (Sur site)<br />
+                <strong data-i18n="experiences.item1.durationLabel">Durée:</strong> Mars 2025 - Sept 2025<br />
+                <strong data-i18n="experiences.item1.infoLabel">Détails:</strong> Développement des Web Services GraphQL sur Sage X3 et intégration avec une Application mobile Flutter.<br />
+                <strong data-i18n="experiences.item1.regionLabel">Région:</strong> Casablanca, Maroc
               </p>
             </div>
             <div class="experience-image-card">
@@ -136,17 +135,15 @@
         <div class="card">
           <div class="experience-content">
             <div class="experience-text">
-              <h3>Conception & Mise en place d'une application de déclaration et de gestion des flux CCG.</h3>
-              <p>
-                <strong>Entreprise:</strong> Umnia Bank
-                <br />
-                <strong>Type:</strong> Stage (Sur site)
-                <br />
-                <strong>Durée:</strong> Juill 2024 - Mi-Sept 2024
-                <br />
-                <strong>Détails:</strong> Frontend et Backend (Développement des APIs) d'une application web avec du .NET
-                <br />
-                <strong>Région:</strong> Casablanca, Maroc
+              <h3 data-i18n="experiences.item2.title">
+                Conception & Mise en place d'une application de déclaration et de gestion des flux CCG.
+              </h3>
+              <p data-i18n="experiences.item2.details">
+                <strong data-i18n="experiences.item2.companyLabel">Entreprise:</strong> Umnia Bank<br />
+                <strong data-i18n="experiences.item2.typeLabel">Type:</strong> Stage (Sur site)<br />
+                <strong data-i18n="experiences.item2.durationLabel">Durée:</strong> Juill 2024 - Mi-Sept 2024<br />
+                <strong data-i18n="experiences.item2.infoLabel">Détails:</strong> Frontend et Backend (Développement des APIs) d'une application web avec du .NET<br />
+                <strong data-i18n="experiences.item2.regionLabel">Région:</strong> Casablanca, Maroc
               </p>
             </div>
             <div class="experience-image-card">
@@ -157,17 +154,15 @@
         <div class="card">
           <div class="experience-content">
             <div class="experience-text">
-              <h3>Développement sur Symfony d'un générateur MVC d'applications en mode SaaS.</h3>
-              <p>
-                <strong>Entreprise:</strong> Dataclear
-                <br />
-                <strong>Type:</strong> Stage (Sur site)
-                <br />
-                <strong>Date:</strong> Juill 2023 - Aout 2023
-                <br />
-                <strong>Détails:</strong> Générateur d'applications de gestion avec Symfony et personalisation d'une application generée.
-                <br />
-                <strong>Région:</strong> Casablanca, Maroc
+              <h3 data-i18n="experiences.item3.title">
+                Développement sur Symfony d'un générateur MVC d'applications en mode SaaS.
+              </h3>
+              <p data-i18n="experiences.item3.details">
+                <strong data-i18n="experiences.item3.companyLabel">Entreprise:</strong> Dataclear<br />
+                <strong data-i18n="experiences.item3.typeLabel">Type:</strong> Stage (Sur site)<br />
+                <strong data-i18n="experiences.item3.dateLabel">Date:</strong> Juill 2023 - Aout 2023<br />
+                <strong data-i18n="experiences.item3.infoLabel">Détails:</strong> Générateur d'applications de gestion avec Symfony et personnalisation d'une application générée.<br />
+                <strong data-i18n="experiences.item3.regionLabel">Région:</strong> Casablanca, Maroc
               </p>
             </div>
             <div class="experience-image-card">
@@ -178,18 +173,15 @@
         <div class="card">
           <div class="experience-content">
             <div class="experience-text">
-              <h3>Développement d'un site web pour la société.</h3>
-              <p>
-                <strong>Entreprise:</strong> SOCIÉTÉ CIVILES DES ÉTUDES AGRICOLES 
-                <br />
-                <strong>Type:</strong> Stage (A distance)
-                <br />
-                <strong>Durée:</strong>Juill 2022
-                <br />
-                <strong>Détails:</strong> 
-                Site web avec du HTML,CSS et Bootstrap.
-                <br />
-                <strong>Région:</strong> Casablanca, Maroc
+              <h3 data-i18n="experiences.item4.title">
+                Développement d'un site web pour la société.
+              </h3>
+              <p data-i18n="experiences.item4.details">
+                <strong data-i18n="experiences.item4.companyLabel">Entreprise:</strong> SOCIÉTÉ CIVILES DES ÉTUDES AGRICOLES<br />
+                <strong data-i18n="experiences.item4.typeLabel">Type:</strong> Stage (À distance)<br />
+                <strong data-i18n="experiences.item4.durationLabel">Durée:</strong> Juill 2022<br />
+                <strong data-i18n="experiences.item4.infoLabel">Détails:</strong> Site web avec du HTML, CSS et Bootstrap.<br />
+                <strong data-i18n="experiences.item4.regionLabel">Région:</strong> Casablanca, Maroc
               </p>
             </div>
             <div class="experience-image-card">
@@ -204,16 +196,17 @@
   <!-- Academic Projects Section -->
   <section id="projects" class="section projects">
     <div class="container">
-      <h2>PROJETS ACADEMIQUES</h2>
+      <h2 data-i18n="projects.title">PROJETS ACADEMIQUES</h2>
       <div class="cards">
         <div class="card">
           <div class="project-content">
             <div class="project-text">
-              <h3>Conception et développement d'un Système de Pointage Digital intelligent via Application Cross-Platform</h3>
-              <p>
-                <strong>Technologies:</strong> Flutter (Dart) et Firebase
-                <br />
-                <strong>Type:</strong> PROJET DE FIN D'ANNEE (5ème année ) – Janvier 2025
+              <h3 data-i18n="projects.item1.title">
+                Conception et développement d'un Système de Pointage Digital intelligent via Application Cross-Platform
+              </h3>
+              <p data-i18n="projects.item1.details">
+                <strong data-i18n="projects.item1.techLabel">Technologies:</strong> Flutter (Dart) et Firebase<br />
+                <strong data-i18n="projects.item1.typeLabel">Type:</strong> PROJET DE FIN D'ANNEE (5ème année) – Janvier 2025
               </p>
             </div>
             <div class="project-image-card">
@@ -224,11 +217,12 @@
         <div class="card">
           <div class="project-content">
             <div class="project-text">
-              <h3>Conception et développement d'une application mobile dédiée à la pratique religieuse musulmane : Étude de cas et mise en oeuvre.</h3>
-              <p>
-                <strong>Technologies:</strong> Java
-                <br />
-                <strong>Type:</strong> PROJET DE FIN D'ANNEE (4ème année ) – Juin 2024
+              <h3 data-i18n="projects.item2.title">
+                Conception et développement d'une application mobile dédiée à la pratique religieuse musulmane : Étude de cas et mise en oeuvre.
+              </h3>
+              <p data-i18n="projects.item2.details">
+                <strong data-i18n="projects.item2.techLabel">Technologies:</strong> Java<br />
+                <strong data-i18n="projects.item2.typeLabel">Type:</strong> PROJET DE FIN D'ANNEE (4ème année) – Juin 2024
               </p>
             </div>
           </div>
@@ -236,11 +230,12 @@
         <div class="card">
           <div class="project-content">
             <div class="project-text">
-              <h3>Application web E-Games pour l'achat de jeux vidéo.</h3>
-              <p>
-                <strong>Technologies:</strong> Python ET DJANGO (Architecture MVT)
-                <br />
-                <strong>Type:</strong> PROJET DE FIN D'ANNEE (3ème année ) – Juin 2023
+              <h3 data-i18n="projects.item3.title">
+                Application web E-Games pour l'achat de jeux vidéo.
+              </h3>
+              <p data-i18n="projects.item3.details">
+                <strong data-i18n="projects.item3.techLabel">Technologies:</strong> Python ET DJANGO (Architecture MVT)<br />
+                <strong data-i18n="projects.item3.typeLabel">Type:</strong> PROJET DE FIN D'ANNEE (3ème année) – Juin 2023
               </p>
             </div>
           </div>
@@ -252,39 +247,39 @@
   <!-- Skills Section -->
   <section id="skills" class="section skills">
     <div class="container">
-      <h2>COMPÉTENCES</h2>
+      <h2 data-i18n="skills.title">COMPÉTENCES</h2>
       <div class="cards">
         <div class="card">
-          <h3>ERP & Intégration</h3>
-          <p>Consultant Technique Sage X3 (Développement et Intégration)</p>
+          <h3 data-i18n="skills.item1.title">ERP & Intégration</h3>
+          <p data-i18n="skills.item1.details">Consultant Technique Sage X3 (Développement et Intégration)</p>
         </div>
         <div class="card">
-          <h3>Conception des Systèmes d'Information</h3>
-          <p>Software Architecture / Design , UML</p>
+          <h3 data-i18n="skills.item2.title">Conception des Systèmes d'Information</h3>
+          <p data-i18n="skills.item2.details">Software Architecture / Design, UML</p>
         </div>
         <div class="card">
-          <h3>Langages de Programmation</h3>
-          <p>C, C++, C#, Python, Java</p>
+          <h3 data-i18n="skills.item3.title">Langages de Programmation</h3>
+          <p data-i18n="skills.item3.details">C, C++, C#, Python, Java</p>
         </div>
         <div class="card">
-          <h3>Développement Web</h3>
-          <p>HTML, CSS, JavaScript, PHP, Symfony, Django, Spring Boot, Angular, .NET</p>
+          <h3 data-i18n="skills.item4.title">Développement Web</h3>
+          <p data-i18n="skills.item4.details">HTML, CSS, JavaScript, PHP, Symfony, Django, Spring Boot, Angular, .NET</p>
         </div>
         <div class="card">
-          <h3>DevOps</h3>
-          <p>Docker, Kubernetes, Git, GitHub</p>
+          <h3 data-i18n="skills.item5.title">DevOps</h3>
+          <p data-i18n="skills.item5.details">Docker, Kubernetes, Git, GitHub</p>
         </div>
         <div class="card">
-          <h3>Databases</h3>
-          <p>SQL, PL/SQL, Transact-SQL, Oracle Administration</p>
+          <h3 data-i18n="skills.item6.title">Databases</h3>
+          <p data-i18n="skills.item6.details">SQL, PL/SQL, Transact-SQL, Oracle Administration</p>
         </div>
         <div class="card">
-          <h3>Développement Mobile</h3>
-          <p>Native : Android (Java), Cross-Platform :(Flutter)</p>
+          <h3 data-i18n="skills.item7.title">Développement Mobile</h3>
+          <p data-i18n="skills.item7.details">Native: Android (Java), Cross-Platform: (Flutter)</p>
         </div>
         <div class="card">
-          <h3>Gestion de Projet </h3>
-          <p>Compétences en gestion de projet et leadership d'équipe, maîtrise des méthodologies Agile (Scrum) , Jira</p>
+          <h3 data-i18n="skills.item8.title">Gestion de Projet</h3>
+          <p data-i18n="skills.item8.details">Compétences en gestion de projet et leadership d'équipe, maîtrise des méthodologies Agile (Scrum), Jira</p>
         </div>
       </div>
     </div>
@@ -293,13 +288,18 @@
   <!-- Certifications Section -->
   <section id="certifications" class="section certifications">
     <div class="container">
-      <h2>CERTIFICATIONS</h2>
+      <h2 data-i18n="certifications.title">CERTIFICATIONS</h2>
       <div class="cards">
+        <!-- Carte 1 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>API Integration - End to End Web Development – En cours (Board Infinity)</p>
-              <a href="#" class="certification-id">ID Certification: À remplir</a>
+              <p data-i18n="certifications.item1.text">
+                API Integration - End to End Web Development – En cours (Board Infinity)
+              </p>
+              <a href="#" class="certification-id" data-i18n="certifications.item1.id">
+                ID Certification: À remplir
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -310,12 +310,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 2 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Software Design and Architecture Specialization – En cours (University of Alberta)</p>
-              <a href="#" class="certification-id">ID Certification: À remplir</a>
+              <p data-i18n="certifications.item2.text">
+                Software Design and Architecture Specialization – En cours (University of Alberta)
+              </p>
+              <a href="#" class="certification-id" data-i18n="certifications.item2.id">
+                ID Certification: À remplir
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -326,12 +330,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 3 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Information​ ​Systems Specialization – En cours (University of Minnesota)</p>
-              <a href="#" class="certification-id">ID Certification: À remplir</a>
+              <p data-i18n="certifications.item3.text">
+                Information​ ​Systems Specialization – En cours (University of Minnesota)
+              </p>
+              <a href="#" class="certification-id" data-i18n="certifications.item3.id">
+                ID Certification: À remplir
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -342,12 +350,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 4 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Introduction to Git and GitHub – En cours (Google Career Certificates)</p>
-              <a href="#" class="certification-id">ID Certification: À remplir</a>
+              <p data-i18n="certifications.item4.text">
+                Introduction to Git and GitHub – En cours (Google Career Certificates)
+              </p>
+              <a href="#" class="certification-id" data-i18n="certifications.item4.id">
+                ID Certification: À remplir
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -358,12 +370,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 5 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Machine Learning with Python – IBM (24 Janvier 2025)</p>
-              <a href="https://coursera.org/verify/BURWOS6FDD4I" class="certification-id">Identifiant de la certification: BURWOS6FDD4I</a>
+              <p data-i18n="certifications.item5.text">
+                Machine Learning with Python – IBM (24 Janvier 2025)
+              </p>
+              <a href="https://coursera.org/verify/BURWOS6FDD4I" class="certification-id" data-i18n="certifications.item5.id">
+                Identifiant de la certification: BURWOS6FDD4I
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -374,12 +390,15 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 6 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Introduction to Big Data with Spark and Hadoop – IBM (23 Janvier 2025)</p>
-              <a href="https://coursera.org/share/c69ce80882f845635d2525598e65aa4c" class="certification-id">Identifiant de la certification: P9B5FFOQKJNC
+              <p data-i18n="certifications.item6.text">
+                Introduction to Big Data with Spark and Hadoop – IBM (23 Janvier 2025)
+              </p>
+              <a href="https://coursera.org/share/c69ce80882f845635d2525598e65aa4c" class="certification-id" data-i18n="certifications.item6.id">
+                Identifiant de la certification: P9B5FFOQKJNC
               </a>
             </div>
             <div class="certification-image-wrapper">
@@ -391,12 +410,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 7 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Building Scalable Java Microservices with Spring Boot and Spring Cloud – Google Cloud (04 Janvier 2025)</p>
-              <a href="https://coursera.org/share/2d0c748b89c3cb1cf86a750262afcc86" class="certification-id">Identifiant de la certification: 3209UDMR9E13</a>
+              <p data-i18n="certifications.item7.text">
+                Building Scalable Java Microservices with Spring Boot and Spring Cloud – Google Cloud (04 Janvier 2025)
+              </p>
+              <a href="https://coursera.org/share/2d0c748b89c3cb1cf86a750262afcc86" class="certification-id" data-i18n="certifications.item7.id">
+                Identifiant de la certification: 3209UDMR9E13
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -407,12 +430,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 8 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Project Management: The Basics for Success – University of California, Irvine (24 Nov 2024)</p>
-              <a href="https://coursera.org/share/44b4630fff965f784f1a4c27d3b8ab95" class="certification-id">Identifiant de la certification: Q823Q4KHYL58</a>
+              <p data-i18n="certifications.item8.text">
+                Project Management: The Basics for Success – University of California, Irvine (24 Nov 2024)
+              </p>
+              <a href="https://coursera.org/share/44b4630fff965f784f1a4c27d3b8ab95" class="certification-id" data-i18n="certifications.item8.id">
+                Identifiant de la certification: Q823Q4KHYL58
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -423,12 +450,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 9 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Building Services with ASP.NET Web API – Board Infinity (6 Aout 2024)</p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/398KYBA38PAG" class="certification-id">Identifiant de la certification: 398KYBA38PAG</a>
+              <p data-i18n="certifications.item9.text">
+                Building Services with ASP.NET Web API – Board Infinity (6 Aout 2024)
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/398KYBA38PAG" class="certification-id" data-i18n="certifications.item9.id">
+                Identifiant de la certification: 398KYBA38PAG
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -439,12 +470,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 10 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>React Native – Meta (05 Juin 2024)</p>
-              <a href="https://coursera.org/share/899a10865c749268c4df7af16a56cbdf" class="certification-id">Identifiant de la certification: 2BYSR7TWU5UH</a>
+              <p data-i18n="certifications.item10.text">
+                React Native – Meta (05 Juin 2024)
+              </p>
+              <a href="https://coursera.org/share/899a10865c749268c4df7af16a56cbdf" class="certification-id" data-i18n="certifications.item10.id">
+                Identifiant de la certification: 2BYSR7TWU5UH
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -455,12 +490,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 11 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Introduction to Containers w/ Docker, Kubernetes &amp; OpenShift – IBM (27 May 2024)</p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/D5Q4VN7WF3P2" class="certification-id">Identifiant de la certification: D5Q4VN7WF3P2</a>
+              <p data-i18n="certifications.item11.text">
+                Introduction to Containers w/ Docker, Kubernetes &amp; OpenShift – IBM (27 May 2024)
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/D5Q4VN7WF3P2" class="certification-id" data-i18n="certifications.item11.id">
+                Identifiant de la certification: D5Q4VN7WF3P2
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -471,12 +510,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 12 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Virtual Networks in Azure – Whizlabs (27 May 2024)</p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/2AS74XPAL3XB" class="certification-id">Identifiant de la certification: 2AS74XPAL3XB</a>
+              <p data-i18n="certifications.item12.text">
+                Virtual Networks in Azure – Whizlabs (27 May 2024)
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/2AS74XPAL3XB" class="certification-id" data-i18n="certifications.item12.id">
+                Identifiant de la certification: 2AS74XPAL3XB
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -487,28 +530,36 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 13 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>React Basics – Meta (05 Juin 2024)</p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/PRYRNZQDWKN6" class="certification-id">Identifiant de la certification: PRYRNZQDWKN6</a>
+              <p data-i18n="certifications.item13.text">
+                React Basics – Meta (05 Juin 2024)
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/PRYRNZQDWKN6" class="certification-id" data-i18n="certifications.item13.id">
+                Identifiant de la certification: PRYRNZQDWKN6
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
                 <div class="certification-image-inner">
-                  <img src="assets/images/Certif/Meta.png" alt="React Native Certificate">
+                  <img src="assets/images/Certif/Meta.png" alt="React Basics Certificate">
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+        <!-- Carte 14 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Introduction to Java and Object-Oriented Programming – University of Pennsylvania (15 Janvier 2024)</p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/P4BF99PJ2UB9" class="certification-id">Identifiant de la certification: P4BF99PJ2UB9</a>
+              <p data-i18n="certifications.item14.text">
+                Introduction to Java and Object-Oriented Programming – University of Pennsylvania (15 Janvier 2024)
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/P4BF99PJ2UB9" class="certification-id" data-i18n="certifications.item14.id">
+                Identifiant de la certification: P4BF99PJ2UB9
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -519,12 +570,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 15 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Étudier en France: French Intermediate course B1-B2 – École Polytechnique (7 Avril 2023)</p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/XWG76SNVCLQM" class="certification-id">Identifiant de la certification: XWG76SNVCLQM</a>
+              <p data-i18n="certifications.item15.text">
+                Étudier en France: French Intermediate course B1-B2 – École Polytechnique (7 Avril 2023)
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/XWG76SNVCLQM" class="certification-id" data-i18n="certifications.item15.id">
+                Identifiant de la certification: XWG76SNVCLQM
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -535,12 +590,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 16 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Python for Everybody Specialization – University of Michigan (28 Mars 2023)</p>
-              <a href="https://www.coursera.org/account/accomplishments/specialization/G9PW84B4RFYV" class="certification-id">Identifiant de la certification: G9PW84B4RFYV</a>
+              <p data-i18n="certifications.item16.text">
+                Python for Everybody Specialization – University of Michigan (28 Mars 2023)
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/specialization/G9PW84B4RFYV" class="certification-id" data-i18n="certifications.item16.id">
+                Identifiant de la certification: G9PW84B4RFYV
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -551,12 +610,16 @@
             </div>
           </div>
         </div>
-
+        <!-- Carte 17 -->
         <div class="card">
           <div class="certification-content">
             <div class="certification-text">
-              <p>Software Engineering: Modeling Software Systems using UML – The Hong Kong University of Science and Technology (26 Mars 2023)</p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/4EYCQSC7PEX6" class="certification-id">Identifiant de la certification: 4EYCQSC7PEX6</a>
+              <p data-i18n="certifications.item17.text">
+                Software Engineering: Modeling Software Systems using UML – The Hong Kong University of Science and Technology (26 Mars 2023)
+              </p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/4EYCQSC7PEX6" class="certification-id" data-i18n="certifications.item17.id">
+                Identifiant de la certification: 4EYCQSC7PEX6
+              </a>
             </div>
             <div class="certification-image-wrapper">
               <div class="certification-image-card">
@@ -570,20 +633,21 @@
       </div>
     </div>
   </section>
+  
 
   <!-- Languages Section -->
   <section id="languages" class="section languages">
     <div class="container">
-      <h2>Langues</h2>
+      <h2 data-i18n="languages.title">Langues</h2>
       <div class="cards">
         <div class="card">
-          <p><strong>Arabe</strong> Native</p>
+          <p data-i18n="languages.item1"><strong>Arabe</strong> Native</p>
         </div>
         <div class="card">
-          <p><strong>Français</strong> Courant</p>
+          <p data-i18n="languages.item2"><strong>Français</strong> Courant</p>
         </div>
         <div class="card">
-          <p><strong>Anglais</strong> Intermediare</p>
+          <p data-i18n="languages.item3"><strong>Anglais</strong> Intermédiaire</p>
         </div>
       </div>
     </div>
@@ -592,23 +656,23 @@
   <!-- Interests Section -->
   <section id="interests" class="section interests">
     <div class="container">
-      <h2>Interets</h2>
+      <h2 data-i18n="interests.title">Intérêts</h2>
       <div class="cards">
         <div class="card">
           <i class="fas fa-dumbbell interest-icon"></i>
-          <p>Gym</p>
+          <p data-i18n="interests.item1">Gym</p>
         </div>
         <div class="card">
           <i class="fas fa-code interest-icon"></i>
-          <p>Programming</p>
+          <p data-i18n="interests.item2">Programming</p>
         </div>
         <div class="card">
           <i class="fas fa-futbol interest-icon"></i>
-          <p>Football</p>
+          <p data-i18n="interests.item3">Football</p>
         </div>
         <div class="card">
           <i class="fas fa-hand-fist interest-icon"></i>
-          <p>Kickboxing</p>
+          <p data-i18n="interests.item4">Kickboxing</p>
         </div>
       </div>
     </div>
@@ -618,27 +682,35 @@
   <section id="contact" class="section contact">
     <div class="container">
       <div class="card">
-        <h2>contact</h2>
+        <h2 data-i18n="contact.title">contact</h2>
         <div class="contact-item">
           <i class="fas fa-phone contact-icon"></i>
-          <p><strong>Phone:</strong> +212682221611</p>
+          <p data-i18n="contact.phone">
+            <strong data-i18n="contact.phoneLabel">Phone:</strong> +212682221611
+          </p>
         </div>
         <div class="contact-item">
           <i class="fas fa-envelope contact-icon"></i>
-          <p><strong>Email:</strong> <a href="mailto:aymanetajani01@gmail.com">aymanetajani01@gmail.com</a></p>
+          <p data-i18n="contact.email">
+            <strong data-i18n="contact.emailLabel">Email:</strong>
+            <a href="mailto:aymanetajani01@gmail.com">aymanetajani01@gmail.com</a>
+          </p>
         </div>
         <div class="contact-item">
           <i class="fab fa-linkedin contact-icon"></i>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aymane-tajani" target="_blank">Aymane Tajani</a></p>
+          <p data-i18n="contact.linkedin">
+            <strong data-i18n="contact.linkedinLabel">LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/aymane-tajani" target="_blank">Aymane Tajani</a>
+          </p>
         </div>
         <div class="qr-code-card">
-          <h3>Scan Mon Portfolio QR Code</h3>
+          <h3 data-i18n="contact.qrTitle">Scan Mon Portfolio QR Code</h3>
           <img src="assets/images/QR_Portfolio.png" alt="Portfolio QR Code" class="qr-code-image">
         </div>
         <div class="cv-download">
           <a href="assets/docs/TAJANI-AYMANE-CV.pdf" class="download-btn" download>
             <i class="fas fa-download"></i>
-            Télécharger mon CV
+            <span data-i18n="contact.downloadCV">Télécharger mon CV</span>
           </a>
         </div>
       </div>
@@ -648,10 +720,50 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Aymane Tajani. All rights reserved.</p>
+      <p data-i18n="footer.text">&copy; 2025 Aymane Tajani. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- Main script -->
   <script src="js/script.js"></script>
+  <!-- i18next initialization script -->
+  <script>
+    // Initialize i18next
+    i18next
+      .use(i18nextHttpBackend)
+      .use(i18nextBrowserLanguageDetector)
+      .init({
+        fallbackLng: 'fr',
+        debug: true,
+        backend: {
+          loadPath: '/locales/{{lng}}/translation.json'
+        }
+      }, function(err, t) {
+        // Set initial active state
+        updateLanguageButtons(i18next.language || 'fr');
+        updateContent();
+      });
+
+    function updateContent() {
+      document.querySelectorAll('[data-i18n]').forEach(function(element) {
+        var key = element.getAttribute('data-i18n');
+        element.innerHTML = i18next.t(key);
+      });
+    }
+
+    function updateLanguageButtons(currentLang) {
+      document.querySelectorAll('.language-switcher button').forEach(button => {
+        const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+        button.classList.toggle('active', lang === currentLang);
+      });
+    }
+
+    function changeLanguage(lng) {
+      i18next.changeLanguage(lng, function() {
+        updateContent();
+        updateLanguageButtons(lng);
+      });
+    }
+  </script>
 </body>
 </html>
