@@ -260,6 +260,7 @@ body {
     color: #2d3436;
     line-height: 1.6;
     margin-bottom: 10px;
+    
 }
 
 .card strong {
@@ -626,7 +627,7 @@ body {
     padding: 10px;
     transition: transform 0.3s ease;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;  /* Changed from center to flex-start */
 }
 
 .contact-item:hover {
@@ -640,19 +641,27 @@ body {
     text-align: left;
 }
 
-.contact-icon {
-    font-size: 1.5em;
-    color: #3498db;
-    width: 40px;
-    height: 40px;
+.contact-item .contact-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(145deg, #ffffff, #f5f7fa);
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);
-    animation: pulseScale 2s ease-in-out infinite;
-    flex-shrink: 0;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+}
+
+.contact-item .contact-icon i {
+    font-size: 18px;
+    color: #3498db !important;
+}
+
+/* Override any Font Awesome specific styles */
+.contact-item .contact-icon .fas,
+.contact-item .contact-icon .fab {
+    font-size: 18px;
+    color: #3498db !important;
 }
 
 .cv-download {
@@ -719,6 +728,7 @@ body {
         flex-direction: column;
         text-align: center;
         gap: 10px;
+        justify-content: center;  /* Center alignment on mobile */
     }
 
     .contact-item p {
@@ -748,6 +758,10 @@ body {
     .download-btn {
         padding: 10px 20px;
         font-size: 0.9em;
+    }
+
+    .contact-icon {
+        margin: 0 auto;  /* Center icon on mobile */
     }
 }
 
