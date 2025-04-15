@@ -713,7 +713,7 @@
           <img src="assets/images/QR_Portfolio.png" alt="Portfolio QR Code" class="qr-code-image">
         </div>
         <div class="cv-download">
-          <a href="assets/docs/TAJANI-AYMANE-CV.pdf" class="download-btn" download>
+          <a href="assets/docs/TAJANI-AYMANE-CV.pdf" class="download-btn" download="CV-TAJANI-AYMANE.pdf">
             <i class="fas fa-download"></i>
             <span data-i18n="contact.downloadCV">Télécharger mon CV</span>
           </a>
@@ -737,7 +737,7 @@
       const downloadBtn = document.querySelector('.cv-download .download-btn');
       if (downloadBtn) {
         const currentLang = i18next.language || 'fr';
-        downloadBtn.setAttribute('href', currentLang === 'en' ? 'assets/docs/CV-Pro Ang .pdf' : 'assets/docs/TAJANI-AYMANE-CV.pdf');
+        downloadBtn.setAttribute('href', currentLang === 'en' ? 'assets/docs/TAJANI-AYMANE-CV-ANG.pdf' : 'assets/docs/TAJANI-AYMANE-CV.pdf');
       }
     }
 
