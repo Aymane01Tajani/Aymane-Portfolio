@@ -137,74 +137,73 @@
     },
     "certifications": {
         "title": "CERTIFICATIONS",
-        
         "item1": {
-        "text": "Software Design and Architecture Specialization – En cours (University of Alberta)",
-        "id": "ID Certification: À remplir"
+          "text": "Software Design and Architecture Specialization – En cours (University of Alberta)",
+          "id": "Identifiant de la certification: En cours"
         },
         "item2": {
-        "text": "Information​ ​Systems Specialization – En cours (University of Minnesota)",
-        "id": "ID Certification: À remplir"
+          "text": "Information Systems Specialization – En cours (University of Minnesota)",
+          "id": "Identifiant de la certification: En cours"
         },
         "item3": {
-        "text": "Introduction to Git and GitHub – En cours (Google Career Certificates)",
-        "id": "ID Certification: À remplir"
+          "text": "Introduction to Git and GitHub – En cours (Google Career Certificates)",
+          "id": "Identifiant de la certification: En cours"
         },
         "item4": {
-        "text": "API Integration - End to End Web Development – Board Infinity (15 Avril 2025)",
-        "id": "Identifiant de la certification: 1DG8YJ4KF90W"
+          "text": "API Integration - End to End Web Development – Board Infinity (15 Avril 2025)",
+          "id": "Identifiant de la certification: 1DG8YJ4KF90W"
         },
         "item5": {
-        "text": "Machine Learning with Python – IBM (24 Janvier 2025)",
-        "id": "Identifiant de la certification: BURWOS6FDD4I"
+          "text": "Machine Learning with Python – IBM (24 Janvier 2025)",
+          "id": "Identifiant de la certification: BURWOS6FDD4I"
         },
         "item6": {
-        "text": "Introduction to Big Data with Spark and Hadoop – IBM (23 Janvier 2025)",
-        "id": "Identifiant de la certification: P9B5FFOQKJNC"
+          "text": "Introduction to Big Data with Spark and Hadoop – IBM (23 Janvier 2025)",
+          "id": "Identifiant de la certification: P9B5FFOQKJNC"
         },
         "item7": {
-        "text": "Building Scalable Java Microservices with Spring Boot and Spring Cloud – Google Cloud (04 Janvier 2025)",
-        "id": "Identifiant de la certification: 3209UDMR9E13"
+          "text": "Building Scalable Java Microservices with Spring Boot and Spring Cloud – Google Cloud (04 Janvier 2025)",
+          "id": "Identifiant de la certification: 3209UDMR9E13"
         },
         "item8": {
-        "text": "Project Management: The Basics for Success – University of California, Irvine (24 Nov 2024)",
-        "id": "Identifiant de la certification: Q823Q4KHYL58"
+          "text": "Project Management: The Basics for Success – University of California, Irvine (24 Nov 2024)",
+          "id": "Identifiant de la certification: Q823Q4KHYL58"
         },
         "item9": {
-        "text": "Building Services with ASP.NET Web API – Board Infinity (6 Aout 2024)",
-        "id": "Identifiant de la certification: 398KYBA38PAG"
+          "text": "Building Services with ASP.NET Web API – Board Infinity (6 Aout 2024)",
+          "id": "Identifiant de la certification: 398KYBA38PAG"
         },
         "item10": {
-        "text": "React Native – Meta (05 Juin 2024)",
-        "id": "Identifiant de la certification: 2BYSR7TWU5UH"
+          "text": "React Native – Meta (05 Juin 2024)",
+          "id": "Identifiant de la certification: 2BYSR7TWU5UH"
         },
         "item11": {
-        "text": "Introduction to Containers w/ Docker, Kubernetes & OpenShift – IBM (27 May 2024)",
-        "id": "Identifiant de la certification: D5Q4VN7WF3P2"
+          "text": "Introduction to Containers w/ Docker, Kubernetes & OpenShift – IBM (27 May 2024)",
+          "id": "Identifiant de la certification: D5Q4VN7WF3P2"
         },
         "item12": {
-        "text": "Virtual Networks in Azure – Whizlabs (27 May 2024)",
-        "id": "Identifiant de la certification: 2AS74XPAL3XB"
+          "text": "Virtual Networks in Azure – Whizlabs (27 May 2024)",
+          "id": "Identifiant de la certification: 2AS74XPAL3XB"
         },
         "item13": {
-        "text": "React Basics – Meta (05 Juin 2024)",
-        "id": "Identifiant de la certification: PRYRNZQDWKN6"
+          "text": "React Basics – Meta (05 Juin 2024)",
+          "id": "Identifiant de la certification: PRYRNZQDWKN6"
         },
         "item14": {
-        "text": "Introduction to Java and Object-Oriented Programming – University of Pennsylvania (15 Janvier 2024)",
-        "id": "Identifiant de la certification: P4BF99PJ2UB9"
+          "text": "Introduction to Java and Object-Oriented Programming – University of Pennsylvania (15 Janvier 2024)",
+          "id": "Identifiant de la certification: P4BF99PJ2UB9"
         },
         "item15": {
-        "text": "Étudier en France: French Intermediate course B1-B2 – École Polytechnique (7 Avril 2023)",
-        "id": "Identifiant de la certification: XWG76SNVCLQM"
+          "text": "Étudier en France: French Intermediate course B1-B2 – École Polytechnique (7 Avril 2023)",
+          "id": "Identifiant de la certification: XWG76SNVCLQM"
         },
         "item16": {
-        "text": "Python for Everybody Specialization – University of Michigan (28 Mars 2023)",
-        "id": "Identifiant de la certification: G9PW84B4RFYV"
+          "text": "Python for Everybody Specialization – University of Michigan (28 Mars 2023)",
+          "id": "Identifiant de la certification: G9PW84B4RFYV"
         },
         "item17": {
-        "text": "Software Engineering: Modeling Software Systems using UML – The Hong Kong University of Science and Technology (26 Mars 2023)",
-        "id": "Identifiant de la certification: 4EYCQSC7PEX6"
+          "text": "Software Engineering: Modeling Software Systems using UML – The Hong Kong University of Science and Technology (26 Mars 2023)",
+          "id": "Identifiant de la certification: 4EYCQSC7PEX6"
         }
     },
     "languages": {
@@ -235,4 +234,3 @@
       "text": "&copy; 2025 Aymane Tajani. All rights reserved."
     }
   }
-  

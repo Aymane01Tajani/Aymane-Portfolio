@@ -164,6 +164,19 @@ function updateContent() {
     var key = element.getAttribute('data-i18n');
     element.innerHTML = i18next.t(key);
   });
+  
+  // Sort certification cards to maintain order
+  const certificationSection = document.querySelector('#certifications .cards-container');
+  if (certificationSection) {
+    const cards = Array.from(certificationSection.querySelectorAll('.card'));
+    cards.sort((a, b) => {
+      const aIndex = a.getAttribute('data-item-index');
+      const bIndex = b.getAttribute('data-item-index');
+      return parseInt(aIndex) - parseInt(bIndex);
+    });
+    cards.forEach(card => certificationSection.appendChild(card));
+  }
+  
   updateCVDownloadLink();
 }
 
