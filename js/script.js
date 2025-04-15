@@ -184,23 +184,13 @@ function updateCVDownloadLink() {
   const downloadBtn = document.querySelector('.cv-download .download-btn');
   if (downloadBtn) {
     const currentLang = i18next.language || 'fr';
-    const fileName = currentLang === 'en' ? 'CV-TAJANI-AYMANE-ANG.pdf' : 'CV-TAJANI-AYMANE.pdf';
-    downloadBtn.setAttribute('href', `assets/docs/TAJANI-AYMANE-CV${currentLang === 'en' ? '-ANG' : ''}.pdf`);
+    const fileName = `TAJANI-AYMANE-CV${currentLang === 'en' ? '-ANG' : ''}.pdf`;
+    downloadBtn.setAttribute('href', `assets/docs/${fileName}`);
     downloadBtn.setAttribute('download', fileName);
   }
 }
 
 function downloadCV(event) {
-  event.preventDefault();
-  const currentLang = i18next.language || 'fr';
-  const fileName = currentLang === 'en' ? 'CV-TAJANI-AYMANE-ANG.pdf' : 'CV-TAJANI-AYMANE.pdf';
-  const cvPath = `assets/docs/TAJANI-AYMANE-CV${currentLang === 'en' ? '-ANG' : ''}.pdf`;
-  
-  // Create a temporary link and trigger the download
-  const link = document.createElement('a');
-  link.href = cvPath;
-  link.setAttribute('download', fileName);
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+  // Remove this function as we're no longer customizing the download
+  return true;
 }
