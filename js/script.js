@@ -95,6 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial language button state
     const currentLang = i18next.language || 'fr';
     updateLanguageButtons(currentLang);
+
+    // Initialize carousels
+    initializeCarousels();
 });
 
 // Smooth scroll with dynamic speed
@@ -194,3 +197,159 @@ function downloadCV(event) {
   // Remove this function as we're no longer customizing the download
   return true;
 }
+
+// Carousel functionality
+function initializeCarousels() {
+  // Initialize each carousel in the document
+  document.querySelectorAll('.carousel-container').forEach(container => {
+    const track = container.querySelector('.carousel-track');
+    const slides = Array.from(track.querySelectorAll('.carousel-slide'));
+    const dotsContainer = container.querySelector('.carousel-dots');
+    const prevButton = container.querySelector('.carousel-button.prev');
+    const nextButton = container.querySelector('.carousel-button.next');
+    
+    let currentSlideIndex = 0;
+    const totalSlides = slides.length;
+
+    // Clear existing dots first
+    dotsContainer.innerHTML = '';
+    
+    // Create dots
+    slides.forEach((_, idx) => {
+      const dot = document.createElement('button');
+      dot.classList.add('carousel-dot');
+      if (idx === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(idx));
+      dotsContainer.appendChild(dot);
+    });
+    
+    const dots = Array.from(dotsContainer.children);
+    
+    function updateCarousel() {
+      // Move the track
+      const slideWidth = slides[0].offsetWidth;
+      track.style.transform = `translateX(-${currentSlideIndex * slideWidth}px)`;
+      
+      // Update dots
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === currentSlideIndex);
+      });
+
+      // Update visibility of slides
+      slides.forEach((slide, idx) => {
+        if (idx === currentSlideIndex) {
+          slide.style.opacity = '1';
+          slide.style.visibility = 'visible';
+        } else {
+          slide.style.opacity = '0.3';
+          slide.style.visibility = 'visible';
+        }
+      });
+    }
+    
+    function goToSlide(index) {
+      if (index < 0) {
+        currentSlideIndex = totalSlides - 1;
+      } else if (index >= totalSlides) {
+        currentSlideIndex = 0;
+      } else {
+        currentSlideIndex = index;
+      }
+      updateCarousel();
+    }
+    
+    function nextSlide() {
+      goToSlide(currentSlideIndex + 1);
+    }
+    
+    function prevSlide() {
+      goToSlide(currentSlideIndex - 1);
+    }
+    
+    // Add button listeners
+    prevButton.addEventListener('click', prevSlide);
+    nextButton.addEventListener('click', nextSlide);
+    
+    // Add touch support
+    let touchStartX = null;
+    let touchStartTransform = 0;
+    
+    track.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+      touchStartTransform = currentSlideIndex * slides[0].offsetWidth;
+    }, { passive: true });
+    
+    track.addEventListener('touchmove', (e) => {
+      if (touchStartX === null) return;
+      
+      const touchCurrentX = e.touches[0].clientX;
+      const diff = touchStartX - touchCurrentX;
+      const newTransform = touchStartTransform + diff;
+      
+      track.style.transform = `translateX(-${newTransform}px)`;
+    }, { passive: true });
+    
+    track.addEventListener('touchend', (e) => {
+      if (touchStartX === null) return;
+      
+      const touchEndX = e.changedTouches[0].clientX;
+      const diff = touchStartX - touchEndX;
+      const slideWidth = slides[0].offsetWidth;
+      
+      if (Math.abs(diff) > slideWidth * 0.2) { // 20% threshold
+        if (diff > 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+      } else {
+        // Return to current slide
+        updateCarousel();
+      }
+      
+      touchStartX = null;
+    }, { passive: true });
+    
+    // Initialize carousel
+    updateCarousel();
+    
+    // Handle window resize
+    window.addEventListener('resize', updateCarousel);
+  });
+}
+
+// Initialize carousels when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Reset all cards to hidden state
+  document.querySelectorAll('.card').forEach(card => {
+    card.classList.remove('reveal');
+  });
+
+  // Observe all sections
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  // Add hover effects to cards
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.style.transform = 'translateY(-5px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'translateY(0) scale(1)';
+    });
+  });
+
+  // Initialize carousels
+  initializeCarousels();
+
+  // Enhanced navigation highlighting
+  updateNavigation();
+
+  // Set initial language button state
+  const currentLang = i18next.language || 'fr';
+  updateLanguageButtons(currentLang);
+});
