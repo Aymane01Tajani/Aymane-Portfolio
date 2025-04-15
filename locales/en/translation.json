@@ -138,20 +138,20 @@
     "certifications": {
         "title": "CERTIFICATIONS",
         "item1": {
-          "text": "API Integration - End to End Web Development – Ongoing (Board Infinity)",
-          "id": "Certification ID: To be filled"
-        },
-        "item2": {
           "text": "Software Design and Architecture Specialization – Ongoing (University of Alberta)",
           "id": "Certification ID: To be filled"
         },
-        "item3": {
+        "item2": {
           "text": "Information Systems Specialization – Ongoing (University of Minnesota)",
           "id": "Certification ID: To be filled"
         },
-        "item4": {
+        "item3": {
           "text": "Introduction to Git and GitHub – Ongoing (Google Career Certificates)",
           "id": "Certification ID: To be filled"
+        },
+        "item4": {
+          "text": "API Integration - End to End Web Development – Board Infinity (April 15, 2025)",
+          "id": "Certification ID: 1DG8YJ4KF90W"
         },
         "item5": {
           "text": "Machine Learning with Python – IBM (January 24, 2025)",
