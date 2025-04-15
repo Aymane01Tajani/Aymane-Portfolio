@@ -714,7 +714,7 @@
           <img src="assets/images/QR_Portfolio.png" alt="Portfolio QR Code" class="qr-code-image">
         </div>
         <div class="cv-download">
-          <a href="assets/docs/TAJANI-AYMANE-CV.pdf" class="download-btn" download>
+          <a href="#" onclick="downloadCV(event)" class="download-btn">
             <i class="fas fa-download"></i>
             <span data-i18n="contact.downloadCV">Télécharger mon CV</span>
           </a>
@@ -726,7 +726,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p data-i18n="footer.text">&copy; 2025 Aymane Tajani. All rights reserved.</p>
+      <p data-i18n="footer.text" style="color: white;">&copy; 2025 Aymane Tajani. All rights reserved.</p>
     </div>
   </footer>
 
@@ -734,27 +734,20 @@
   <script src="./js/script.js"></script>
   <!-- i18next initialization script -->
   <script>
-    // Initialize i18next
-    i18next
-      .use(i18nextHttpBackend)
-      .use(i18nextBrowserLanguageDetector)
-      .init({
-        fallbackLng: 'fr',
-        debug: true,
-        backend: {
-          loadPath: './locales/{{lng}}/translation.json'  // Changed from '/locales/' to './locales/'
-        }
-      }, function(err, t) {
-        // Set initial active state
-        updateLanguageButtons(i18next.language || 'fr');
-        updateContent();
-      });
+    function updateCVDownloadLink() {
+      const downloadBtn = document.querySelector('.cv-download .download-btn');
+      if (downloadBtn) {
+        const currentLang = i18next.language || 'fr';
+        downloadBtn.setAttribute('href', currentLang === 'en' ? 'assets/docs/CV-Pro Ang .pdf' : 'assets/docs/TAJANI-AYMANE-CV.pdf');
+      }
+    }
 
     function updateContent() {
       document.querySelectorAll('[data-i18n]').forEach(function(element) {
         var key = element.getAttribute('data-i18n');
         element.innerHTML = i18next.t(key);
       });
+      updateCVDownloadLink(); // Update CV link when content updates
     }
 
     function updateLanguageButtons(currentLang) {
@@ -770,6 +763,28 @@
         updateLanguageButtons(lng);
       });
     }
+
+    // Initialize i18next
+    i18next
+      .use(i18nextHttpBackend)
+      .use(i18nextBrowserLanguageDetector)
+      .init({
+        fallbackLng: 'fr',
+        debug: true,
+        backend: {
+          loadPath: './locales/{{lng}}/translation.json'
+        }
+      }, function(err, t) {
+        if (err) return console.log('something went wrong loading', err);
+        updateLanguageButtons(i18next.language || 'fr');
+        updateContent(); // This will also update the CV link
+        updateCVDownloadLink(); // Ensure CV link is set on initial load
+      });
+
+    // Add event listener for language changes
+    i18next.on('languageChanged', function(lng) {
+      updateCVDownloadLink(); // Update CV link when language changes
+    });
   </script>
 </body>
 </html>

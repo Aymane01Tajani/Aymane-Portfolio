@@ -20,7 +20,7 @@
       "content": "Future state engineer in the fifth year of Computer Engineering and Networks with a specialization in MIAGE at EMSI. Creative, dynamic, and collaborative, I work efficiently within teams and can adapt to various technical contexts."
     },
     "education": {
-      "title": "ACADEMIC TRAINING",
+      "title": "Education",
       "item1": {
         "title": "5th Year in Computer Engineering and Networks (MIAGE)",
         "details": "<strong>School:</strong> Moroccan School of Engineering Sciences<br /><strong>Duration:</strong> Oct 2021 - Jul 2025",
@@ -35,7 +35,7 @@
       },
       "item3": {
         "title": "Baccalaureate in Physical Sciences",
-        "details": "<strong>School:</strong> Lycée Abdelkhaleck Torres<br /><strong>Date:</strong> June 2019",
+        "details": "<strong>School:</strong> Abdelkhalek Torres High School<br /><strong>Date:</strong> June 2019",
         "schoolLabel": "School:",
         "dateLabel": "Date:"
       }
@@ -71,7 +71,7 @@
       },
       "item4": {
         "title": "Development of a Company Website.",
-        "details": "<strong>Company:</strong> Société Civiles des Études Agricoles<br /><strong>Type:</strong> Internship (Remote)<br /><strong>Duration:</strong> Jul 2022<br /><strong>Details:</strong> Website developed with HTML, CSS, and Bootstrap.<br /><strong>Region:</strong> Casablanca, Morocco",
+        "details": "<strong>Company:</strong> CIVIL SOCIETY FOR AGRICULTURAL STUDIES<br /><strong>Type:</strong> Internship (Remote)<br /><strong>Duration:</strong> Jul 2022<br /><strong>Details:</strong> Website developed with HTML, CSS, and Bootstrap.<br /><strong>Region:</strong> Casablanca, Morocco",
         "companyLabel": "Company:",
         "typeLabel": "Type:",
         "durationLabel": "Duration:",

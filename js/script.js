@@ -144,6 +144,7 @@ function changeLanguage(lng) {
   i18next.changeLanguage(lng, () => {
     updateContent();
     updateLanguageButtons(lng);
+    updateCVDownloadLink(); // Also update CV link when language changes
   });
 }
 
@@ -156,4 +157,34 @@ function updateLanguageButtons(currentLang) {
       button.style.background = '#2c3e50';  // Grey for inactive
     }
   });
+}
+
+function updateContent() {
+  document.querySelectorAll('[data-i18n]').forEach(function(element) {
+    var key = element.getAttribute('data-i18n');
+    element.innerHTML = i18next.t(key);
+  });
+  updateCVDownloadLink();
+}
+
+function updateCVDownloadLink() {
+  const downloadBtn = document.querySelector('.cv-download .download-btn');
+  if (downloadBtn) {
+    const currentLang = i18next.language || 'fr';
+    downloadBtn.setAttribute('href', currentLang === 'en' ? 'assets/docs/CV-Pro Ang .pdf' : 'assets/docs/TAJANI-AYMANE-CV.pdf');
+  }
+}
+
+function downloadCV(event) {
+  event.preventDefault();
+  const currentLang = i18next.language || 'fr';
+  const cvPath = currentLang === 'en' ? 'assets/docs/CV-Pro Ang .pdf' : 'assets/docs/TAJANI-AYMANE-CV.pdf';
+  
+  // Create a temporary link and trigger the download
+  const link = document.createElement('a');
+  link.href = cvPath;
+  link.setAttribute('download', '');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
