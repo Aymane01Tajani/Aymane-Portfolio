@@ -2267,26 +2267,18 @@ body, html {
 
 @media screen and (max-width: 480px) {
   .hero-bg-card {
-    width: 94%;
-    margin: 0 auto;
-    border-radius: 10px;
+    display: none; /* Hide the main hero background card on mobile */
   }
   
   .hero-bg-section {
     padding: 0 10px 15px;
-  }
-  
-  .hero-bg-card img {
-    height: auto;
-    max-height: none; /* Remove any height restrictions */
-    object-fit: contain;
   }
 }
 
 /* Last resort fallback for smallest screens */
 .small-screen-fallback {
   display: none; /* Hidden by default on all screens */
-  width: 90%;
+  width: 94%;
   margin: 15px auto;
   border-radius: 10px;
   overflow: hidden;
@@ -2304,5 +2296,12 @@ body, html {
 @media screen and (max-width: 480px) {
   .small-screen-fallback {
     display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .small-screen-fallback img {
+    max-height: 450px;
+    object-fit: contain;
   }
 }
