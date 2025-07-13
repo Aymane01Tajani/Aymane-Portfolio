@@ -104,20 +104,56 @@ body {
     transform: scaleX(1);
 }
 
+/* Additional adjustments for the top navigation */
+@media (max-width: 768px) {
+    .top-nav {
+        height: auto; /* Allow height to adjust based on content */
+    }
+    
+    .top-nav ul {
+        padding: 5px 10px; /* Add some padding */
+    }
+}
+
 /* Hero Section */
 .hero {
-    position: relative;
-    min-height: 100vh;
     padding: 0;
     background: linear-gradient(135deg, #f5f7fa 0%, #e3f2fd 100%);
+    overflow: visible;
+    padding-top: 60px;
+    padding-bottom: 0px; /* Reduced bottom padding */
+    display: flex;
+    flex-direction: column;
+    min-height: auto; /* Remove any minimum height restrictions */
+    height: auto; /* Let the content determine the height */
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 10px; /* Reduced bottom padding */
     width: 100%;
+    min-height: auto; /* Remove any minimum height */
+    height: auto; /* Let content determine height */
+}
+
+.hero-card {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-left: 4px solid #3498db;
+}
+
+.hero-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .hero-text {
@@ -143,36 +179,123 @@ body {
 .hero-image-card {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 30px auto;
     background: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: block !important;
+    position: relative;
     overflow: hidden;
+    border: 1px solid #e5e5e5;
+    padding: 0;
+    z-index: 5;
 }
 
 .hero-image-card img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 500px; /* Fixed height to ensure visibility */
+    display: block !important;
     object-fit: cover;
+    border-radius: 15px;
+}
+
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {
-    .hero-text {
-        margin-top: 60px;
-        margin-bottom: 30px;
+    .hero-card {
+        width: 95%;
+        padding: 20px;
+        margin-bottom: 25px;
     }
-
-    .hero-text h1 {
-        font-size: 2em;
+    
+    .hero-card-content {
+        gap: 20px;
     }
-
-    .hero-text .tagline {
-        font-size: 1em;
-    }
-
+    
     .hero-image-card {
         width: 95%;
+        margin: 0 auto 30px;
+    }
+    
+    .hero-image-card img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding-bottom: 80px; /* More bottom padding */
+        padding-top: 70px;
+        height: auto; /* Let content dictate height */
+    }
+    
+    .hero-content {
+        padding: 10px 10px 80px; /* More bottom padding */
+        height: auto; /* Let content dictate height */
+    }
+    
+    .hero-card {
+        padding: 15px;
+        margin: 10px auto 25px;
+    }
+    
+    .hero-card-content {
+        gap: 15px;
+    }
+    
+    .hero-image-card {
+        margin: 10px auto 30px; /* Ensure margin at the top */
+        width: 95%;
+        display: block !important; /* Force display */
+        position: relative; /* Add positioning context */
+        z-index: 10; /* Ensure it's above other elements */
+    }
+    
+    .hero-image-card img {
+        height: 300px;
+        display: block !important; /* Force display */
+    }
+}
+
+@media (orientation: landscape) and (max-height: 600px) {
+    .hero {
+        padding-bottom: 60px;
+    }
+    
+    .hero-content {
+        padding: 20px;
+    }
+    
+    .hero-card-content {
+        gap: 20px;
+    }
+    
+    .hero-card {
+        margin-bottom: 25px;
+    }
+    
+    .hero-image-card {
+        width: 85%;
+        margin: 0 auto 40px;
+        max-height: 300px;
+    }
+    
+    .hero-image-card img {
+        object-fit: contain;
+        max-height: 300px;
     }
 }
 
@@ -695,21 +818,30 @@ body {
   transition: all 0.3s ease;
 }
 
-#interests .interest-icon {
-  font-size: 2.5em;
-  color: #3498db;
-  transition: transform 0.3s ease;
+#interests .carousel-button {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-#interests .card:hover .interest-icon {
-  transform: scale(1.2);
-  animation: spinAround 1s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+#interests .card {
+  background: linear-gradient(145deg, #ffffff, #f5f7fa);
+  text-align: center;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 0 15px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-#interests .card p {
-  font-size: 1.2em;
-  color: #2c3e50;
-  margin: 0;
+#interests .carousel-button {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 768px) {
@@ -2048,5 +2180,129 @@ body, html {
   #projects .project-image-card {
     max-width: 250px;
     height: 150px;
+  }
+}
+
+/* Additional styles to ensure hero background image is always visible */
+@media screen and (max-width: 767px) {
+    /* Force proper display of hero section elements */
+    .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-image-card {
+        width: 100%; /* Full width on very small screens */
+        max-width: 95%; /* With some margin */
+        margin: 0 auto 20px;
+        display: block;
+    }
+}
+
+/* Fallback solution for problematic devices - completely rewritten */
+@media screen and (max-width: 480px) {
+    /* Force visibility of the hero image on small screens */
+    .hero {
+        padding-bottom: 100px !important; /* Extra padding at the bottom */
+    }
+    
+    .hero-content {
+        padding-bottom: 100px !important; /* Extra padding at the bottom */
+    }
+    
+    .hero-image-card {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+        min-height: 300px !important;
+        width: 95% !important;
+        margin: 30px auto !important;
+        z-index: 100 !important;
+        position: relative !important;
+    }
+    
+    .hero-image-card img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: 300px !important;
+    }
+}
+
+/* Hero Background Section */
+.hero-bg-section {
+  padding: 0 0 20px 0;
+  width: 100%;
+  display: block;
+  margin-top: 120px; /* Further increased space between hero card and hero background */
+}
+
+.hero-bg-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.hero-bg-card img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+  object-fit: contain; /* Changed to contain to ensure full image is visible */
+}
+
+@media screen and (max-width: 768px) {
+  .hero-bg-card {
+    width: 95%;
+    margin: 0 auto 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-bg-card {
+    width: 94%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .hero-bg-section {
+    padding: 0 10px 15px;
+  }
+  
+  .hero-bg-card img {
+    height: auto;
+    max-height: none; /* Remove any height restrictions */
+    object-fit: contain;
+  }
+}
+
+/* Last resort fallback for smallest screens */
+.small-screen-fallback {
+  display: none; /* Hidden by default on all screens */
+  width: 90%;
+  margin: 15px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e5e5;
+}
+
+.small-screen-fallback img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Only show on the smallest screens */
+@media screen and (max-width: 480px) {
+  .small-screen-fallback {
+    display: block;
   }
 }

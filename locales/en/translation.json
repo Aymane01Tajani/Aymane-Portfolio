@@ -1,5 +1,5 @@
 {
-    "title": "Aymane Tajani | CV",
+    "title": "Aymane Tajani",
     "nav": {
       "profile": "Profile",
       "education": "Education",
@@ -13,16 +13,17 @@
     },
     "hero": {
       "title": "AYMANE TAJANI",
+      "engineerTitle": "State Engineer",
       "tagline": "Full Stack Developer | Mobile Developer | Problem Solver | Tech Enthusiast"
     },
     "profile": {
       "title": "Profile",
-      "content": "Future state engineer in the fifth year of Computer Engineering and Networks with a specialization in MIAGE at EMSI. Creative, dynamic, and collaborative, I work efficiently within teams and can adapt to various technical contexts."
+      "content": "State engineer in Computer Engineering and Networks with a specialization in MIAGE at EMSI. Creative, dynamic, and collaborative, I work efficiently within teams and can adapt to various technical contexts."
     },
     "education": {
       "title": "Education",
       "item1": {
-        "title": "5th Year in Computer Engineering and Networks (MIAGE)",
+        "title": "Computer Engineering and Networks (MIAGE)",
         "details": "<strong>School:</strong> Moroccan School of Engineering Sciences<br /><strong>Duration:</strong> Oct 2021 - Jul 2025",
         "schoolLabel": "School:",
         "durationLabel": "Duration:"
@@ -44,7 +45,7 @@
       "title": "EXPERIENCES",
       "item1": {
         "title": "Design & Development of a Mobile Solution for Pharmaceutical Sales Order Taking Connected to Sage X3.",
-        "details": "<strong>Company:</strong> Aberdeen Services<br /><strong>Type:</strong> Internship (On-site)<br /><strong>Duration:</strong> Mar 2025 - Sept 2025<br /><strong>Details:</strong> Development of GraphQL Web Services on Sage X3 and integration with a Flutter mobile application.<br /><strong>Region:</strong> Casablanca, Morocco",
+        "details": "<strong>Company:</strong> Aberdeen Services<br /><strong>Type:</strong> Internship (On-site)<br /><strong>Duration:</strong> Mar 2025 - Sept 2025<br /><strong>Details:</strong> Development of RSET Web Services on Sage X3 and integration with a Flutter mobile application.<br /><strong>Region:</strong> Casablanca, Morocco",
         "companyLabel": "Company:",
         "typeLabel": "Type:",
         "durationLabel": "Duration:",

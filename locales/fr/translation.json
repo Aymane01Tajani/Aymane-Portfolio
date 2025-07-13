@@ -1,5 +1,5 @@
 {
-    "title": "Aymane Tajani | CV",
+    "title": "Aymane Tajani",
     "nav": {
       "profile": "Profil",
       "education": "Éducation",
@@ -13,16 +13,17 @@
     },
     "hero": {
       "title": "AYMANE TAJANI",
+      "engineerTitle": "Ingénieur d'états",
       "tagline": "Développeur Full Stack | Développeur Mobile | Résolveur de Problèmes | Passionné de Technologie"
     },
     "profile": {
       "title": "Profile",
-      "content": "Futur ingénieur d’états en cinquième année en Ingénierie Informatique et Réseaux avec spécialisation en MIAGE à l'EMSI. Créatif, dynamique, et collaboratif, je travaille avec efficacité au sein d'équipe et suis capable de m'adapter à des contextes techniques variés."
+      "content": "Ingénieur d’états en Informatique et Réseaux avec spécialisation en MIAGE à l'EMSI. Créatif, dynamique, et collaboratif, je travaille avec efficacité au sein d'équipe et suis capable de m'adapter à des contextes techniques variés."
     },
     "education": {
       "title": "FORMATIONS ACADEMIQUE",
       "item1": {
-        "title": "5ème année Ingénierie Informatique et Réseau (MIAGE)",
+        "title": "Ingénierie Informatique et Réseau (MIAGE)",
         "details": "<strong>École:</strong> École MAROCCAINE DES SCIENCES D'INGENIEURS<br /><strong>Durée:</strong> Oct 2021 - Juill 2025",
         "schoolLabel": "École:",
         "durationLabel": "Durée:"
@@ -44,7 +45,7 @@
       "title": "EXPÉRIENCES",
       "item1": {
         "title": "Conception & Développement d'une Solution Mobile de Prise des Commandes de Vente Pharmaceutique Connectée à Sage X3.",
-        "details": "<strong>Entreprise:</strong> Aberdeen Services<br /><strong>Type:</strong> Stage (Sur site)<br /><strong>Durée:</strong> Mars 2025 - Sept 2025<br /><strong>Détails:</strong> Développement des Web Services GraphQL sur Sage X3 et intégration avec une Application mobile Flutter.<br /><strong>Région:</strong> Casablanca, Maroc",
+        "details": "<strong>Entreprise:</strong> Aberdeen Services<br /><strong>Type:</strong> Stage (Sur site)<br /><strong>Durée:</strong> Mars 2025 - Sept 2025<br /><strong>Détails:</strong> Développement des Web Services REST sur Sage X3 et intégration avec une Application mobile Flutter.<br /><strong>Région:</strong> Casablanca, Maroc",
         "companyLabel": "Entreprise:",
         "typeLabel": "Type:",
         "durationLabel": "Durée:",

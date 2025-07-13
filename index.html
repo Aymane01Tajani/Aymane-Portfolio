@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="title">Aymane Tajani | CV</title>
+  <title data-i18n="title">Aymane Tajani</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Inclusion des bibliothèques i18next -->
@@ -33,15 +33,40 @@
         <button onclick="changeLanguage('fr')" class="active">Français</button>
         <button onclick="changeLanguage('en')">English</button>
       </div>
-      <div class="hero-text">
-        <h1 data-i18n="hero.title">AYMANE TAJANI</h1>
-        <p class="tagline" data-i18n="hero.tagline">Full Stack Developer | Mobile Developer | Problem Solver | Tech Enthusiast</p>
+      <div class="hero-card">
+        <div class="hero-card-content">
+          <div class="hero-text">
+            <h1 data-i18n="hero.title">AYMANE TAJANI</h1>
+            <h3 data-i18n="hero.engineerTitle">Ingénieur d'états</h3>
+            <div class="hero-profile-image">
+              <img src="assets/images/name.jpg" alt="Profile Picture" class="circular-image">
+            </div>
+            <p class="tagline" data-i18n="hero.tagline">Full Stack Developer | Mobile Developer | Problem Solver | Tech Enthusiast</p>
+          </div>
+        </div>
       </div>
-      <div class="hero-image-card">
-        <img src="assets/images/hero-background.jpg" alt="Hero Background">
-      </div>
+      
+      <!-- Removed the hero image from here -->
     </div>
   </header>
+  
+  <!-- Hero Background Image Section - Completely separate section -->
+  <section class="hero-bg-section">
+    <div class="container">
+      <div class="hero-bg-card">
+        <img src="assets/images/hero-background.jpg" alt="Hero Background" onError="this.style.height='auto';this.style.maxHeight='none';">
+        <!-- Fallback image in case the main one doesn't display correctly -->
+        <noscript>
+          <img src="assets/images/hero-background.jpg" alt="Hero Background" style="width:100%;height:auto;display:block;max-height:none;">
+        </noscript>
+      </div>
+    </div>
+    
+    <!-- Absolute last resort fallback for smallest screens only -->
+    <div class="small-screen-fallback">
+      <img src="assets/images/hero-background.jpg" alt="Hero Background">
+    </div>
+  </section>
 
   <!-- Profile Section -->
   <section id="profile" class="section profile">
