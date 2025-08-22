@@ -352,4 +352,74 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set initial language button state
   const currentLang = i18next.language || 'fr';
   updateLanguageButtons(currentLang);
+
+  // Mobile Navigation Auto-Scroll
+  let isScrolling = false;
+
+  function handleMobileNavScroll() {
+    const nav = document.querySelector('.top-nav ul');
+    const activeLink = document.querySelector('.top-nav a.active');
+    
+    if (activeLink && nav && window.innerWidth <= 768) {
+      if (!isScrolling) {
+        isScrolling = true;
+        
+        const navRect = nav.getBoundingClientRect();
+        const linkRect = activeLink.getBoundingClientRect();
+        const scrollLeft = nav.scrollLeft;
+        
+        // Calculate the position to center the active link
+        const targetScroll = scrollLeft + (linkRect.left - navRect.left) - (navRect.width / 2) + (linkRect.width / 2);
+        
+        nav.scrollTo({
+          left: Math.max(0, targetScroll),
+          behavior: 'smooth'
+        });
+        
+        setTimeout(() => {
+          isScrolling = false;
+        }, 300);
+      }
+    }
+  }
+
+  // Section detection for navigation highlighting
+  function detectCurrentSection() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.top-nav a');
+    
+    let currentSection = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.offsetHeight;
+      const scrollPosition = window.scrollY;
+      
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute('id');
+      }
+    });
+    
+    // Update active navigation link
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${currentSection}`) {
+        link.classList.add('active');
+      }
+    });
+    
+    // Trigger mobile nav scroll
+    handleMobileNavScroll();
+  }
+
+  // Throttled scroll event listener
+  let scrollTimeout;
+  window.addEventListener('scroll', () => {
+    if (scrollTimeout) {
+      clearTimeout(scrollTimeout);
+    }
+    scrollTimeout = setTimeout(detectCurrentSection, 10);
+  });
+
+  // Initial section detection
+  detectCurrentSection();
 });

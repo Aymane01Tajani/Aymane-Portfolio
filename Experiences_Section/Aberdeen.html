@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/name.jpg" type="image/x-icon">
+    <title>Aberdeen - Aymane Tajani</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with back button -->
+    <header class="experience-detail-header">
+        <div class="container">
+            <a href="../index.html#experiences" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Retour au portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="experience-detail-main">
+        <div class="container">
+            <div class="experience-detail-card">
+                <div class="experience-detail-header-content">
+                    <div class="company-logo">
+                        <img src="../assets/images/Experience/Aberdeen.png" alt="Aberdeen Services Logo">
+                    </div>
+                    <div class="experience-detail-info">
+                        <h1>Conception & Développement d'une Solution Mobile de Prise des Commandes de Vente Pharmaceutique Connectée à Sage X3.</h1>
+                        <h2>Aberdeen Services</h2>
+                        <div class="experience-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> 03 Mars 2025 - 03 Septembre 2025</span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Casablanca, Maroc</span>
+                            <span class="type"><i class="fas fa-briefcase"></i> Stage (Sur site)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-detail-content">
+                    <section class="overview-section">
+                        <h3><i class="fas fa-info-circle"></i> Aperçu du projet</h3>
+                        <p>Le secteur pharmaceutique est un domaine très réglementé et compétitif qui repose sur la performance des délégués médicaux pour la promotion et la vente des produits. Les méthodes traditionnelles de prise de commandes, souvent manuelles ou obsolètes, engendrent erreurs, lenteurs et manque de visibilité.
+                        La transformation digitale s’impose pour optimiser la gestion des commandes et la synchronisation avec les stocks. Dans ce contexte, une application mobile connectée à Sage X3 via un web service REST est développée. Elle permet aux délégués médicaux de gérer leurs clients, consulter les stocks en temps réel, passer des commandes sécurisées et suivre leur avancement.</p>
+                    </section>
+
+                    <section class="technologies-section">
+                        <h3><i class="fas fa-tools"></i> Technologies utilisées</h3>
+                        
+                        <!-- Tools Image -->
+                        <div class="tools-diagram">
+                            <img src="../assets/images/Experience/Experiences_Section/Aberdeen/liste outils.png" alt="Liste des outils et technologies utilisés" class="tools-img">
+                            <p class="diagram-caption">Technologies et outils utilisés dans le projet Aberdeen</p>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">VS Code</span>
+                            <span class="tech-tag">GitHub</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">Sage X3</span>
+                            <span class="tech-tag">4GL</span>
+                            <span class="tech-tag">Postman</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                    </section>
+
+                    <section class="responsibilities-section">
+                        <h3><i class="fas fa-tasks"></i> Responsabilités principales</h3>
+                        <ul class="responsibilities-list">
+                            <li>Analyse des besoins métier du secteur pharmaceutique et définition des spécifications fonctionnelles</li>
+                            <li>Développement de web services REST avec Sage X3 en langage 4GL pour l'intégration ERP</li>
+                            <li>Conception et développement de l'application mobile cross-platform avec Flutter/Dart</li>
+                            <li>Implémentation de la synchronisation temps réel entre l'application mobile et Sage X3</li>
+                            <li>Développement des fonctionnalités de gestion clients, catalogue produits et commandes</li>
+                            <li>Configuration et optimisation de la base de données SQL Server pour les performances</li>
+                            <li>Tests unitaires et d'intégration avec Postman pour valider les API REST</li>
+                            <li>Mise en place du versioning et collaboration avec GitHub</li>
+                        </ul>
+                    </section>
+
+                    <section class="achievements-section">
+                        <h3><i class="fas fa-trophy"></i> Réalisations</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Solution mobile cross-platform</h4>
+                                <p>Accessible sur tous appareils</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-plug"></i>
+                                <h4>API REST</h4>
+                                <p>Integration avec Sage X3 a travers des Web Services REST (EAI)</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-database"></i>
+                                <h4>Gestion de Données</h4>
+                                <p>Synchronisation temps réel avec Sage X3</p>
+                            </div>
+                            
+                            
+                        </div>
+                    </section>
+
+                    <section class="architecture-section">
+                        <h3><i class="fas fa-sitemap"></i> Architecture technique</h3>
+                        
+                        <!-- Architecture Diagram -->
+                        <div class="architecture-diagram">
+                            <img src="../assets/images/Experience/Experiences_Section/Aberdeen/AR-Tech-REST.png" alt="Architecture REST Aberdeen" class="architecture-img">
+                            <p class="diagram-caption">Architecture REST distribuée de l'application PharmaX3</p>
+                        </div>
+                        
+                        <div class="architecture-note">
+                            <p>L’infrastructure repose sur une architecture distribuée légère, permettant une communication directe et sécurisée entre l’application mobile et Sage X3. Elle est constituée des éléments suivants :</p>
+                            <ul>
+                                <li><strong>Application Mobile (Frontend) :</strong> Développée avec Flutter (Dart), cette application est installée sur les tablettes des délégués médicaux. Elle interagit directement avec les Web Services REST exposés par Sage X3 via des requêtes HTTP.</li>
+                                <li><strong>Web Services REST Sage X3 :</strong> Les services sont configurés à partir de représentations associées à des classes métiers (commandes, clients, stocks). Chaque appel se fait selon les standards suivants : une Authentification HTTP de type Basic Auth à travers un username et un password et un échange de données au format JSON</li>
+                                <li><strong>Base de Données (SQL Server) :</strong> L’ensemble des données de gestion (clients, articles, commandes, stocks) est centralisé dans la base de données intégrée à Sage X3.</li>
+                            </ul>
+                            <p><strong>NB :</strong>  Ce modèle assure un niveau de sécurité basique via les identifiants utilisateurs Sage X3 et garantit l’échange de données structurées en JSON, conforme aux standards REST.</p>
+                        </div>
+                    </section>
+
+                    <section class="impact-section">
+                        <h3><i class="fas fa-chart-line"></i> Impact et résultats</h3>
+                        <div class="impact-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">75%</span>
+                                <span class="stat-label">Réduction temps et d'erreur de commande</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">99%</span>
+                                <span class="stat-label">Disponibilité système</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Synchronisation temps réel avec Sage X3</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="gallery-section">
+                        <h3><i class="fas fa-images"></i> Album du projet</h3>
+                        <div class="scrollable-album">
+                            <div class="album-container">
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/1.png" alt="Interface principale">
+                                    <div class="album-caption">Interface d’authentification</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/2.jpg" alt="Catalogue médicaments">
+                                    <div class="album-caption">Interface d'accueil</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/2-2.jpg" alt="Vue détaillée catalogue">
+                                    <div class="album-caption">Fonctionnalités principales de l'application PharmaX3</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/3.png" alt="Gestion commandes">
+                                    <div class="album-caption">Interface pour la consultation des clients</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/4.png" alt="Interface utilisateur">
+                                    <div class="album-caption">Interface pour la création des commandes</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/5.png" alt="Module de configuration">
+                                    <div class="album-caption">Interface pour la consultation d'état de stock d'un article</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/6.png" alt="Tableau de bord">
+                                    <div class="album-caption">Interface du Tableau de Bord pour le suivi des statuts des commandes</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/7.jpg" alt="Analytics et rapports">
+                                    <div class="album-caption">Interfaces pour vérifier l'état de connexion au Serveur X3</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Aberdeen/8.png" alt="Paramètres système">
+                                    <div class="album-caption">Interface Mode Hors Ligne</div>
+                                </div>
+                            </div>
+                            <div class="album-scroll-indicator">
+                                <span>Faites défiler pour voir plus d'images →</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.text" style="color: white;">&copy; 2025 Aymane Tajani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

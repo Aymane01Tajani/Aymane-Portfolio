@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/images/name.jpg" type="image/x-icon">
+    <title>Dataclear - Aymane Tajani</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header with back button -->
+    <header class="experience-detail-header">
+        <div class="container">
+            <a href="../index.html#experiences" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Retour au portfolio
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="experience-detail-main">
+        <div class="container">
+            <div class="experience-detail-card">
+                <div class="experience-detail-header-content">
+                    <div class="company-logo">
+                        <img src="../assets/images/Experience/DataClear.png" alt="Dataclear Logo">
+                    </div>
+                    <div class="experience-detail-info">
+                        <h1>Développement sur Symfony d'un générateur MVC d'applications en mode SaaS</h1>
+                        <h2>Dataclear</h2>
+                        <div class="experience-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> 01 Juillet 2023 - 15 Août 2023</span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Casablanca, Maroc</span>
+                            <span class="type"><i class="fas fa-briefcase"></i> Stage (Sur site)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-detail-content">
+                    <section class="overview-section">
+                        <h3><i class="fas fa-info-circle"></i> Aperçu du projet</h3>
+                        <p>Dans un contexte où la digitalisation des entreprises marocaines s’accélère, le projet Genio vise à optimiser la création d’applications de gestion MVC grâce à un générateur en mode SaaS. Ce générateur, basé sur Symfony 5.4, permet de produire rapidement des applications flexibles et personnalisées, avec une architecture reposant sur trois bases de données : pour le paramétrage, pour l’application SaaS globale et pour chaque entreprise cliente.
+Genio facilite ainsi la génération automatique d’interfaces adaptées, réduit les temps de développement et propose une solution accessible sur réseau privé ou public, répondant aux besoins croissants de gestion et de maintenance d’applications d’entreprise.</p>
+                    </section>
+
+                    <section class="technologies-section">
+                        <h3><i class="fas fa-tools"></i> Technologies utilisées</h3>
+                        
+                        <!-- Tools Image -->
+                        <div class="tools-diagram">
+                            <img src="../assets/images/Experience/Experiences_Section/Dataclear/Liste outils.png" alt="Liste des outils et technologies utilisés" class="tools-img">
+                            <p class="diagram-caption">Technologies et outils utilisés dans le projet Dataclear</p>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">Html 5</span>
+                            <span class="tech-tag">CSS 3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">Twig</span>
+                            <span class="tech-tag">Symfony</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Postman</span>
+                            <span class="tech-tag">MariaDB</span>
+                        </div>
+                    </section>
+
+                    <section class="responsibilities-section">
+                        <h3><i class="fas fa-tasks"></i> Responsabilités principales</h3>
+                        <ul class="responsibilities-list">
+                            <li>Développement du générateur MVC automatique</li>
+                            <li>Création de templates Symfony réutilisables</li>
+                            <li>Personnalisation d'applications générées</li>
+                            <li>Optimisation des performances du générateur</li>
+                            <li>Documentation technique du système</li>
+                        </ul>
+                    </section>
+
+                    <section class="achievements-section">
+                        <h3><i class="fas fa-trophy"></i> Réalisations</h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-item">
+                                <i class="fas fa-magic"></i>
+                                <h4>Générateur Automatique</h4>
+                                <p>Création d'un outil de génération MVC</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Application cliente</h4>
+                                <p>Personnalisation d'une application MVC générée par Genio</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-rocket"></i>
+                                <h4>Mode SaaS</h4>
+                                <p>Applications multi-tenant performantes</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="architecture-section">
+                        <h3><i class="fas fa-sitemap"></i> Architecture technique</h3>
+                        
+                        <!-- Architecture Diagram -->
+                        <div class="architecture-diagram">
+                            <img src="../assets/images/Experience/Experiences_Section/Dataclear/Ar-tech.png" alt="Diagramme d'architecture technique SaaS Dataclear" class="architecture-img">
+                            <p class="diagram-caption">Architecture SaaS scalable pour applications générées</p>
+                        </div>
+                        
+                        <div class="architecture-description">
+                            <div class="arch-item">
+                                <h4><i class="fas fa-layer-group"></i> Architecture SaaS Multi-tenant</h4>
+                                <p>Étant donné le faible nombre d’utilisateurs dans la version initiale, l’infrastructure se limite à un serveur unique pour héberger le générateur.</p>
+                                <p>Cependant, notre objectif est de décrire l’architecture cible, conçue pour accueillir l’application générée en mode SaaS. Dans ce contexte, plusieurs utilisateurs pourront interagir simultanément avec l’application. Pour garantir performance et disponibilité, nous mettons en place :</p>
+                                <p>Un Load Balancer, afin de répartir intelligemment la charge entre plusieurs serveurs applicatifs hébergés en frontal.</p>
+                                <p>Des clusters scalables dédiés au stockage des médias téléchargés par les clients, assurant une montée en charge dynamique et une protection en temps réel contre la perte de données.</p>
+                                <p>Cette architecture garantit résilience, évolutivité et haute disponibilité pour offrir une expérience fluide, même en cas de forte demande.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="gallery-section">
+                        <h3><i class="fas fa-images"></i> Album du projet</h3>
+                        <div class="scrollable-album">
+                            <div class="album-container">
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Dataclear/Image1.png" alt="Interface principale du générateur MVC">
+                                    <div class="album-caption">Interface d'authentification</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Dataclear/Image2.png" alt="Configuration des modèles Symfony">
+                                    <div class="album-caption">Tableau de bord</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Dataclear/Image3.png" alt="Génération automatique des vues">
+                                    <div class="album-caption">Interface de gestion des administrateurs</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Dataclear/Image4.png" alt="Panel d'administration SaaS">
+                                    <div class="album-caption">Liste des applications générées</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../assets/images/Experience/Experiences_Section/Dataclear/Image5.png" alt="Application générée déployée">
+                                    <div class="album-caption">Liste des modules</div>
+                                </div>
+                            </div>
+                            <div class="album-scroll-indicator">
+                                <span>Faites défiler pour voir plus d'images →</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.text" style="color: white;">&copy; 2025 Aymane Tajani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

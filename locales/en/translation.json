@@ -1,10 +1,12 @@
 {
     "title": "Aymane Tajani",
+    "moreDetailsBtn": "More Details",
     "nav": {
       "profile": "Profile",
       "education": "Education",
       "experiences": "Experiences",
-      "projects": "Projects",
+      "projects": "Academic Projects",
+      "personal-projects": "Personal Projects",
       "skills": "Skills",
       "certifications": "Certifications",
       "languages": "Languages",
@@ -100,6 +102,21 @@
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       }
+    },
+    "personalProjects": {
+    "title": "PERSONAL PROJECTS",
+    "item1": {
+    "title": "QuickSoum - Quick Quote App",
+    "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Personal Project - In Development",
+    "techLabel": "Technologies:",
+    "typeLabel": "Type:"
+    },
+    "item2": {
+    "title": "GymTrace - Personal Activity Tracking App",
+    "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Personal Project - December 2024",
+    "techLabel": "Technologies:",
+    "typeLabel": "Type:"
+    }
     },
     "skills": {
       "title": "SKILLS",
