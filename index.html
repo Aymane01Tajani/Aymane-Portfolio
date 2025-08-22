@@ -884,9 +884,19 @@
     }
 
     function updateContent() {
+      console.log('Updating content with language:', i18next.language);
       document.querySelectorAll('[data-i18n]').forEach(function(element) {
         var key = element.getAttribute('data-i18n');
-        element.innerHTML = i18next.t(key);
+        try {
+          const translation = i18next.t(key);
+          if (translation && translation !== key) {
+            element.innerHTML = translation;
+          } else {
+            console.warn('Missing translation for key:', key);
+          }
+        } catch (error) {
+          console.error('Error translating key:', key, error);
+        }
       });
       updateCVDownloadLink();
     }
@@ -905,18 +915,36 @@
       });
     }
 
-    // Initialize i18next
+    // Initialize i18next with proper path handling
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const basePath = isGitHubPages ? '' : './';
+    
+    console.log('Initializing i18next...');
+    console.log('Is GitHub Pages:', isGitHubPages);
+    console.log('Base path:', basePath);
+    console.log('Translation path:', basePath + 'locales/{{lng}}/translation.json');
+    
     i18next
       .use(i18nextHttpBackend)
       .use(i18nextBrowserLanguageDetector)
       .init({
         fallbackLng: 'fr',
-        debug: true,
+        debug: !isGitHubPages,
+        lng: 'fr',
         backend: {
-          loadPath: './locales/{{lng}}/translation.json'
+          loadPath: basePath + 'locales/{{lng}}/translation.json'
+        },
+        detection: {
+          order: ['localStorage', 'navigator'],
+          caches: ['localStorage']
         }
       }, function(err, t) {
-        if (err) return console.log('something went wrong loading', err);
+        if (err) {
+          console.error('Translation loading error:', err);
+        } else {
+          console.log('i18next initialized successfully');
+          console.log('Current language:', i18next.language);
+        }
         updateLanguageButtons(i18next.language || 'fr');
         updateContent();
         updateCVDownloadLink();
