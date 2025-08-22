@@ -1,139 +1,139 @@
 {
     "title": "Aymane Tajani",
-    "moreDetailsBtn": "More Details",
+    "moreDetailsBtn": "Plus de détails",
     "nav": {
-      "profile": "Profile",
-      "education": "Education",
-      "experiences": "Experiences",
-      "projects": "Academic Projects",
-      "personal-projects": "Personal Projects",
-      "skills": "Skills",
+      "profile": "Profil",
+      "education": "Éducation",
+      "experiences": "Expériences",
+      "projects": "Projets Académiques",
+      "personal-projects": "Projets Personnels",
+      "skills": "Compétences",
       "certifications": "Certifications",
-      "languages": "Languages",
-      "interests": "Interests",
-      "contact": "Contact"
+      "languages": "Langues",
+      "interests": "Intérêts",
+      "contact": "Coordonnées"
     },
     "hero": {
       "title": "AYMANE TAJANI",
-      "engineerTitle": "State Engineer",
-      "tagline": "Full Stack Developer | Mobile Developer | Problem Solver | Tech Enthusiast"
+      "engineerTitle": "Ingénieur d'états",
+      "tagline": "Développeur Full Stack | Développeur Mobile | Résolveur de Problèmes | Passionné de Technologie"
     },
     "profile": {
       "title": "Profile",
-      "content": "State engineer in Computer Engineering and Networks with a specialization in MIAGE at EMSI. Creative, dynamic, and collaborative, I work efficiently within teams and can adapt to various technical contexts."
+      "content": "Ingénieur d’états en Informatique et Réseaux avec spécialisation en MIAGE à l'EMSI. Créatif, dynamique, et collaboratif, je travaille avec efficacité au sein d'équipe et suis capable de m'adapter à des contextes techniques variés."
     },
     "education": {
-      "title": "Education",
+      "title": "FORMATIONS ACADEMIQUE",
       "item1": {
-        "title": "Computer Engineering and Networks (MIAGE)",
-        "details": "<strong>School:</strong> Moroccan School of Engineering Sciences<br /><strong>Duration:</strong> Oct 2021 - Jul 2025",
-        "schoolLabel": "School:",
-        "durationLabel": "Duration:"
+        "title": "Ingénierie Informatique et Réseau (MIAGE)",
+        "details": "<strong>École:</strong> École MAROCCAINE DES SCIENCES D'INGENIEURS<br /><strong>Durée:</strong> Oct 2021 - Juill 2025",
+        "schoolLabel": "École:",
+        "durationLabel": "Durée:"
       },
       "item2": {
-        "title": "2 Years in CPGE - Scientific Prep Classes (MP)",
-        "details": "<strong>School:</strong> Yassamine Californie<br /><strong>Duration:</strong> Sept 2019 - May 2021",
-        "schoolLabel": "School:",
-        "durationLabel": "Duration:"
+        "title": "2 ANS EN CPGE - Classes préparatoires scientifiques (MP)",
+        "details": "<strong>École:</strong> Yassamine Californie<br /><strong>Durée:</strong> Sept 2019 - Mai 2021",
+        "schoolLabel": "École:",
+        "durationLabel": "Durée:"
       },
       "item3": {
-        "title": "Baccalaureate in Physical Sciences",
-        "details": "<strong>School:</strong> Abdelkhalek Torres High School<br /><strong>Date:</strong> June 2019",
-        "schoolLabel": "School:",
+        "title": "BACCALAURÉAT OPTION SCIENCES PHYSIQUES",
+        "details": "<strong>École:</strong> LYCÉE ABDELKHALEK TORRES<br /><strong>Date:</strong> Juin 2019",
+        "schoolLabel": "École:",
         "dateLabel": "Date:"
       }
     },
     "experiences": {
-      "title": "EXPERIENCES",
+      "title": "EXPÉRIENCES",
       "item1": {
-        "title": "Design & Development of a Mobile Solution for Pharmaceutical Sales Order Taking Connected to Sage X3.",
-        "details": "<strong>Company:</strong> Aberdeen Services<br /><strong>Type:</strong> Internship (On-site)<br /><strong>Duration:</strong> Mar 2025 - Sept 2025<br /><strong>Details:</strong> Development of RSET Web Services on Sage X3 and integration with a Flutter mobile application.<br /><strong>Region:</strong> Casablanca, Morocco",
-        "companyLabel": "Company:",
+        "title": "Conception & Développement d'une Solution Mobile de Prise des Commandes de Vente Pharmaceutique Connectée à Sage X3.",
+        "details": "<strong>Entreprise:</strong> Aberdeen Services<br /><strong>Type:</strong> Stage (Sur site)<br /><strong>Durée:</strong> Mars 2025 - Sept 2025<br /><strong>Détails:</strong> Développement des Web Services REST sur Sage X3 et intégration avec une Application mobile Flutter.<br /><strong>Région:</strong> Casablanca, Maroc",
+        "companyLabel": "Entreprise:",
         "typeLabel": "Type:",
-        "durationLabel": "Duration:",
-        "infoLabel": "Details:",
-        "regionLabel": "Region:"
+        "durationLabel": "Durée:",
+        "infoLabel": "Détails:",
+        "regionLabel": "Région:"
       },
       "item2": {
-        "title": "Design & Implementation of a Web Application for Declaring and Managing CCG Flows.",
-        "details": "<strong>Company:</strong> Umnia Bank<br /><strong>Type:</strong> Internship (On-site)<br /><strong>Duration:</strong> Jul 2024 - Mid Sept 2024<br /><strong>Details:</strong> Frontend and Backend (API development) of a web application using .NET<br /><strong>Region:</strong> Casablanca, Morocco",
-        "companyLabel": "Company:",
+        "title": "Conception & Mise en place d'une application de déclaration et de gestion des flux CCG.",
+        "details": "<strong>Entreprise:</strong> Umnia Bank<br /><strong>Type:</strong> Stage (Sur site)<br /><strong>Durée:</strong> Juill 2024 - Mi-Sept 2024<br /><strong>Détails:</strong> Frontend et Backend (Développement des APIs) d'une application web avec du .NET<br /><strong>Région:</strong> Casablanca, Maroc",
+        "companyLabel": "Entreprise:",
         "typeLabel": "Type:",
-        "durationLabel": "Duration:",
-        "infoLabel": "Details:",
-        "regionLabel": "Region:"
+        "durationLabel": "Durée:",
+        "infoLabel": "Détails:",
+        "regionLabel": "Région:"
       },
       "item3": {
-        "title": "Development on Symfony of an MVC Generator for SaaS Applications.",
-        "details": "<strong>Company:</strong> Dataclear<br /><strong>Type:</strong> Internship (On-site)<br /><strong>Date:</strong> Jul 2023 - Aug 2023<br /><strong>Details:</strong> Generator of management applications with Symfony and customization of a generated application.<br /><strong>Region:</strong> Casablanca, Morocco",
-        "companyLabel": "Company:",
+        "title": "Développement sur Symfony d'un générateur MVC d'applications en mode SaaS.",
+        "details": "<strong>Entreprise:</strong> Dataclear<br /><strong>Type:</strong> Stage (Sur site)<br /><strong>Date:</strong> Juill 2023 - Aout 2023<br /><strong>Détails:</strong> Générateur d'applications de gestion avec Symfony et personnalisation d'une application générée.<br /><strong>Région:</strong> Casablanca, Maroc",
+        "companyLabel": "Entreprise:",
         "typeLabel": "Type:",
         "dateLabel": "Date:",
-        "infoLabel": "Details:",
-        "regionLabel": "Region:"
+        "infoLabel": "Détails:",
+        "regionLabel": "Région:"
       },
       "item4": {
-        "title": "Development of a Company Website.",
-        "details": "<strong>Company:</strong> CIVIL SOCIETY FOR AGRICULTURAL STUDIES<br /><strong>Type:</strong> Internship (Remote)<br /><strong>Duration:</strong> Jul 2022<br /><strong>Details:</strong> Website developed with HTML, CSS, and Bootstrap.<br /><strong>Region:</strong> Casablanca, Morocco",
-        "companyLabel": "Company:",
+        "title": "Développement d'un site web pour la société.",
+        "details": "<strong>Entreprise:</strong> SOCIÉTÉ CIVILES DES ÉTUDES AGRICOLES<br /><strong>Type:</strong> Stage (À distance)<br /><strong>Durée:</strong> Juill 2022<br /><strong>Détails:</strong> Site web avec du HTML, CSS et Bootstrap.<br /><strong>Région:</strong> Casablanca, Maroc",
+        "companyLabel": "Entreprise:",
         "typeLabel": "Type:",
-        "durationLabel": "Duration:",
-        "infoLabel": "Details:",
-        "regionLabel": "Region:"
+        "durationLabel": "Durée:",
+        "infoLabel": "Détails:",
+        "regionLabel": "Région:"
       }
     },
     "projects": {
-      "title": "ACADEMIC PROJECTS",
+      "title": "PROJETS ACADEMIQUES",
       "item1": {
-        "title": "Design and Development of a Digital Attendance System via a Cross-Platform Application",
-        "details": "<strong>Technologies:</strong> Flutter (Dart) and Firebase<br /><strong>Type:</strong> FINAL YEAR PROJECT (5th year) – January 2025",
+        "title": "Conception et développement d'un Système de Pointage Digital intelligent via Application Cross-Platform",
+        "details": "<strong>Technologies:</strong> Flutter (Dart) et Firebase<br /><strong>Type:</strong> PROJET DE FIN D'ANNEE (5ème année) – Janvier 2025",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item2": {
-        "title": "Design and Development of a Mobile Application Dedicated to Muslim Religious Practice: Case Study and Implementation.",
-        "details": "<strong>Technologies:</strong> Java<br /><strong>Type:</strong> FINAL YEAR PROJECT (4th year) – June 2024",
+        "title": "Conception et développement d'une application mobile dédiée à la pratique religieuse musulmane : Étude de cas et mise en oeuvre.",
+        "details": "<strong>Technologies:</strong> Java<br /><strong>Type:</strong> PROJET DE FIN D'ANNEE (4ème année) – Juin 2024",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item3": {
-        "title": "E-Games Web Application for Purchasing Video Games.",
-        "details": "<strong>Technologies:</strong> Python and DJANGO (MVT Architecture)<br /><strong>Type:</strong> FINAL YEAR PROJECT (3rd year) – June 2023",
+        "title": "Application web E-Games pour l'achat de jeux vidéo.",
+        "details": "<strong>Technologies:</strong> Python ET DJANGO (Architecture MVT)<br /><strong>Type:</strong> PROJET DE FIN D'ANNEE (3ème année) – Juin 2023",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       }
     },
     "personalProjects": {
-    "title": "PERSONAL PROJECTS",
-    "item1": {
-    "title": "QuickSoum - Quick Quote App",
-    "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Personal Project - In Development",
-    "techLabel": "Technologies:",
-    "typeLabel": "Type:"
-    },
-    "item2": {
-    "title": "GymTrace - Personal Activity Tracking App",
-    "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Personal Project - December 2024",
-    "techLabel": "Technologies:",
-    "typeLabel": "Type:"
-    }
-    },
-    "skills": {
-      "title": "SKILLS",
+      "title": "PROJETS PERSONNELS",
       "item1": {
-        "title": "ERP & Integration",
-        "details": "Sage X3 Technical Consultant (Development and Integration)"
+        "title": "QuickSoum - Application de Devis Rapide",
+        "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Projet Personnel - En développement",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
       },
       "item2": {
-        "title": "Information Systems Design",
-        "details": "Software Architecture/Design, UML"
+        "title": " GymTrace - Application pour le Suivi personnel des Activités Sportives",
+        "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong>  Projet Personnel - Décembre 2024",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
+      }
+    },
+    "skills": {
+      "title": "COMPÉTENCES",
+      "item1": {
+        "title": "ERP & Intégration",
+        "details": "Consultant Technique Sage X3 (Développement et Intégration)"
+      },
+      "item2": {
+        "title": "Conception des Systèmes d'Information",
+        "details": "Software Architecture / Design, UML"
       },
       "item3": {
-        "title": "Programming Languages",
+        "title": "Langages de Programmation",
         "details": "C, C++, C#, Python, Java"
       },
       "item4": {
-        "title": "Web Development",
+        "title": "Développement Web",
         "details": "HTML, CSS, JavaScript, PHP, Symfony, Django, Spring Boot, Angular, .NET"
       },
       "item5": {
@@ -145,93 +145,93 @@
         "details": "SQL, PL/SQL, Transact-SQL, Oracle Administration"
       },
       "item7": {
-        "title": "Mobile Development",
+        "title": "Développement Mobile",
         "details": "Native: Android (Java), Cross-Platform: (Flutter)"
       },
       "item8": {
-        "title": "Project Management",
-        "details": "Project management and team leadership skills, expertise in Agile methodologies (Scrum), Jira"
+        "title": "Gestion de Projet",
+        "details": "Compétences en gestion de projet et leadership d'équipe, maîtrise des méthodologies Agile (Scrum), Jira"
       }
     },
     "certifications": {
         "title": "CERTIFICATIONS",
         "item1": {
-          "text": "Software Design and Architecture Specialization – Ongoing (University of Alberta)",
-          "id": "Certification ID: To be filled"
+          "text": "Software Design and Architecture Specialization – En cours (University of Alberta)",
+          "id": "Identifiant de la certification: En cours"
         },
         "item2": {
-          "text": "Information Systems Specialization – Ongoing (University of Minnesota)",
-          "id": "Certification ID: To be filled"
+          "text": "Information Systems Specialization – En cours (University of Minnesota)",
+          "id": "Identifiant de la certification: En cours"
         },
         "item3": {
-          "text": "Introduction to Git and GitHub – Ongoing (Google Career Certificates)",
-          "id": "Certification ID: To be filled"
+          "text": "Introduction to Git and GitHub – En cours (Google Career Certificates)",
+          "id": "Identifiant de la certification: En cours"
         },
         "item4": {
-          "text": "API Integration - End to End Web Development – Board Infinity (April 15, 2025)",
-          "id": "Certification ID: 1DG8YJ4KF90W"
+          "text": "API Integration - End to End Web Development – Board Infinity (15 Avril 2025)",
+          "id": "Identifiant de la certification: 1DG8YJ4KF90W"
         },
         "item5": {
-          "text": "Machine Learning with Python – IBM (January 24, 2025)",
-          "id": "Certification ID: BURWOS6FDD4I"
+          "text": "Machine Learning with Python – IBM (24 Janvier 2025)",
+          "id": "Identifiant de la certification: BURWOS6FDD4I"
         },
         "item6": {
-          "text": "Introduction to Big Data with Spark and Hadoop – IBM (January 23, 2025)",
-          "id": "Certification ID: P9B5FFOQKJNC"
+          "text": "Introduction to Big Data with Spark and Hadoop – IBM (23 Janvier 2025)",
+          "id": "Identifiant de la certification: P9B5FFOQKJNC"
         },
         "item7": {
-          "text": "Building Scalable Java Microservices with Spring Boot and Spring Cloud – Google Cloud (January 04, 2025)",
-          "id": "Certification ID: 3209UDMR9E13"
+          "text": "Building Scalable Java Microservices with Spring Boot and Spring Cloud – Google Cloud (04 Janvier 2025)",
+          "id": "Identifiant de la certification: 3209UDMR9E13"
         },
         "item8": {
-          "text": "Project Management: The Basics for Success – University of California, Irvine (November 24, 2024)",
-          "id": "Certification ID: Q823Q4KHYL58"
+          "text": "Project Management: The Basics for Success – University of California, Irvine (24 Nov 2024)",
+          "id": "Identifiant de la certification: Q823Q4KHYL58"
         },
         "item9": {
-          "text": "Building Services with ASP.NET Web API – Board Infinity (August 06, 2024)",
-          "id": "Certification ID: 398KYBA38PAG"
+          "text": "Building Services with ASP.NET Web API – Board Infinity (6 Aout 2024)",
+          "id": "Identifiant de la certification: 398KYBA38PAG"
         },
         "item10": {
-          "text": "React Native – Meta (June 05, 2024)",
-          "id": "Certification ID: 2BYSR7TWU5UH"
+          "text": "React Native – Meta (05 Juin 2024)",
+          "id": "Identifiant de la certification: 2BYSR7TWU5UH"
         },
         "item11": {
-          "text": "Introduction to Containers w/ Docker, Kubernetes & OpenShift – IBM (May 27, 2024)",
-          "id": "Certification ID: D5Q4VN7WF3P2"
+          "text": "Introduction to Containers w/ Docker, Kubernetes & OpenShift – IBM (27 May 2024)",
+          "id": "Identifiant de la certification: D5Q4VN7WF3P2"
         },
         "item12": {
-          "text": "Virtual Networks in Azure – Whizlabs (May 27, 2024)",
-          "id": "Certification ID: 2AS74XPAL3XB"
+          "text": "Virtual Networks in Azure – Whizlabs (27 May 2024)",
+          "id": "Identifiant de la certification: 2AS74XPAL3XB"
         },
         "item13": {
-          "text": "React Basics – Meta (June 05, 2024)",
-          "id": "Certification ID: PRYRNZQDWKN6"
+          "text": "React Basics – Meta (05 Juin 2024)",
+          "id": "Identifiant de la certification: PRYRNZQDWKN6"
         },
         "item14": {
-          "text": "Introduction to Java and Object-Oriented Programming – University of Pennsylvania (January 15, 2024)",
-          "id": "Certification ID: P4BF99PJ2UB9"
+          "text": "Introduction to Java and Object-Oriented Programming – University of Pennsylvania (15 Janvier 2024)",
+          "id": "Identifiant de la certification: P4BF99PJ2UB9"
         },
         "item15": {
-          "text": "Study in France: French Intermediate course B1-B2 – École Polytechnique (April 07, 2023)",
-          "id": "Certification ID: XWG76SNVCLQM"
+          "text": "Étudier en France: French Intermediate course B1-B2 – École Polytechnique (7 Avril 2023)",
+          "id": "Identifiant de la certification: XWG76SNVCLQM"
         },
         "item16": {
-          "text": "Python for Everybody Specialization – University of Michigan (March 28, 2023)",
-          "id": "Certification ID: G9PW84B4RFYV"
+          "text": "Python for Everybody Specialization – University of Michigan (28 Mars 2023)",
+          "id": "Identifiant de la certification: G9PW84B4RFYV"
         },
         "item17": {
-          "text": "Software Engineering: Modeling Software Systems using UML – The Hong Kong University of Science and Technology (March 26, 2023)",
-          "id": "Certification ID: 4EYCQSC7PEX6"
+          "text": "Software Engineering: Modeling Software Systems using UML – The Hong Kong University of Science and Technology (26 Mars 2023)",
+          "id": "Identifiant de la certification: 4EYCQSC7PEX6"
         }
-      },
+    },
     "languages": {
-      "title": "Languages",
-      "item1": "<strong>Arabic</strong> Native",
-      "item2": "<strong>French</strong> Fluent",
-      "item3": "<strong>English</strong> Intermediate"
+      "title": "Langues",
+      "item1": "<strong>Arabe</strong> Native",
+      "item2": "<strong>Français</strong> Courant",
+      "item3": "<strong>Anglais</strong> Intermédiaire"
     },
     "interests": {
-      "title": "Interests",
+      "title": "Intérêts",
       "item1": "Gym",
       "item2": "Programming",
       "item3": "Football",
@@ -239,17 +239,16 @@
     },
     "contact": {
       "title": "contact",
-      "phone": "<strong>Phone:</strong> +212682221611",
+      "phone": "<strong>Téléphone:</strong> +212682221611",
       "phoneLabel": "Phone:",
       "email": "<strong>Email:</strong> <a href=\"mailto:aymanetajani01@gmail.com\">aymanetajani01@gmail.com</a>",
       "emailLabel": "Email:",
       "linkedin": "<strong>LinkedIn:</strong> <a href=\"https://www.linkedin.com/in/aymane-tajani\" target=\"_blank\">Aymane Tajani</a>",
       "linkedinLabel": "LinkedIn:",
-      "qrTitle": "Scan My Portfolio QR Code",
-      "downloadCV": "Download my CV"
+      "qrTitle": "Scan Mon Portfolio QR Code",
+      "downloadCV": "Télécharger mon CV"
     },
     "footer": {
       "text": "&copy; 2025 Aymane Tajani. All rights reserved."
     }
   }
-  
