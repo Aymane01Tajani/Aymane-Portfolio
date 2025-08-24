@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/images/name.jpg" type="image/x-icon">
-    <title>STE Civil - Aymane Tajani</title>
+    <title data-i18n="ste.title">STE Civil - Aymane Tajani</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Inclusion des bibliothèques i18next -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
 <body>
     <!-- Header with back button -->
     <header class="experience-detail-header">
         <div class="container">
             <a href="../index.html#experiences" class="back-btn">
-                <i class="fas fa-arrow-left"></i> Retour au portfolio
+                <i class="fas fa-arrow-left"></i> <span data-i18n="ste.back">Retour au portfolio</span>
             </a>
         </div>
     </header>
@@ -27,24 +31,24 @@
                         <img src="../assets/images/Experience/STE-Civil.png" alt="STE Civil Logo">
                     </div>
                     <div class="experience-detail-info">
-                        <h1>Développement d'un site web pour la société.</h1>
-                        <h2>SOCIÉTÉ CIVILES DES ÉTUDES AGRICOLES</h2>
+                        <h1 data-i18n="ste.projectTitle">Développement d'un site web pour la société.</h1>
+                        <h2 data-i18n="ste.company">SOCIÉTÉ CIVILES DES ÉTUDES AGRICOLES</h2>
                         <div class="experience-meta">
-                            <span class="duration"><i class="fas fa-calendar"></i>Juillet 2021</span>
-                            <span class="location"><i class="fas fa-map-marker-alt"></i> Casablanca, Maroc</span>
-                            <span class="type"><i class="fas fa-briefcase"></i> Stage (A distance)</span>
+                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="ste.duration">Juillet 2021</span></span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="ste.location">Casablanca, Maroc</span></span>
+                            <span class="type"><i class="fas fa-briefcase"></i> <span data-i18n="ste.type">Stage (A distance)</span></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="experience-detail-content">
                     <section class="overview-section">
-                        <h3><i class="fas fa-info-circle"></i> Aperçu du projet</h3>
-                        <p>Développement d'un site web vitrine pour la société pour representer ses services.</p>
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="ste.overviewTitle">Aperçu du projet</span></h3>
+                        <p data-i18n="ste.overviewDesc">Développement d'un site web vitrine pour la société pour representer ses services.</p>
                     </section>
 
                     <section class="technologies-section">
-                        <h3><i class="fas fa-tools"></i> Technologies utilisées</h3>
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="ste.techTitle">Technologies utilisées</span></h3>
                         <div class="tech-stack">
                             <span class="tech-tag">HTML5</span>
                             <span class="tech-tag">CSS3</span>
@@ -54,76 +58,76 @@
                     </section>
 
                     <section class="responsibilities-section">
-                        <h3><i class="fas fa-tasks"></i> Responsabilités principales</h3>
+                        <h3><i class="fas fa-tasks"></i> <span data-i18n="ste.respTitle">Responsabilités principales</span></h3>
                         <ul class="responsibilities-list">
-                            <li>Mise en place d'un site web statique qui présente les services de la société</li>
-                            <li>Développement des pages web</li>
-                            <li>Tests et déploiement du site Web</li>
+                            <li data-i18n="ste.resp1">Mise en place d'un site web statique qui présente les services de la société</li>
+                            <li data-i18n="ste.resp2">Développement des pages web</li>
+                            <li data-i18n="ste.resp3">Tests et déploiement du site Web</li>
                         </ul>
                     </section>
 
                     <section class="achievements-section">
-                        <h3><i class="fas fa-trophy"></i> Réalisations</h3>
+                        <h3><i class="fas fa-trophy"></i> <span data-i18n="ste.achievementsTitle">Réalisations</span></h3>
                         <div class="achievements-grid">
                             <div class="achievement-item">
                                 <i class="fas fa-globe"></i>
-                                <h4>Site Web Vitrine</h4>
-                                <p>Développement d'un site web statique</p>
+                                <h4 data-i18n="ste.ach1Title">Site Web Vitrine</h4>
+                                <p data-i18n="ste.ach1Desc">Développement d'un site web statique</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-laptop-code"></i>
-                                <h4>Interface Responsive</h4>
-                                <p>Design adaptatif avec Bootstrap</p>
+                                <h4 data-i18n="ste.ach2Title">Interface Responsive</h4>
+                                <p data-i18n="ste.ach2Desc">Design adaptatif avec Bootstrap</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-seedling"></i>
-                                <h4>Services Agricoles</h4>
-                                <p>Présentation des études agricoles</p>
+                                <h4 data-i18n="ste.ach3Title">Services Agricoles</h4>
+                                <p data-i18n="ste.ach3Desc">Présentation des études agricoles</p>
                             </div>
                         </div>
                     </section>
 
                     <section class="impact-section">
-                        <h3><i class="fas fa-chart-line"></i> Impact et résultats</h3>
+                        <h3><i class="fas fa-chart-line"></i> <span data-i18n="ste.impactTitle">Impact et résultats</span></h3>
                         <div class="impact-stats">
                             <div class="stat-item">
                                 <span class="stat-number">100%</span>
-                                <span class="stat-label">Site web déployé</span>
+                                <span class="stat-label" data-i18n="ste.impact1">Site web déployé</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">5</span>
-                                <span class="stat-label">Pages développées</span>
+                                <span class="stat-label" data-i18n="ste.impact2">Pages développées</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">15</span>
-                                <span class="stat-label">Jours de développement</span>
+                                <span class="stat-label" data-i18n="ste.impact3">Jours de développement</span>
                             </div>
                         </div>
                     </section>
 
                     <section class="gallery-section">
-                        <h3><i class="fas fa-images"></i> Album du projet</h3>
+                        <h3><i class="fas fa-images"></i> <span data-i18n="ste.galleryTitle">Album du projet</span></h3>
                         <div class="scrollable-album">
                             <div class="album-container">
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Ste-civil/1.png" alt="Page d'accueil">
-                                    <div class="album-caption">Page d'accueil du site web</div>
+                                    <div class="album-caption" data-i18n="ste.gallery1">Page d'accueil du site web</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Ste-civil/2.png" alt="Services agricoles">
-                                    <div class="album-caption">Page des services agricoles</div>
+                                    <div class="album-caption" data-i18n="ste.gallery2">Page des services agricoles</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Ste-civil/3.png" alt="À propos">
-                                    <div class="album-caption">Page à propos de l'entreprise</div>
+                                    <div class="album-caption" data-i18n="ste.gallery3">Page à propos de l'entreprise</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Ste-civil/4.png" alt="Contact">
-                                    <div class="album-caption">Page de contact et informations</div>
+                                    <div class="album-caption" data-i18n="ste.gallery4">Page de contact et informations</div>
                                 </div>
                             </div>
                             <div class="album-scroll-indicator">
-                                <span>Faites défiler pour voir plus d'images →</span>
+                                <span data-i18n="ste.scrollHint">Faites défiler pour voir plus d'images →</span>
                             </div>
                         </div>
                     </section>
@@ -139,5 +143,78 @@
     </footer>
 
     <script src="../js/script.js"></script>
+        <!-- i18next initialization script -->
+    <script>
+        function updateContent() {
+            console.log('Updating content with language:', i18next.language);
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                var key = element.getAttribute('data-i18n');
+                try {
+                    const translation = i18next.t(key);
+                    if (translation && translation !== key) {
+                        element.innerHTML = translation;
+                    } else {
+                        console.warn('Missing translation for key:', key);
+                    }
+                } catch (error) {
+                    console.error('Error translating key:', key, error);
+                }
+            });
+        }
+
+        function updateLanguageButtons(currentLang) {
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                button.classList.toggle('active', lang === currentLang);
+            });
+        }
+
+        function changeLanguage(lng) {
+            localStorage.setItem('i18nextLng', lng);
+            i18next.changeLanguage(lng, function() {
+                updateContent();
+                updateLanguageButtons(lng);
+            });
+        }
+
+        // Initialize i18next with proper path handling
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = isGitHubPages ? '../' : '../';
+        
+        console.log('Initializing i18next for Aberdeen page...');
+        console.log('Is GitHub Pages:', isGitHubPages);
+        console.log('Base path:', basePath);
+        console.log('Translation path:', basePath + 'locales/{{lng}}/translation.json');
+        
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'fr',
+                debug: !isGitHubPages,
+                lng: localStorage.getItem('i18nextLng') || 'fr', // Get language from localStorage or default to 'fr'
+                backend: {
+                    loadPath: basePath + 'locales/{{lng}}/translation.json'
+                },
+                detection: {
+                    order: ['localStorage', 'navigator'],
+                    caches: ['localStorage']
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('Translation loading error:', err);
+                } else {
+                    console.log('i18next initialized successfully');
+                    console.log('Current language:', i18next.language);
+                }
+                updateLanguageButtons(i18next.language || 'fr');
+                updateContent();
+            });
+
+        // Add event listener for language changes
+        i18next.on('languageChanged', function(lng) {
+            console.log('Language changed to:', lng);
+        });
+    </script>
 </body>
 </html>

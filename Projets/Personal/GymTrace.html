@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../assets/images/name.jpg" type="image/x-icon">
-    <title>GymTrace - Aymane Tajani</title>
+    <title data-i18n="gymtrace.title">GymTrace - Aymane Tajani</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <!-- Inclusion des bibliothèques i18next -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
 <body>
     <!-- Header with back button -->
     <header class="experience-detail-header">
         <div class="container">
-            <a href="../../index.html#personal-projects" class="back-btn">
+            <a href="../../index.html#personal-projects" class="back-btn" data-i18n="back.to.portfolio">
                 <i class="fas fa-arrow-left"></i> Retour au portfolio
             </a>
         </div>
@@ -27,182 +31,174 @@
                         <img src="../../assets/images/PFA/Personnel/GymTrace/logo-gymtrace.jpg" alt="GymTrace Logo">
                     </div>
                     <div class="experience-detail-info">
-                        <h1>GymTrace - Application pour le Suivi personnel des Activités Sportives</h1>
-                        <h2>Projet Personnel</h2>
+                        <h1 data-i18n="gymtrace.heading">GymTrace - Application pour le Suivi personnel des Activités Sportives</h1>
+                        <h2 data-i18n="gymtrace.subheading">Projet Personnel</h2>
                         <div class="experience-meta">
-                            <span class="duration"><i class="fas fa-calendar"></i> Décembre 2024</span>
-                            <span class="location"><i class="fas fa-code"></i> Projet Personnel</span>
-                            <span class="type"><i class="fas fa-mobile-alt"></i> Application Mobile</span>
+                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="gymtrace.date">Décembre 2024</span></span>
+                            <span class="location"><i class="fas fa-code"></i> <span data-i18n="gymtrace.projectType">Projet Personnel</span></span>
+                            <span class="type"><i class="fas fa-mobile-alt"></i> <span data-i18n="gymtrace.appType">Application Mobile</span></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="experience-detail-content">
                     <section class="overview-section">
-                        <h3><i class="fas fa-info-circle"></i> Aperçu du projet</h3>
-                        <p>GymTrace est une application mobile de fitness développée avec Flutter, conçue pour aider les utilisateurs à suivre leurs entraînements et progrès de manière efficace. L'application permet aux utilisateurs de sauvegarder leurs séances d'entraînement, de suivre leur progression au fil du temps, et de consulter l'historique détaillé de leurs exercices. Avec une interface intuitive et moderne, GymTrace offre une expérience personnalisée pour optimiser les performances sportives et maintenir la motivation des utilisateurs dans leur parcours fitness.</p>
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="overview.title">Aperçu du projet</span></h3>
+                        <p data-i18n="gymtrace.overview">GymTrace est une application mobile de fitness développée avec Flutter et Firebase pour permettre aux utilisateurs de suivre efficacement leurs entraînements sportifs. Cette solution personnelle offre un suivi détaillé des exercices, une visualisation des progrès et un historique complet des performances par groupe musculaire.</p>
                     </section>
 
                     <section class="technologies-section">
-                        <h3><i class="fas fa-tools"></i> Technologies utilisées</h3>
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="technologies.title">Technologies utilisées</span></h3>
                         <div class="tech-stack">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Firestore</span>
-                            <span class="tech-tag">Charts & Analytics</span>
-                            <span class="tech-tag">Date/Time Management</span>
+                            <span class="tech-tag" data-i18n="tech.flutter">Flutter</span>
+                            <span class="tech-tag" data-i18n="tech.dart">Dart</span>
+                            <span class="tech-tag" data-i18n="tech.firebase">Firebase</span>
+                            <span class="tech-tag" data-i18n="tech.firestore">Firestore</span>
+                            <span class="tech-tag" data-i18n="tech.charts">Charts & Analytics</span>
+                            <span class="tech-tag" data-i18n="tech.datetime">Date/Time Management</span>
                         </div>
                     </section>
 
                     <section class="responsibilities-section">
-                        <h3><i class="fas fa-tasks"></i> Fonctionnalités développées</h3>
+                        <h3><i class="fas fa-tasks"></i> <span data-i18n="features.developed.title">Fonctionnalités développées</span></h3>
                         <ul class="responsibilities-list">
-                            <li>Système d'authentification utilisateur avec interface de connexion</li>
-                            <li>Page d'accueil avec navigation intuitive</li>
-                            <li>Menu des fonctionnalités accessibles via AppBar</li>
-                            <li>Interface de profil utilisateur personnalisable</li>
-                            <li>Système de sauvegarde des entraînements</li>
-                            <li>Suivi des progrès avec visualisations graphiques</li>
-                            <li>Historique détaillé des exercices par muscle (ex: Chest)</li>
-                            <li>Tracking temporel des performances mensuelles</li>
+                            <li data-i18n="gymtrace.features.auth">Système d'authentification utilisateur avec interface de connexion</li>
+                            <li data-i18n="gymtrace.features.homepage">Page d'accueil avec navigation intuitive</li>
+                            <li data-i18n="gymtrace.features.menu">Menu des fonctionnalités accessibles via AppBar</li>
+                            <li data-i18n="gymtrace.features.profile">Interface de profil utilisateur personnalisable</li>
+                            <li data-i18n="gymtrace.features.saveWorkout">Système de sauvegarde des entraînements</li>
+                            <li data-i18n="gymtrace.features.progress">Suivi des progrès avec visualisations graphiques</li>
+                            <li data-i18n="gymtrace.features.history">Historique détaillé des exercices par muscle</li>
+                            <li data-i18n="gymtrace.features.tracking">Tracking temporel des performances mensuelles</li>
                         </ul>
                     </section>
 
                     <section class="achievements-section">
-                        <h3><i class="fas fa-trophy"></i> Points forts du projet</h3>
+                        <h3><i class="fas fa-trophy"></i> <span data-i18n="achievements.title">Points forts du projet</span></h3>
                         <div class="achievements-grid">
                             <div class="achievement-item">
                                 <i class="fas fa-sign-in-alt"></i>
-                                <h4>Authentification</h4>
-                                <p>Système de connexion sécurisé et intuitif</p>
+                                <h4 data-i18n="gymtrace.achievements.auth.title">Authentification</h4>
+                                <p data-i18n="gymtrace.achievements.auth.desc">Système de connexion sécurisé et intuitif</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-save"></i>
-                                <h4>Sauvegarde Workout</h4>
-                                <p>Enregistrement détaillé des séances</p>
+                                <h4 data-i18n="gymtrace.achievements.save.title">Sauvegarde Workout</h4>
+                                <p data-i18n="gymtrace.achievements.save.desc">Enregistrement détaillé des séances</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-chart-line"></i>
-                                <h4>Suivi Progrès</h4>
-                                <p>Visualisation graphique des performances</p>
+                                <h4 data-i18n="gymtrace.achievements.progress.title">Suivi Progrès</h4>
+                                <p data-i18n="gymtrace.achievements.progress.desc">Visualisation graphique des performances</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-history"></i>
-                                <h4>Historique Détaillé</h4>
-                                <p>Tracking précis par groupe musculaire</p>
+                                <h4 data-i18n="gymtrace.achievements.history.title">Historique Détaillé</h4>
+                                <p data-i18n="gymtrace.achievements.history.desc">Tracking précis par groupe musculaire</p>
                             </div>
                         </div>
                     </section>
 
                     <section class="architecture-section">
-                        <h3><i class="fas fa-sitemap"></i> Architecture technique</h3>
+                        <h3><i class="fas fa-sitemap"></i> <span data-i18n="architecture.title">Architecture technique</span></h3>
                         <div class="architecture-note">
-                            <p>L'architecture de GymTrace est basée sur Flutter avec Firebase pour une expérience mobile native et une gestion cloud des données :</p>
-                            <ul>
-                                <li><strong>Frontend Flutter :</strong> Interface utilisateur développée avec Material Design pour une expérience native et fluide sur mobile.</li>
-                                <li><strong>Backend Firebase :</strong> Utilisation de l'écosystème Firebase pour l'authentification sécurisée et la gestion des services cloud.</li>
-                                <li><strong>Base de données Firestore :</strong> Cloud Firestore pour le stockage et la synchronisation en temps réel des données d'entraînement, profils utilisateur et historiques.</li>
-                                <li><strong>Authentification Firebase :</strong> Système de connexion sécurisé avec gestion des sessions utilisateur via Firebase Auth.</li>
-                                <li><strong>Navigation Flutter :</strong> Système de navigation optimisé avec AppBar personnalisée et routing entre les différentes pages.</li>
-                                <li><strong>Visualisation :</strong> Implémentation de graphiques et charts pour le suivi des progrès avec données synchronisées depuis Firestore.</li>
-                            </ul>
+                            <p data-i18n="gymtrace.architecture.intro">L'architecture de GymTrace est basée sur Flutter avec Firebase pour garantir une expérience utilisateur fluide et une synchronisation des données en temps réel. L'application utilise une architecture modulaire avec séparation des couches de présentation, logique métier et données. Firebase Firestore assure la persistance des données d'entraînement, tandis que l'authentification Firebase gère la sécurité des comptes utilisateurs. L'interface utilisateur responsive s'adapte aux différentes tailles d'écrans pour une utilisation optimale sur mobile.</p>
                         </div>
                     </section>
 
                     <section class="impact-section">
-                        <h3><i class="fas fa-chart-line"></i> Impact et résultats</h3>
+                        <h3><i class="fas fa-chart-line"></i> <span data-i18n="impact.title">Impact et résultats</span></h3>
                         <div class="impact-stats">
                             <div class="stat-item">
-                                <span class="stat-number">8</span>
-                                <span class="stat-label">Interfaces développées</span>
+                                <span class="stat-number" data-i18n="gymtrace.impact.interfaces.number">8</span>
+                                <span class="stat-label" data-i18n="gymtrace.impact.interfaces.label">Interfaces développées</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number">4</span>
-                                <span class="stat-label">Modules principaux</span>
+                                <span class="stat-number" data-i18n="gymtrace.impact.modules.number">4</span>
+                                <span class="stat-label" data-i18n="gymtrace.impact.modules.label">Modules principaux</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number">100%</span>
-                                <span class="stat-label">Fonctionnement opérationnel</span>
+                                <span class="stat-number" data-i18n="gymtrace.impact.operational.number">100%</span>
+                                <span class="stat-label" data-i18n="gymtrace.impact.operational.label">Fonctionnement opérationnel</span>
                             </div>
                         </div>
                     </section>
 
                     <section class="features-section">
-                        <h3><i class="fas fa-star"></i> Fonctionnalités clés</h3>
+                        <h3><i class="fas fa-star"></i> <span data-i18n="features.title">Fonctionnalités clés</span></h3>
                         <div class="features-grid">
                             <div class="feature-item">
                                 <i class="fas fa-sign-in-alt"></i>
-                                <h4>Authentification</h4>
-                                <p>Interface de connexion sécurisée pour accéder à l'application</p>
+                                <h4 data-i18n="gymtrace.keyFeatures.auth.title">Authentification</h4>
+                                <p data-i18n="gymtrace.keyFeatures.auth.desc">Interface de connexion sécurisée avec validation des données utilisateur et gestion des sessions</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-home"></i>
-                                <h4>Page d'Accueil</h4>
-                                <p>Dashboard principal avec navigation intuitive vers toutes les fonctionnalités</p>
+                                <h4 data-i18n="gymtrace.keyFeatures.home.title">Page d'Accueil</h4>
+                                <p data-i18n="gymtrace.keyFeatures.home.desc">Dashboard principal avec navigation intuitive vers toutes les fonctionnalités de l'application</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-bars"></i>
-                                <h4>Menu Fonctionnalités</h4>
-                                <p>AppBar avec accès rapide aux différents modules de l'application</p>
+                                <h4 data-i18n="gymtrace.keyFeatures.menu.title">Menu Fonctionnalités</h4>
+                                <p data-i18n="gymtrace.keyFeatures.menu.desc">AppBar avec accès rapide aux différentes sections de l'application de fitness</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-user-circle"></i>
-                                <h4>Profil Utilisateur</h4>
-                                <p>Gestion des informations personnelles et préférences</p>
+                                <h4 data-i18n="gymtrace.keyFeatures.profile.title">Profil Utilisateur</h4>
+                                <p data-i18n="gymtrace.keyFeatures.profile.desc">Gestion des informations personnelles et paramètres de l'utilisateur</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-save"></i>
-                                <h4>Sauvegarde Workout</h4>
-                                <p>Enregistrement détaillé des séances d'entraînement</p>
+                                <h4 data-i18n="gymtrace.keyFeatures.save.title">Sauvegarde Workout</h4>
+                                <p data-i18n="gymtrace.keyFeatures.save.desc">Enregistrement détaillé des séances d'entraînement avec exercices et performances</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-chart-line"></i>
-                                <h4>Suivi des Progrès</h4>
-                                <p>Visualisation graphique et historique des performances par exercice</p>
+                                <h4 data-i18n="gymtrace.keyFeatures.progress.title">Suivi des Progrès</h4>
+                                <p data-i18n="gymtrace.keyFeatures.progress.desc">Visualisation graphique et historique des performances sportives par période</p>
                             </div>
                         </div>
                     </section>
 
                     <section class="gallery-section">
-                        <h3><i class="fas fa-images"></i> Album du projet</h3>
+                        <h3><i class="fas fa-images"></i> <span data-i18n="gallery.title">Album du projet</span></h3>
                         <div class="scrollable-album">
                             <div class="album-container">
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Personnel/GymTrace/Login.jpg" alt="Interface de connexion">
-                                    <div class="album-caption">Interface de connexion GymTrace</div>
+                                    <div class="album-caption" data-i18n="gymtrace.gallery.login">Interface de connexion GymTrace</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Personnel/GymTrace/Homepage.jpg" alt="Page d'accueil">
-                                    <div class="album-caption">Page d'accueil de l'application</div>
+                                    <div class="album-caption" data-i18n="gymtrace.gallery.home">Page d'accueil de l'application</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Personnel/GymTrace/fonctionnalites%20AppBar.jpg" alt="Fonctionnalités AppBar">
-                                    <div class="album-caption">Menu des fonctionnalités principales</div>
+                                    <div class="album-caption" data-i18n="gymtrace.gallery.menu">Menu des fonctionnalités principales</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Personnel/GymTrace/Profile.png" alt="Profil utilisateur">
-                                    <div class="album-caption">Interface de profil utilisateur</div>
+                                    <div class="album-caption" data-i18n="gymtrace.gallery.profile">Interface de profil utilisateur</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Personnel/GymTrace/Save%20Workout.jpg" alt="Sauvegarder entraînement">
-                                    <div class="album-caption">Interface de sauvegarde d'entraînement</div>
+                                    <div class="album-caption" data-i18n="gymtrace.gallery.save">Interface de sauvegarde d'entraînement</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Personnel/GymTrace/Track%20progress.jpg" alt="Suivi des progrès">
-                                    <div class="album-caption">Interface de suivi des progrès</div>
+                                    <div class="album-caption" data-i18n="gymtrace.gallery.progress">Interface de suivi des progrès</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Personnel/GymTrace/Chest%20Historique.jpg" alt="Historique Chest">
-                                    <div class="album-caption">Historique des exercices pectoraux</div>
+                                    <div class="album-caption" data-i18n="gymtrace.gallery.chest">Historique des exercices pectoraux</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Personnel/GymTrace/Chest%20August%20Historique.jpg" alt="Historique Chest Août">
-                                    <div class="album-caption">Historique détaillé des pectoraux - Août</div>
+                                    <div class="album-caption" data-i18n="gymtrace.gallery.chestAugust">Historique détaillé des pectoraux - Août</div>
                                 </div>
                             </div>
                             <div class="album-scroll-indicator">
-                                <span>Faites défiler pour voir plus d'images →</span>
+                                <span data-i18n="gallery.scroll">Faites défiler pour voir plus d'images →</span>
                             </div>
                         </div>
                     </section>
@@ -218,5 +214,78 @@
     </footer>
 
     <script src="../../js/script.js"></script>
+     <!-- i18next initialization script -->
+    <script>
+        function updateContent() {
+            console.log('Updating content with language:', i18next.language);
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                var key = element.getAttribute('data-i18n');
+                try {
+                    const translation = i18next.t(key);
+                    if (translation && translation !== key) {
+                        element.innerHTML = translation;
+                    } else {
+                        console.warn('Missing translation for key:', key);
+                    }
+                } catch (error) {
+                    console.error('Error translating key:', key, error);
+                }
+            });
+        }
+
+        function updateLanguageButtons(currentLang) {
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                button.classList.toggle('active', lang === currentLang);
+            });
+        }
+
+        function changeLanguage(lng) {
+            localStorage.setItem('i18nextLng', lng);
+            i18next.changeLanguage(lng, function() {
+                updateContent();
+                updateLanguageButtons(lng);
+            });
+        }
+
+        // Initialize i18next with proper path handling
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = isGitHubPages ? '../../' : '../../';
+
+        console.log('Initializing i18next for GymTrace page...');
+        console.log('Is GitHub Pages:', isGitHubPages);
+        console.log('Base path:', basePath);
+        console.log('Translation path:', basePath + 'locales/{{lng}}/translation.json');
+        
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'fr',
+                debug: !isGitHubPages,
+                lng: localStorage.getItem('i18nextLng') || 'fr', // Get language from localStorage or default to 'fr'
+                backend: {
+                    loadPath: basePath + 'locales/{{lng}}/translation.json'
+                },
+                detection: {
+                    order: ['localStorage', 'navigator'],
+                    caches: ['localStorage']
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('Translation loading error:', err);
+                } else {
+                    console.log('i18next initialized successfully');
+                    console.log('Current language:', i18next.language);
+                }
+                updateLanguageButtons(i18next.language || 'fr');
+                updateContent();
+            });
+
+        // Add event listener for language changes
+        i18next.on('languageChanged', function(lng) {
+            console.log('Language changed to:', lng);
+        });
+    </script>
 </body>
 </html>

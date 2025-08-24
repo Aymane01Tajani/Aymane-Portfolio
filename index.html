@@ -909,6 +909,7 @@
     }
 
     function changeLanguage(lng) {
+      localStorage.setItem('i18nextLng', lng);
       i18next.changeLanguage(lng, function() {
         updateContent();
         updateLanguageButtons(lng);
@@ -930,7 +931,7 @@
       .init({
         fallbackLng: 'fr',
         debug: !isGitHubPages,
-        lng: 'fr',
+        lng: localStorage.getItem('i18nextLng') || 'fr',
         backend: {
           loadPath: basePath + 'locales/{{lng}}/translation.json'
         },

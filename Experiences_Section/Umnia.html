@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/images/name.jpg" type="image/x-icon">
-    <title>Umnia Bank - Aymane Tajani</title>
+    <title data-i18n="umnia.title">Umnia Bank - Aymane Tajani</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Inclusion des bibliothèques i18next -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
 <body>
     <!-- Header with back button -->
     <header class="experience-detail-header">
         <div class="container">
             <a href="../index.html#experiences" class="back-btn">
-                <i class="fas fa-arrow-left"></i> Retour au portfolio
+                <i class="fas fa-arrow-left"></i> <span data-i18n="umnia.backBtn">Retour au portfolio</span>
             </a>
         </div>
     </header>
@@ -27,30 +31,31 @@
                         <img src="../assets/images/Experience/Umnia-Bank.png" alt="Umnia Bank Logo">
                     </div>
                     <div class="experience-detail-info">
-                        <h1>Conception & Mise en place d’une application de déclaration et de gestion des flux CCG.</h1>
-                        <h2>Umnia Bank</h2>
+                        <h1 data-i18n="umnia.projectTitle">Conception & Mise en place d’une application de déclaration et de gestion des flux CCG.</h1>
+                        <h2 data-i18n="umnia.company">Umnia Bank</h2>
                         <div class="experience-meta">
-                            <span class="duration"><i class="fas fa-calendar"></i> 01 Juillet 2024 - 15 Septembre 2024</span>
-                            <span class="location"><i class="fas fa-map-marker-alt"></i> Casablanca, Maroc</span>
-                            <span class="type"><i class="fas fa-briefcase"></i> Stage (Sur site)</span>
+                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="umnia.dates">01 Juillet 2024 - 15 Septembre 2024</span></span>
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> <span data-i18n="umnia.location">Casablanca, Maroc</span></span>
+                            <span class="type"><i class="fas fa-briefcase"></i> <span data-i18n="umnia.type">Stage (Sur site)</span></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="experience-detail-content">
                     <section class="overview-section">
-                        <h3><i class="fas fa-info-circle"></i> Aperçu du projet</h3>
-                        <p>Dans un contexte de digitalisation croissante au Maroc, la gestion manuelle des échanges de fichiers entre Umnia Bank et la Caisse Centrale de Garantie (CCG) s’avère lente, complexe et sujette aux erreurs. Pour optimiser ces processus et garantir la conformité, une application dédiée est développée afin d’automatiser entièrement le flux des fichiers, de la saisie initiale à l’envoi des fichiers validés à la CCG.
-Basée sur ASP.NET Web API pour le backend et ASP.NET MVC avec Entity Framework Core Code First pour le frontend, cette solution modulaire et évolutive assure une gestion fiable, réduit la charge de travail et renforce l’efficacité du département des risques de la banque.</p>
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="umnia.overviewTitle">Aperçu du projet</span></h3>
+                        <p data-i18n="umnia.overviewText">
+                            Dans un contexte de digitalisation croissante au Maroc, ...
+                        </p>
                     </section>
 
                     <section class="technologies-section">
-                        <h3><i class="fas fa-tools"></i> Technologies utilisées</h3>
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="umnia.techTitle">Technologies utilisées</span></h3>
                         
                         <!-- Tools Image -->
                         <div class="tools-diagram">
                             <img src="../assets/images/Experience/Experiences_Section/Umnia/Liste des outils.png" alt="Liste des outils et technologies utilisés" class="tools-img">
-                            <p class="diagram-caption">Technologies et outils utilisés dans le projet Umnia Bank</p>
+                            <p class="diagram-caption" data-i18n="umnia.techDiagram">Technologies et outils utilisés dans le projet Umnia Bank</p>
                         </div>
                         
                         <div class="tech-stack">
@@ -69,108 +74,108 @@ Basée sur ASP.NET Web API pour le backend et ASP.NET MVC avec Entity Framework 
                     </section>
 
                     <section class="responsibilities-section">
-                        <h3><i class="fas fa-tasks"></i> Responsabilités principales</h3>
+                        <h3><i class="fas fa-tasks"></i> <span data-i18n="umnia.respTitle">Responsabilités principales</span></h3>
                         <ul class="responsibilities-list">
-                            <li>Analyse des besoins métier bancaire et définition des spécifications fonctionnelles</li>
-                            <li>Développement des Web Services pour le traitement des fichiers et la gestion des données</li>
-                            <li>Développement du frontend avec ASP.NET MVC</li>
-                            <li>Integration du backend avec ASP.NET Web API avec le frontend</li>
-                            <li>Tests et optimisation des performances de l'application web</li>
+                            <li data-i18n="umnia.resp1">Analyse des besoins métier bancaire ...</li>
+                            <li data-i18n="umnia.resp2">Développement des Web Services ...</li>
+                            <li data-i18n="umnia.resp3">Développement du frontend avec ASP.NET MVC</li>
+                            <li data-i18n="umnia.resp4">Intégration du backend avec ASP.NET Web API</li>
+                            <li data-i18n="umnia.resp5">Tests et optimisation des performances ...</li>
                         </ul>
                     </section>
 
                     <section class="achievements-section">
-                        <h3><i class="fas fa-trophy"></i> Réalisations</h3>
+                        <h3><i class="fas fa-trophy"></i> <span data-i18n="umnia.achievementsTitle">Réalisations</span></h3>
                         <div class="achievements-grid">
                             <div class="achievement-item">
                                 <i class="fas fa-globe"></i>
-                                <h4>Application Web</h4>
-                                <p>Application web full stack avec ASP.NET</p>
+                                <h4 data-i18n="umnia.ach1.title">Application Web</h4>
+                                <p data-i18n="umnia.ach1.text">Application web full stack avec ASP.NET</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-plug"></i>
-                                <h4>Development des API REST</h4>
-                                <p>Integration des Web Services REST</p>
+                                <h4 data-i18n="umnia.ach2.title">Développement des API REST</h4>
+                                <p data-i18n="umnia.ach2.text">Intégration des Web Services REST</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-sitemap"></i>
-                                <h4>Architecture orientée services</h4>
-                                <p>Décomposition de l'applications en services réutilisables.</p>
+                                <h4 data-i18n="umnia.ach3.title">Architecture orientée services</h4>
+                                <p data-i18n="umnia.ach3.text">Décomposition de l'application en services réutilisables.</p>
                             </div>
                         </div>
                     </section>
 
                     <section class="architecture-section">
-                        <h3><i class="fas fa-sitemap"></i> Architecture technique</h3>
+                        <h3><i class="fas fa-sitemap"></i> <span data-i18n="umnia.archTitle">Architecture technique</span></h3>
                         
                         <!-- Architecture Diagram -->
                         <div class="architecture-diagram">
                             <img src="../assets/images/Experience/Experiences_Section/Umnia/AR-Technique.png" alt="Architecture technique Umnia" class="architecture-img">
-                            <p class="diagram-caption">Architecture technique de l'application de gestion des évaluations</p>
+                            <p class="diagram-caption" data-i18n="umnia.archDiagram">Architecture technique de l'application Flux-CCG</p>
                         </div>
                         
                         <div class="architecture-note">
-                            <p>L’application Flux-CCG est basée sur une structure N-tiers avec une séparation entre le frontend (ASP.NET MVC) et le backend (ASP.NET Web API). Les fichiers CSV et TXT sont échangés et traités au travers des services backend, tandis que les données sont transmises en JSON via des requêtes HTTP depuis le frontend.</p>
+                            <p data-i18n="umnia.archText">L’application Flux-CCG est basée sur une structure N-tiers ...</p>
                         </div>
                     </section>
 
                     <section class="impact-section">
-                        <h3><i class="fas fa-chart-line"></i> Impact et résultats</h3>
+                        <h3><i class="fas fa-chart-line"></i> <span data-i18n="umnia.impactTitle">Impact et résultats</span></h3>
                         <div class="impact-stats">
                             <div class="stat-item">
                                 <span class="stat-number">80%</span>
-                                <span class="stat-label">Réduction temps de traitement</span>
+                                <span class="stat-label" data-i18n="umnia.stat1">Réduction temps de traitement</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">90%</span>
-                                <span class="stat-label">Réduction des erreurs de saisie</span>
+                                <span class="stat-label" data-i18n="umnia.stat2">Réduction des erreurs de saisie</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">95%</span>
-                                <span class="stat-label">Satisfaction utilisateurs</span>
+                                <span class="stat-label" data-i18n="umnia.stat3">Satisfaction utilisateurs</span>
                             </div>
                         </div>
                     </section>
 
                     <section class="gallery-section">
-                        <h3><i class="fas fa-images"></i> Album du projet</h3>
+                        <h3><i class="fas fa-images"></i> <span data-i18n="umnia.galleryTitle">Album du projet</span></h3>
                         <div class="scrollable-album">
                             <div class="album-container">
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Umnia/Home-page.png" alt="Page d'accueil">
-                                    <div class="album-caption">Page d'accueil de l'application</div>
+                                    <div class="album-caption" data-i18n="umnia.gallery1">Page d'accueil de l'application</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Umnia/Insertion-page.png" alt="Interface d'insertion">
-                                    <div class="album-caption">Interface d’insertion du fichier Txt (Interprétation de la réponse)</div>
+                                    <div class="album-caption" data-i18n="umnia.gallery2">Interface d’insertion du fichier Txt</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Umnia/Insertion-page1.png" alt="Formulaire détaillé">
-                                    <div class="album-caption">Interface d’insertion du fichier csv.(Fichier CSV depuis T24 pour le cas d'envoie)</div>
+                                    <div class="album-caption" data-i18n="umnia.gallery3">Interface d’insertion du fichier CSV</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Umnia/Modif-Data.png" alt="Modification des données">
-                                    <div class="album-caption">Tableau pour modification des informations relatifs aux projets</div>
+                                    <div class="album-caption" data-i18n="umnia.gallery4">Tableau modification projets</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Umnia/Modif-ev2.png" alt="Édition évaluation">
-                                    <div class="album-caption">Tableau pour modification des informations relatifs aux associés</div>
+                                    <div class="album-caption" data-i18n="umnia.gallery5">Tableau modification associés</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Umnia/Modif-ev3.png" alt="Gestion évaluations">
-                                    <div class="album-caption">Tableau pour modification des informations relatifs aux programmes d’investissements</div>
+                                    <div class="album-caption" data-i18n="umnia.gallery6">Tableau modification programmes</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Umnia/Modif-ev4.png" alt="Interface de suivi">
-                                    <div class="album-caption">Tableau pour modification des informations relatifs aux plans de financement</div>
+                                    <div class="album-caption" data-i18n="umnia.gallery7">Tableau modification plans de financement</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../assets/images/Experience/Experiences_Section/Umnia/Modif-ev5.png" alt="Tableau de bord">
-                                    <div class="album-caption">Tableau pour modification des informations relatifs aux sûretés</div>
+                                    <div class="album-caption" data-i18n="umnia.gallery8">Tableau modification sûretés</div>
                                 </div>
                             </div>
                             <div class="album-scroll-indicator">
-                                <span>Faites défiler pour voir plus d'images →</span>
+                                <span data-i18n="umnia.scrollHint">Faites défiler pour voir plus d'images →</span>
                             </div>
                         </div>
                     </section>
@@ -186,5 +191,67 @@ Basée sur ASP.NET Web API pour le backend et ASP.NET MVC avec Entity Framework 
     </footer>
 
     <script src="../js/script.js"></script>
+    <!-- i18next initialization script -->
+    <script>
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                var key = element.getAttribute('data-i18n');
+                try {
+                    const translation = i18next.t(key);
+                    if (translation && translation !== key) {
+                        element.innerHTML = translation;
+                    } else {
+                        console.warn('Missing translation for key:', key);
+                    }
+                } catch (error) {
+                    console.error('Error translating key:', key, error);
+                }
+            });
+        }
+
+        function updateLanguageButtons(currentLang) {
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                button.classList.toggle('active', lang === currentLang);
+            });
+        }
+
+        function changeLanguage(lng) {
+            localStorage.setItem('i18nextLng', lng);
+            i18next.changeLanguage(lng, function() {
+                updateContent();
+                updateLanguageButtons(lng);
+            });
+        }
+
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = isGitHubPages ? '../' : '../';
+        
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'fr',
+                debug: !isGitHubPages,
+                lng: localStorage.getItem('i18nextLng') || 'fr',
+                backend: {
+                    loadPath: basePath + 'locales/{{lng}}/translation.json'
+                },
+                detection: {
+                    order: ['localStorage', 'navigator'],
+                    caches: ['localStorage']
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('Translation loading error:', err);
+                }
+                updateLanguageButtons(i18next.language || 'fr');
+                updateContent();
+            });
+
+        i18next.on('languageChanged', function(lng) {
+            console.log('Language changed to:', lng);
+        });
+    </script>
 </body>
 </html>

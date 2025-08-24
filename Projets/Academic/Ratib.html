@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../assets/images/name.jpg" type="image/x-icon">
-    <title>Ratib - Aymane Tajani</title>
+    <title data-i18n="ratib.title">Ratib - Aymane Tajani</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Inclusion des bibliothèques i18next -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
 <body>
     <!-- Header with back button -->
     <header class="experience-detail-header">
         <div class="container">
-            <a href="../../index.html#projects" class="back-btn">
+            <a href="../../index.html#projects" class="back-btn" data-i18n="back.portfolio">
                 <i class="fas fa-arrow-left"></i> Retour au portfolio
             </a>
         </div>
@@ -27,24 +31,28 @@
                         <img src="../../assets/images/PFA/PFA-4.jpg" alt="Ratib Logo">
                     </div>
                     <div class="experience-detail-info">
-                        <h1>Ratib - Application Mobile Islamique</h1>
-                        <h2>Projet Académique</h2>
+                        <h1 data-i18n="ratib.projectTitle">Ratib - Application Mobile Islamique</h1>
+                        <h2 data-i18n="project.type.academic">Projet Académique</h2>
                         <div class="experience-meta">
-                            <span class="duration"><i class="fas fa-calendar"></i> Juin 2024</span>
-                            <span class="location"><i class="fas fa-graduation-cap"></i> EMSI Casablanca</span>
-                            <span class="type"><i class="fas fa-mobile-alt"></i> Application Mobile</span>
+                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="ratib.date">Juin 2024</span></span>
+                            <span class="location"><i class="fas fa-graduation-cap"></i> <span data-i18n="location.emsi">EMSI Casablanca</span></span>
+                            <span class="type"><i class="fas fa-mobile-alt"></i> <span data-i18n="ratib.mobileApp">Application Mobile</span></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="experience-detail-content">
+                    <!-- Aperçu -->
                     <section class="overview-section">
-                        <h3><i class="fas fa-info-circle"></i> Aperçu du projet</h3>
-                        <p>Ratib est une application mobile native (Android) Islamique destinée aux mosquées marocaines afin d'accompagner les musulmans dans leur pratique quotidienne. Elle offre des fonctionnalités essentielles comme les horaires de prière, le suivi de la lecture du Coran (Hizb), la programmation des annonces, et bien plus encore, le tout dans une interface moderne et respectueuse des traditions islamiques.</p>
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="overview.title">Aperçu du projet</span></h3>
+                        <p data-i18n="ratib.overview">
+                            Ratib est une application mobile native (Android) Islamique destinée aux mosquées marocaines afin d'accompagner les musulmans dans leur pratique quotidienne. Elle offre des fonctionnalités essentielles comme les horaires de prière, le suivi de la lecture du Coran (Hizb), la programmation des annonces, et bien plus encore, le tout dans une interface moderne et respectueuse des traditions islamiques.
+                        </p>
                     </section>
 
+                    <!-- Technologies -->
                     <section class="technologies-section">
-                        <h3><i class="fas fa-tools"></i> Technologies utilisées</h3>
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="technologies.title">Technologies utilisées</span></h3>
                         <div class="tech-stack">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">Android Studio</span>
@@ -55,170 +63,176 @@
                         </div>
                     </section>
 
+                    <!-- Fonctionnalités -->
                     <section class="responsibilities-section">
-                        <h3><i class="fas fa-tasks"></i> Fonctionnalités développées</h3>
+                        <h3><i class="fas fa-tasks"></i> <span data-i18n="features.developed">Fonctionnalités développées</span></h3>
                         <ul class="responsibilities-list">
-                            <li>Calcul automatique des horaires de prière</li>
-                            <li>Interface avec un compte a rebours entre le Adhan et l'Iqama</li>
-                            <li>Affichage d'une Black-screen lors de la prière</li>
-                            <li>Affichage des Hizb du jour après la prière d'Al-Fajr et Al-Maghreb automatiquement en fonction de la date du jour</li>
-                            <li>Calendrier islamique (Hijri)</li>  
-                            <li>Programmation des annonces selon leurs type</li>
+                            <li data-i18n="ratib.feature1">Calcul automatique des horaires de prière</li>
+                            <li data-i18n="ratib.feature2">Interface avec un compte à rebours entre le Adhan et l'Iqama</li>
+                            <li data-i18n="ratib.feature3">Affichage d'une Black-screen lors de la prière</li>
+                            <li data-i18n="ratib.feature4">Affichage des Hizb du jour après la prière d'Al-Fajr et Al-Maghreb automatiquement</li>
+                            <li data-i18n="ratib.feature5">Calendrier islamique (Hijri)</li>  
+                            <li data-i18n="ratib.feature6">Programmation des annonces selon leur type</li>
                         </ul>
                     </section>
 
+                    <!-- Points forts -->
                     <section class="achievements-section">
-                        <h3><i class="fas fa-trophy"></i> Points forts du projet</h3>
+                        <h3><i class="fas fa-trophy"></i> <span data-i18n="highlights.title">Points forts du projet</span></h3>
                         <div class="achievements-grid">
                             <div class="achievement-item">
                                 <i class="fas fa-clock"></i>
-                                <h4>Horaires & Iqama</h4>
-                                <p>Système complet avec compte à rebours entre Adhan et Iqama</p>
+                                <h4 data-i18n="ratib.highlight1">Horaires & Iqama</h4>
+                                <p data-i18n="ratib.highlight1desc">Système complet avec compte à rebours entre Adhan et Iqama</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-book-quran"></i>
-                                <h4>Hizb Automatique</h4>
-                                <p>Affichage automatique du Hizb du jour après Fajr et Maghreb</p>
+                                <h4 data-i18n="ratib.highlight2">Hizb Automatique</h4>
+                                <p data-i18n="ratib.highlight2desc">Affichage automatique du Hizb du jour après Fajr et Maghreb</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-bullhorn"></i>
-                                <h4>Gestion Annonces</h4>
-                                <p>Système d'annonces spéciales et funéraires (Janaza)</p>
+                                <h4 data-i18n="ratib.highlight3">Gestion Annonces</h4>
+                                <p data-i18n="ratib.highlight3desc">Système d'annonces spéciales et funéraires (Janaza)</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-user-shield"></i>
-                                <h4>Panel Admin</h4>
-                                <p>Interface d'administration complète pour la mosquée</p>
+                                <h4 data-i18n="ratib.highlight4">Panel Admin</h4>
+                                <p data-i18n="ratib.highlight4desc">Interface d'administration complète pour la mosquée</p>
                             </div>
                         </div>
                     </section>
 
+                    <!-- Architecture -->
                     <section class="architecture-section">
-                        <h3><i class="fas fa-sitemap"></i> Architecture technique</h3>
+                        <h3><i class="fas fa-sitemap"></i> <span data-i18n="architecture.title">Architecture technique</span></h3>
                         <div class="architecture-note">
-                            <p>L'application Ratib est construite avec une architecture modulaire et performante :</p>
+                            <p data-i18n="ratib.archIntro">L'application Ratib est construite avec une architecture modulaire et performante :</p>
                             <ul>
-                                <li><strong>Frontend Java :</strong> Interface native avec design Material adapté</li>
-                                <li><strong>Base de données :</strong> Firestore pour stockage et synchronisation des données</li>
-                                <li><strong>APIs externes :</strong> Services de calcul d'horaires de prière et dates islamiques et </li>
-                                <li><strong>Authentication:</strong> Firebase Authentication pour gestion des utilisateurs</li>
-                                <li><strong>Services :</strong> Systeme de progration et affichages des annonces</li>
+                                <li data-i18n="ratib.arch1"><strong>Frontend Java :</strong> Interface native avec design Material adapté</li>
+                                <li data-i18n="ratib.arch2"><strong>Base de données :</strong> Firestore pour stockage et synchronisation des données</li>
+                                <li data-i18n="ratib.arch3"><strong>APIs externes :</strong> Services de calcul d'horaires de prière et dates islamiques</li>
+                                <li data-i18n="ratib.arch4"><strong>Authentication:</strong> Firebase Authentication pour gestion des utilisateurs</li>
+                                <li data-i18n="ratib.arch5"><strong>Services :</strong> Système de programmation et affichage des annonces</li>
                             </ul>
                         </div>
                     </section>
 
+                    <!-- Impact -->
                     <section class="impact-section">
-                        <h3><i class="fas fa-chart-line"></i> Impact et résultats</h3>
+                        <h3><i class="fas fa-chart-line"></i> <span data-i18n="impact.title">Impact et résultats</span></h3>
                         <div class="impact-stats">
                             <div class="stat-item">
                                 <span class="stat-number">5</span>
-                                <span class="stat-label">Prières quotidiennes</span>
+                                <span class="stat-label" data-i18n="ratib.impact1">Prières quotidiennes</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">60</span>
-                                <span class="stat-label">Hizb du Coran</span>
+                                <span class="stat-label" data-i18n="ratib.impact2">Hizb du Coran</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">3</span>
-                                <span class="stat-label">Types d'annonces</span>
+                                <span class="stat-label" data-i18n="ratib.impact3">Types d'annonces</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">100%</span>
-                                <span class="stat-label">Gestion automatisée</span>
+                                <span class="stat-label" data-i18n="ratib.impact4">Gestion automatisée</span>
                             </div>
                         </div>
                     </section>
 
+                    <!-- Fonctionnalités clés -->
                     <section class="features-section">
-                        <h3><i class="fas fa-star"></i> Fonctionnalités clés</h3>
+                        <h3><i class="fas fa-star"></i> <span data-i18n="keyFeatures.title">Fonctionnalités clés</span></h3>
                         <div class="features-grid">
                             <div class="feature-item">
                                 <i class="fas fa-user-lock"></i>
-                                <h4>Authentification Sécurisée</h4>
-                                <p>Système de connexion et inscription pour les utilisateurs de la mosquée</p>
+                                <h4 data-i18n="ratib.key1">Authentification Sécurisée</h4>
+                                <p data-i18n="ratib.key1desc">Système de connexion et inscription pour les utilisateurs de la mosquée</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-clock"></i>
-                                <h4>Gestion des Prières</h4>
-                                <p>Horaires automatiques avec compte à rebours Adhan-Iqama et écran de prière</p>
+                                <h4 data-i18n="ratib.key2">Gestion des Prières</h4>
+                                <p data-i18n="ratib.key2desc">Horaires automatiques avec compte à rebours Adhan-Iqama et écran de prière</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-book-quran"></i>
-                                <h4>Hizb Quotidien</h4>
-                                <p>Affichage automatique du Hizb après Fajr et Maghreb selon le calendrier</p>
+                                <h4 data-i18n="ratib.key3">Hizb Quotidien</h4>
+                                <p data-i18n="ratib.key3desc">Affichage automatique du Hizb après Fajr et Maghreb selon le calendrier</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-bullhorn"></i>
-                                <h4>Système d'Annonces</h4>
-                                <p>Gestion complète des annonces générales, spéciales et funéraires (Janaza)</p>
+                                <h4 data-i18n="ratib.key4">Système d'Annonces</h4>
+                                <p data-i18n="ratib.key4desc">Gestion complète des annonces générales, spéciales et funéraires (Janaza)</p>
                             </div>
                             <div class="feature-item">
                                 <i class="fas fa-cog"></i>
-                                <h4>Panel Administrateur</h4>
-                                <p>Interface d'administration pour la gestion complète de la mosquée</p>
+                                <h4 data-i18n="ratib.key5">Panel Administrateur</h4>
+                                <p data-i18n="ratib.key5desc">Interface d'administration pour la gestion complète de la mosquée</p>
                             </div>
                         </div>
                     </section>
 
+                    <!-- Album -->
                     <section class="gallery-section">
-                        <h3><i class="fas fa-images"></i> Album du projet</h3>
+                        <h3><i class="fas fa-images"></i> <span data-i18n="gallery.title">Album du projet</span></h3>
                         <div class="scrollable-album">
                             <div class="album-container">
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Login.png" alt="Écran de connexion">
-                                    <div class="album-caption">Interface de connexion</div>
+                                    <div class="album-caption" data-i18n="ratib.album1">Interface de connexion</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Register.png" alt="Inscription">
-                                    <div class="album-caption">Interface d'inscription</div>
+                                    <div class="album-caption" data-i18n="ratib.album2">Interface d'inscription</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/home.png" alt="Page d'accueil">
-                                    <div class="album-caption">Page d'accueil de Ratib</div>
+                                    <div class="album-caption" data-i18n="ratib.album3">Page d'accueil de Ratib</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Admin section.png" alt="Section administrateur">
-                                    <div class="album-caption">Panel d'administration</div>
+                                    <div class="album-caption" data-i18n="ratib.album4">Panel d'administration</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Darss.png" alt="Cours religieux">
-                                    <div class="album-caption">Interface pour programmer une annonce des cours religieux (Darss)</div>
+                                    <div class="album-caption" data-i18n="ratib.album5">Interface pour programmer une annonce des cours religieux (Darss)</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Annonce.png" alt="Annonces">
-                                    <div class="album-caption">Interface d'annonces</div>
+                                    <div class="album-caption" data-i18n="ratib.album6">Interface d'annonces</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/janaza screen.png" alt="Écran Janaza">
-                                    <div class="album-caption">Écran dédié aux programmations des annonces de prières funéraires</div>
+                                    <div class="album-caption" data-i18n="ratib.album7">Programmation des annonces de prières funéraires</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Announce-janaza.png" alt="Annonce Janaza">
-                                    <div class="album-caption">Annonce de prière funéraire (Janaza)</div>
+                                    <div class="album-caption" data-i18n="ratib.album8">Annonce de prière funéraire (Janaza)</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/spcl-announce.png" alt="Annonce spéciale">
-                                    <div class="album-caption">Interface d'annonces spéciales</div>
+                                    <div class="album-caption" data-i18n="ratib.album9">Interface d'annonces spéciales</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Spcl annonce display.png" alt="Affichage annonce spéciale">
-                                    <div class="album-caption">Affichage des annonces spéciales</div>
+                                    <div class="album-caption" data-i18n="ratib.album10">Affichage des annonces spéciales</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Hizb.png" alt="Hizb du Coran">
-                                    <div class="album-caption">Interface de lecture du Hizb du Coran après la prière d'Al-Fajr et Al-Maghreb</div>
+                                    <div class="album-caption" data-i18n="ratib.album11">Interface de lecture du Hizb du Coran</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Black-screen.png" alt="Écran noir">
-                                    <div class="album-caption">Mode d'affichage sombre lors de la prière</div>
+                                    <div class="album-caption" data-i18n="ratib.album12">Mode sombre lors de la prière</div>
                                 </div>
                                 <div class="album-item">
                                     <img src="../../assets/images/PFA/Academic/Ratib/Iqama.png" alt="Iqama">
-                                    <div class="album-caption">Interface d'appel à la prière (Iqama)</div>
+                                    <div class="album-caption" data-i18n="ratib.album13">Interface d'appel à la prière (Iqama)</div>
                                 </div>
                             </div>
                             <div class="album-scroll-indicator">
-                                <span>Faites défiler pour voir plus d'images →</span>
+                                <span data-i18n="gallery.scroll">Faites défiler pour voir plus d'images →</span>
                             </div>
                         </div>
                     </section>
@@ -233,5 +247,78 @@
     </footer>
 
     <script src="../../js/script.js"></script>
+         <!-- i18next initialization script -->
+    <script>
+        function updateContent() {
+            console.log('Updating content with language:', i18next.language);
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                var key = element.getAttribute('data-i18n');
+                try {
+                    const translation = i18next.t(key);
+                    if (translation && translation !== key) {
+                        element.innerHTML = translation;
+                    } else {
+                        console.warn('Missing translation for key:', key);
+                    }
+                } catch (error) {
+                    console.error('Error translating key:', key, error);
+                }
+            });
+        }
+
+        function updateLanguageButtons(currentLang) {
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                button.classList.toggle('active', lang === currentLang);
+            });
+        }
+
+        function changeLanguage(lng) {
+            localStorage.setItem('i18nextLng', lng);
+            i18next.changeLanguage(lng, function() {
+                updateContent();
+                updateLanguageButtons(lng);
+            });
+        }
+
+        // Initialize i18next with proper path handling
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = isGitHubPages ? '../../' : '../../';
+
+        console.log('Initializing i18next for Ratib page...');
+        console.log('Is GitHub Pages:', isGitHubPages);
+        console.log('Base path:', basePath);
+        console.log('Translation path:', basePath + 'locales/{{lng}}/translation.json');
+        
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'fr',
+                debug: !isGitHubPages,
+                lng: localStorage.getItem('i18nextLng') || 'fr', // Get language from localStorage or default to 'fr'
+                backend: {
+                    loadPath: basePath + 'locales/{{lng}}/translation.json'
+                },
+                detection: {
+                    order: ['localStorage', 'navigator'],
+                    caches: ['localStorage']
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('Translation loading error:', err);
+                } else {
+                    console.log('i18next initialized successfully');
+                    console.log('Current language:', i18next.language);
+                }
+                updateLanguageButtons(i18next.language || 'fr');
+                updateContent();
+            });
+
+        // Add event listener for language changes
+        i18next.on('languageChanged', function(lng) {
+            console.log('Language changed to:', lng);
+        });
+    </script>
 </body>
 </html>

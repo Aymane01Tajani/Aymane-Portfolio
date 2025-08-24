@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../assets/images/name.jpg" type="image/x-icon">
-    <title>QuickSoum - Aymane Tajani</title>
+    <title data-i18n="quicksoum.title">QuickSoum - Aymane Tajani</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+                <!-- Inclusion des bibliothèques i18next -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
 </head>
 <body>
     <!-- Header with back button -->
     <header class="experience-detail-header">
         <div class="container">
-            <a href="../../index.html#personal-projects" class="back-btn">
+            <a href="../../index.html#personal-projects" class="back-btn" data-i18n="quicksoum.backBtn">
                 <i class="fas fa-arrow-left"></i> Retour au portfolio
             </a>
         </div>
@@ -27,12 +31,12 @@
                         <img src="../../assets/images/PFA/Personnel/QuickSoum/logo-quicksoum.png" alt="QuickSoum Logo">
                     </div>
                     <div class="experience-detail-info">
-                        <h1>QuickSoum - Application de Devis Rapide</h1>
-                        <h2>Projet Personnel</h2>
+                        <h1 data-i18n="quicksoum.projectTitle">QuickSoum - Application de Devis Rapide</h1>
+                        <h2 data-i18n="quicksoum.company">Projet Personnel</h2>
                         <div class="experience-meta">
-                            <span class="duration"><i class="fas fa-calendar"></i> En développement</span>
-                            <span class="location"><i class="fas fa-code"></i> Projet Personnel</span>
-                            <span class="type"><i class="fas fa-mobile-alt"></i> Application Mobile</span>
+                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="quicksoum.meta.duration">En développement</span></span>
+                            <span class="location"><i class="fas fa-code"></i> <span data-i18n="quicksoum.meta.location">Projet Personnel</span></span>
+                            <span class="type"><i class="fas fa-mobile-alt"></i> <span data-i18n="quicksoum.meta.type">Application Mobile</span></span>
                         </div>
                     </div>
                 </div>
@@ -43,11 +47,13 @@
                             <div class="notice-icon">
                                 <i class="fas fa-code fa-4x"></i>
                             </div>
-                            <h3>Projet en Développement</h3>
-                            <p class="notice-message">L'application QuickSoum est en cours de développement. Revenez prochainement pour plus de détails.</p>
+                            <h3 data-i18n="quicksoum.devNotice.title">Projet en Développement</h3>
+                            <p class="notice-message" data-i18n="quicksoum.devNotice.message">
+                                L'application QuickSoum est en cours de développement. Revenez prochainement pour plus de détails.
+                            </p>
                             <div class="notice-details">
-                                <p><strong>Technologies prévues :</strong> Flutter, Firebase, Dart</p>
-                                <p><strong>Objectif :</strong> Application de génération de devis rapide pour entreprises</p>
+                                <p><strong data-i18n="quicksoum.devNotice.technologiesLabel">Technologies prévues :</strong> <span data-i18n="quicksoum.devNotice.technologies">Flutter, Firebase, Dart</span></p>
+                                <p><strong data-i18n="quicksoum.devNotice.objectiveLabel">Objectif :</strong> <span data-i18n="quicksoum.devNotice.objective">Application de génération de devis rapide pour entreprises</span></p>
                             </div>
                         </div>
                     </section>
@@ -63,5 +69,79 @@
     </footer>
 
     <script src="../../js/script.js"></script>
+     <!-- i18next initialization script -->
+    <script>
+        function updateContent() {
+            console.log('Updating content with language:', i18next.language);
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                var key = element.getAttribute('data-i18n');
+                try {
+                    const translation = i18next.t(key);
+                    if (translation && translation !== key) {
+                        element.innerHTML = translation;
+                    } else {
+                        console.warn('Missing translation for key:', key);
+                    }
+                } catch (error) {
+                    console.error('Error translating key:', key, error);
+                }
+            });
+        }
+
+        function updateLanguageButtons(currentLang) {
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                button.classList.toggle('active', lang === currentLang);
+            });
+        }
+
+        function changeLanguage(lng) {
+            localStorage.setItem('i18nextLng', lng);
+            i18next.changeLanguage(lng, function() {
+                updateContent();
+                updateLanguageButtons(lng);
+            });
+        }
+
+        // Initialize i18next with proper path handling
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = isGitHubPages ? '../../' : '../../';
+
+        console.log('Initializing i18next for QuickSoum page...');
+        console.log('Is GitHub Pages:', isGitHubPages);
+        console.log('Base path:', basePath);
+        console.log('Translation path:', basePath + 'locales/{{lng}}/translation.json');
+        
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'fr',
+                debug: !isGitHubPages,
+                lng: localStorage.getItem('i18nextLng') || 'fr', // Get language from localStorage or default to 'fr'
+                backend: {
+                    loadPath: basePath + 'locales/{{lng}}/translation.json'
+                },
+                detection: {
+                    order: ['localStorage', 'navigator'],
+                    caches: ['localStorage']
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('Translation loading error:', err);
+                } else {
+                    console.log('i18next initialized successfully');
+                    console.log('Current language:', i18next.language);
+                }
+                updateLanguageButtons(i18next.language || 'fr');
+                updateContent();
+            });
+
+        // Add event listener for language changes
+        i18next.on('languageChanged', function(lng) {
+            console.log('Language changed to:', lng);
+        });
+    </script>
+    
 </body>
 </html>

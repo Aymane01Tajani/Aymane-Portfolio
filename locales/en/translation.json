@@ -250,6 +250,604 @@
     },
     "footer": {
       "text": "&copy; 2025 Aymane Tajani. All rights reserved."
+    },
+    "aberdeen": {
+      "title": "Aberdeen - Aymane Tajani",
+      "backBtn": "Back to portfolio",
+      "projectTitle": "Design & Development of a Mobile Solution for Pharmaceutical Sales Order Management Connected to Sage X3.",
+      "company": "Aberdeen Services",
+      "dates": "March 03, 2025 - September 03, 2025",
+      "location": "Casablanca, Morocco",
+      "type": "Internship (On-site)",
+      "overviewTitle": "Project Overview",
+      "overviewText": "The pharmaceutical sector is a highly regulated and competitive field that relies on the performance of medical representatives to promote and sell products. Traditional order-taking methods, often manual or outdated, lead to errors, delays, and a lack of visibility.Digital transformation is essential to optimize order management and inventory synchronization. In this context, a mobile application connected to Sage X3 via a REST web service has been developed. It allows medical representatives to manage their clients, view inventory in real time, place secure orders, and track their progress.",
+      "techTitle": "Technologies Used",
+      "techDiagram": "Technologies and tools used in the Aberdeen project",
+      "respTitle": "Main Responsibilities",
+      "resp1": "Analysis of pharmaceutical sector business needs and definition of functional specifications",
+      "resp2": "Development of REST web services with Sage X3 in 4GL language for ERP integration",
+      "resp3": "Design and development of cross-platform mobile application with Flutter/Dart",
+      "resp4": "Implementation of real-time synchronization between mobile application and Sage X3",
+      "resp5": "Development of client management features, product catalog and orders",
+      "resp6": "Configuration and optimization of SQL Server database for performance",
+      "resp7": "Unit and integration testing with Postman to validate REST APIs",
+      "resp8": "Implementation of versioning and collaboration with GitHub",
+      "achievementsTitle": "Achievements",
+      "ach1": {
+        "title": "Cross-platform mobile solution",
+        "text": "Accessible on all devices"
+      },
+      "ach2": {
+        "title": "REST API",
+        "text": "Integration with Sage X3 through REST Web Services (EAI)"
+      },
+      "ach3": {
+        "title": "Data Management",
+        "text": "Real-time synchronization with Sage X3"
+      },
+      "archTitle": "Technical Architecture",
+      "archDiagram": "Distributed REST architecture of the PharmaX3 application",
+      "archText1": "The infrastructure is based on a lightweight distributed architecture, enabling direct and secure communication between the mobile application and Sage X3. It consists of the following elements:",
+      "archItem1": "<strong>Mobile Application (Frontend):</strong> Developed with Flutter (Dart), this application is installed on medical representatives' tablets. It interacts directly with REST Web Services exposed by Sage X3 via HTTP requests.",
+      "archItem2": "<strong>Sage X3 REST Web Services:</strong> Services are configured from representations associated with business classes (orders, clients, inventory). Each call follows these standards: HTTP Basic Auth authentication through username and password, and JSON data exchange",
+      "archItem3": "<strong>Database (SQL Server):</strong> All management data (clients, items, orders, inventory) is centralized in the database integrated with Sage X3.",
+      "archText2": "<strong>Note:</strong> This model ensures basic security through Sage X3 user credentials and guarantees structured data exchange in JSON, compliant with REST standards.",
+      "impactTitle": "Impact and Results",
+      "stat1": "Reduction in order time and errors",
+      "stat2": "System availability",
+      "stat3": "Real-time synchronization with Sage X3",
+      "galleryTitle": "Project Album",
+      "gallery1": "Authentication interface",
+      "gallery2": "Home interface",
+      "gallery3": "Main features of the PharmaX3 application",
+      "gallery4": "Interface for client consultation",
+      "gallery5": "Interface for order creation",
+      "gallery6": "Interface for item stock status consultation",
+      "gallery7": "Dashboard interface for order status tracking",
+      "gallery8": "Interfaces to verify X3 Server connection status",
+      "gallery9": "Offline Mode interface",
+      "scrollHint": "Scroll to see more images →"
+    },
+    "umnia": {
+      "title": "Umnia Bank - Aymane Tajani",
+      "backBtn": "Back to portfolio",
+      "projectTitle": "Design & Implementation of a Web Application for Declaring and Managing CCG Flows.",
+      "company": "Umnia Bank",
+      "dates": "July 01, 2024 - September 15, 2024",
+      "location": "Casablanca, Morocco",
+      "type": "Internship (On-site)",
+      "overviewTitle": "Project Overview",
+      "overviewText": "In a context of growing digitalization in Morocco, the manual management of file exchanges between Umnia Bank and the Central Guarantee Fund (CCG) proves to be slow, complex and error-prone. To optimize these processes and ensure compliance, a dedicated application is developed to fully automate the file flow, from initial entry to sending validated files to the CCG. Based on ASP.NET Web API for the backend and ASP.NET MVC with Entity Framework Core Code First for the frontend, this modular and scalable solution ensures reliable management, reduces workload and strengthens the efficiency of the bank's risk department.",
+      "techTitle": "Technologies Used",
+      "techDiagram": "Technologies and tools used in the Umnia Bank project",
+      "respTitle": "Main Responsibilities",
+      "resp1": "Analysis of banking business needs and definition of functional specifications",
+      "resp2": "Development of Web Services for file processing and data management",
+      "resp3": "Frontend development with ASP.NET MVC",
+      "resp4": "Backend integration with ASP.NET Web API with the frontend",
+      "resp5": "Testing and performance optimization of the web application",
+      "achievementsTitle": "Achievements",
+      "ach1": {
+        "title": "Web Application",
+        "text": "Full stack web application with ASP.NET"
+      },
+      "ach2": {
+        "title": "REST API Development",
+        "text": "Integration of REST Web Services"
+      },
+      "ach3": {
+        "title": "Service-oriented architecture",
+        "text": "Decomposition of the application into reusable services."
+      },
+      "archTitle": "Technical Architecture",
+      "archDiagram": "Technical architecture of the evaluation management application",
+      "archText": "The Flux-CCG application is based on an N-tier structure with separation between frontend (ASP.NET MVC) and backend (ASP.NET Web API). CSV and TXT files are exchanged and processed through backend services, while data is transmitted in JSON via HTTP requests from the frontend.",
+      "impactTitle": "Impact and Results",
+      "stat1": "Reduction in processing time",
+      "stat2": "Reduction in input errors",
+      "stat3": "User satisfaction",
+      "galleryTitle": "Project Album",
+      "gallery1": "Application home page",
+      "gallery2": "Txt file insertion interface (Response interpretation)",
+      "gallery3": "CSV file insertion interface (CSV file from T24 for sending case)",
+      "gallery4": "Table for modifying project-related information",
+      "gallery5": "Table for modifying partner-related information",
+      "gallery6": "Table for modifying investment program information",
+      "gallery7": "Table for modifying financing plan information",
+      "gallery8": "Table for modifying collateral information",
+      "scrollHint": "Scroll to see more images →"
+    },
+    "dataclear": {
+      "title": "Dataclear - Aymane Tajani",
+      "projectTitle": "Symfony Development of an MVC Generator for SaaS Applications",
+      "company": "Dataclear",
+      "duration": "July 01, 2023 - August 15, 2023",
+      "location": "Casablanca, Morocco",
+      "type": "Internship (On-site)",
+      "overview": "In a context where the digitalization of Moroccan businesses is accelerating, the Genio project aims to optimize the creation of MVC management applications using a SaaS generator. This generator, based on Symfony 5.4, allows for the rapid production of flexible and customized applications, with an architecture based on three databases: for configuration, for the overall SaaS application, and for each client company.Genio thus facilitates the automatic generation of adapted interfaces, reduces development time, and offers a solution accessible over private or public networks, meeting the growing needs for enterprise application management and maintenance.",
+      "toolsCaption": "Technologies and tools used in the Dataclear project",
+      "resp1": "Development of automatic MVC generator with Symfony for creating SaaS applications",
+      "resp2": "Creation of reusable Symfony templates for different types of management applications",
+      "resp3": "Customization and adaptation of generated applications according to specific client needs",
+      "resp4": "Performance optimization of the generator and produced applications",
+      "resp5": "Complete technical documentation of the generation system and user guide",
+      "ach1": {
+        "title": "Automatic Generator",
+        "desc": "Creation of a complete and automated MVC generation tool"
+      },
+      "ach2": {
+        "title": "Client Application",
+        "desc": "Customization of an MVC application generated by Genio according to specifications"
+      },
+      "ach3": {
+        "title": "SaaS Mode",
+        "desc": "High-performance and scalable multi-tenant applications"
+      },
+      "archCaption": "Scalable SaaS architecture for applications generated by Genio",
+      "archDesc": "Given the low number of users in the initial version, the infrastructure is limited to a single server to host the generator. However, our objective is to describe the target architecture, designed to host the generated application in SaaS mode. In this context, multiple users will be able to interact with the application simultaneously. To guarantee performance and availability, we implement: A Load Balancer, to intelligently distribute the load between multiple application servers hosted on the front end. Scalable clusters dedicated to storing media downloaded by customers, ensuring dynamic scalability and real-time protection against data loss. This architecture guarantees resilience, scalability, and high availability to provide a smooth experience, even under high demand.",
+      "img1": "Authentication interface of the Genio application",
+      "img2": "Main dashboard with customizable widgets",
+      "img3": "Administrator management and permissions interface",
+      "img4": "List of applications generated by the Genio system",
+      "img5": "Module and feature management interface"
+    },
+    "ste": {
+      "title": "STE Civil - Aymane Tajani",
+      "back": "Back to portfolio",
+      "projectTitle": "Development of a company website.",
+      "company": "CIVIL SOCIETY FOR AGRICULTURAL STUDIES",
+      "duration": "July 2022",
+      "location": "Casablanca, Morocco",
+      "type": "Internship (Remote)",
+      "overviewTitle": "Project Overview",
+      "overviewDesc": "Development of a showcase website for the civil society of agricultural studies to present its services and expertise in the agricultural field. This project aimed to create a professional online presence allowing the company to highlight its skills and reach a broader clientele.",
+      "techTitle": "Technologies Used",
+      "respTitle": "Main Responsibilities",
+      "resp1": "Implementation of a static website presenting the company's services and agricultural expertise",
+      "resp2": "Development of web pages with a responsive design approach for all devices",
+      "resp3": "Comprehensive testing and website deployment with performance optimization",
+      "achievementsTitle": "Achievements",
+      "ach1Title": "Showcase Website",
+      "ach1Desc": "Development of a professional static website",
+      "ach2Title": "Responsive Interface",
+      "ach2Desc": "Adaptive design with Bootstrap for all devices",
+      "ach3Title": "Agricultural Services",
+      "ach3Desc": "Clear presentation of agricultural studies and services",
+      "impactTitle": "Impact and Results",
+      "impact1": "Website successfully deployed",
+      "impact2": "Pages developed and optimized",
+      "impact3": "Total development days",
+      "galleryTitle": "Project Album",
+      "gallery1": "Website homepage with company presentation",
+      "gallery2": "Agricultural services page and technical expertise",
+      "gallery3": "About page presenting the company's history and values",
+      "gallery4": "Contact page with information and request form",
+      "scrollHint": "Scroll to see more images →"
+    },
+    "chronotrace": {
+      "title": "Chronotrace - Aymane Tajani",
+      "projectTitle": "ChronoTrace - Intelligent Digital Attendance System",
+      "projectType": "Final Year Project (PFA)",
+      "date": "January 2025",
+      "school": "EMSI Casablanca",
+      "category": "Academic Project",
+      "overview": "In a performance-focused professional context, ChronoTrace is an intelligent attendance management application that revolutionizes traditional time tracking. Through the integration of advanced technologies such as AI facial recognition, precise GPS geolocation, and secure QR codes, this cross-platform solution offers a modern and reliable approach to employee monitoring. Developed with Flutter and Firebase, ChronoTrace ensures real-time synchronization, an intuitive interface, and scalable architecture to meet the needs of modern businesses.",
+      "toolsCaption": "Technologies and tools used in the ChronoTrace project",
+      "featuresTitle": "Developed Features",
+      "feature1": "Facial recognition with ML Kit for automatic and secure identification",
+      "feature2": "GPS geolocation system for on-site presence validation",
+      "feature3": "Dynamic QR codes for quick and contactless check-in",
+      "feature4": "Complete administrator interface for employee and settings management",
+      "feature5": "Real-time synchronization with Firebase Cloud Firestore",
+      "feature6": "Advanced user roles and permissions management",
+      "feature7": "Admin replacement system for leave or absence coverage",
+      "highlightsTitle": "Project Highlights",
+      "highlight1": {
+        "title": "AI Recognition",
+        "text": "90% accuracy in facial recognition with ML Kit"
+      },
+      "highlight2": {
+        "title": "Geolocation",
+        "text": "Automatic validation through precise GPS positioning"
+      },
+      "highlight3": {
+        "title": "Cross-Platform",
+        "text": "Compatible with iOS and Android using Flutter"
+      },
+      "highlight4": {
+        "title": "Cloud Native",
+        "text": "Scalable and performant Firebase architecture"
+      },
+      "architectureTitle": "Technical Architecture",
+      "architectureCaption": "Modern technical architecture of the ChronoTrace application",
+      "architectureText": "<p>The technical architecture of the ChronoTrace application relies on a modern, modular structure to ensure flexibility and performance. The architecture is divided into three main layers: Frontend, Services, and Database.</p><ul><li><strong>Mobile Frontend:</strong> This layer corresponds to the user interface, developed with the Flutter framework and the Dart language. It is designed to work on mobile devices and web browsers, providing a seamless, cross-platform user experience. Users interact with the application through this interface to perform actions such as clocking in or managing their data.</li><li><strong>Services:</strong> This layer groups together the backend services required for the application to function properly. Implemented services include:<br />- Authentication Service: Based on Firebase Authentication, it enables secure user login management.</li><li><strong>Time and Attendance Services:</strong> These include features such as facial recognition (via ML Kit), geolocation (via Google Maps API), and QR code scanning (Flutter QR Code integration). These services are interconnected to ensure flexible time and attendance options tailored to user needs.</li><li><strong>Database:</strong> Data persistence is ensured by Firebase Firestore, a powerful and scalable NoSQL database. It stores user information, roles, and time and attendance history, while ensuring real-time synchronization with the application.</li></ul><p><strong>Note:</strong> The arrows in the diagram represent the communication flows between the different layers. The frontend communicates with services via HTTP requests (REST API) or Firebase SDKs, while services interact with the database to perform read and write operations. This organization ensures a modular architecture, where each layer can evolve independently to meet the future needs of the application.</p>",
+      "impactTitle": "Impact and Results",
+      "impact1": "Facial recognition accuracy",
+      "impact2": "Elimination of attendance fraud",
+      "impact3": "Reduction in check-in time",
+      "gallery1": "Registration interface with data validation",
+      "gallery2": "Secure authentication interface",
+      "gallery3": "Administrator home interface",
+      "gallery4": "QR Code scanner interface for quick check-in",
+      "gallery5": "GPS geolocation interface for presence validation",
+      "gallery6": "Face-ID facial recognition interface",
+      "gallery7": "Complete features in the admin menu bar",
+      "gallery8": "Optimized sidebar for web version",
+      "gallery9": "Administrator profile management interface",
+      "gallery10": "Dynamic QR-Code generation interface",
+      "gallery11": "Dashboard with real-time statistics",
+      "gallery12": "Role change and permissions interface",
+      "gallery13": "Personalized home interface for users",
+      "gallery14": "User sidebar with adapted features",
+      "gallery15": "General application settings",
+      "gallery16": "Complete user account management",
+      "gallery17": "Customizable user profile interface",
+      "gallery18": "Advanced settings interface",
+      "gallery19": "About page with application information"
+    },
+    "backPortfolio": "Back to portfolio",
+    "overview": {
+      "title": "Project Overview",
+      "text": "GymTrace is a fitness mobile application developed with Flutter and Firebase to allow users to effectively track their sports workouts. This personal solution offers detailed exercise tracking, progress visualization, and complete performance history by muscle group."
+    },
+    "technologies": {
+      "title": "Technologies Used"
+    },
+    "tech": {
+      "flutter": "Flutter",
+      "dart": "Dart",
+      "firebase": "Firebase",
+      "firestore": "Firestore",
+      "charts": "Charts & Analytics",
+      "datetime": "Date/Time Management"
+    },
+    "gallery": {
+      "title": "Project Album",
+      "scroll": "Scroll to see more images →"
+    },
+    "common": {
+      "back": "<i class=\"fas fa-arrow-left\"></i> Back to portfolio",
+      "overview": "Project Overview",
+      "technologies": "Technologies Used",
+      "responsibilities": "Main Responsibilities",
+      "achievements": "Achievements",
+      "architecture": "Technical Architecture",
+      "gallery": "Project Album",
+      "scrollIndicator": "Scroll to see more images →"
+    },
+    "ratib": {
+      "title": "Ratib - Aymane Tajani",
+      "projectTitle": "Ratib - Islamic Mobile Application",
+      "date": "June 2024",
+      "mobileApp": "Mobile Application",
+      "overview": "Ratib is a native mobile application (Android) designed for Moroccan mosques to accompany Muslims in their daily practice. It offers essential features such as prayer times, Quran reading tracking (Hizb), announcement scheduling, and much more, all within a modern interface that respects Islamic traditions.",
+      "feature1": "Automatic calculation of prayer times",
+      "feature2": "Interface with countdown between Adhan and Iqama",
+      "feature3": "Black screen display during prayer",
+      "feature4": "Automatic display of daily Hizb after Al-Fajr and Al-Maghreb prayers",
+      "feature5": "Islamic calendar (Hijri)",
+      "feature6": "Announcement programming by type",
+      "highlight1": "Prayer Times & Iqama",
+      "highlight1desc": "Complete system with countdown between Adhan and Iqama",
+      "highlight2": "Automatic Hizb",
+      "highlight2desc": "Automatic display of daily Hizb after Fajr and Maghreb",
+      "highlight3": "Announcement Management",
+      "highlight3desc": "System for special and funeral announcements (Janaza)",
+      "highlight4": "Admin Panel",
+      "highlight4desc": "Complete administration interface for the mosque",
+      "archIntro": "The Ratib application is built with a modular and performant architecture:",
+      "arch1": "<strong>Java Frontend:</strong> Native interface with adapted Material design",
+      "arch2": "<strong>Database:</strong> Firestore for data storage and synchronization",
+      "arch3": "<strong>External APIs:</strong> Prayer time calculation and Islamic date services",
+      "arch4": "<strong>Authentication:</strong> Firebase Authentication for user management",
+      "arch5": "<strong>Services:</strong> Announcement programming and display system",
+      "impact1": "Daily prayers",
+      "impact2": "Quran Hizb",
+      "impact3": "Announcement types",
+      "impact4": "Automated management",
+      "key1": "Secure Authentication",
+      "key1desc": "Login and registration system for mosque users",
+      "key2": "Prayer Management",
+      "key2desc": "Automatic schedules with Adhan-Iqama countdown and prayer screen",
+      "key3": "Daily Hizb",
+      "key3desc": "Automatic Hizb display after Fajr and Maghreb according to calendar",
+      "key4": "Announcement System",
+      "key4desc": "Complete management of general, special, and funeral announcements (Janaza)",
+      "key5": "Administrator Panel",
+      "key5desc": "Administration interface for complete mosque management",
+      "album1": "Login interface",
+      "album2": "Registration interface",
+      "album3": "Ratib home page",
+      "album4": "Administration panel",
+      "album5": "Interface to schedule religious course announcements (Darss)",
+      "album6": "Announcements interface",
+      "album7": "Funeral prayer announcement scheduling",
+      "album8": "Funeral prayer announcement (Janaza)",
+      "album9": "Special announcements interface",
+      "album10": "Special announcements display",
+      "album11": "Quran Hizb reading interface",
+      "album12": "Dark mode during prayer",
+      "album13": "Call to prayer interface (Iqama)"
+    },
+    "project": {
+      "type": {
+        "academic": "Academic Project"
+      }
+    },
+    "location": {
+      "emsi": "EMSI Casablanca"
+    },
+    "features": {
+      "developed": {
+        "title": "Developed Features"
+      },
+      "title": "Key Features",
+      "auth": {
+        "title": "Authentication",
+        "desc": "Secure login interface with user data validation and session management"
+      },
+      "homepage": "Home page with intuitive navigation",
+      "home": {
+        "title": "Home Page",
+        "desc": "Main dashboard with intuitive navigation to all application features"
+      },
+      "menu": {
+        "title": "Feature Menu",
+        "desc": "AppBar with quick access to different sections of the fitness application"
+      },
+      "profile": {
+        "title": "User Profile",
+        "desc": "Management of personal information and user settings"
+      },
+      "saveWorkout": "Workout saving system",
+      "save": {
+        "title": "Workout Save",
+        "desc": "Detailed recording of training sessions with exercises and performances"
+      },
+      "progress": {
+        "title": "Progress Tracking",
+        "desc": "Graphical visualization and history of sports performances by period"
+      },
+      "history": "Detailed exercise history by muscle",
+      "tracking": "Temporal tracking of monthly performances"
+    },
+    "achievements": {
+      "title": "Project Highlights",
+      "auth": {
+        "title": "Authentication",
+        "desc": "Secure and intuitive login system"
+      },
+      "save": {
+        "title": "Workout Save",
+        "desc": "Detailed session recording"
+      },
+      "progress": {
+        "title": "Progress Tracking",
+        "desc": "Graphical visualization of performances"
+      },
+      "history": {
+        "title": "Detailed History",
+        "desc": "Precise tracking by muscle group"
+      }
+    },
+    "architecture": {
+      "title": "Technical Architecture",
+      "intro": "GymTrace's architecture is based on Flutter with Firebase to ensure a smooth user experience and real-time data synchronization. The application uses a modular architecture with separation of presentation, business logic, and data layers. Firebase Firestore ensures persistence of training data, while Firebase authentication manages user account security. The responsive user interface adapts to different screen sizes for optimal mobile use."
+    },
+    "impact": {
+      "title": "Impact and Results",
+      "interfaces": {
+        "number": "8",
+        "label": "Developed interfaces"
+      },
+      "modules": {
+        "number": "4",
+        "label": "Main modules"
+      },
+      "operational": {
+        "number": "100%",
+        "label": "Operational functionality"
+      }
+    },
+    "keyFeatures": {
+      "title": "Key Features"
+    },
+    "back": {
+      "portfolio": "<i class=\"fas fa-arrow-left\"></i> Back to portfolio",
+      "to": {
+        "portfolio": "<i class=\"fas fa-arrow-left\"></i> Back to portfolio"
+      }
+    },
+    "egames": {
+      "title": "E-Games - Aymane Tajani",
+      "header": {
+        "title": "E-Games - Video Game E-commerce Platform",
+        "subtitle": "Django Academic Project"
+      },
+      "meta": {
+        "date": "<i class=\"fas fa-calendar\"></i> June 2023",
+        "location": "<i class=\"fas fa-graduation-cap\"></i> EMSI Casablanca",
+        "type": "<i class=\"fas fa-shopping-cart\"></i> E-commerce"
+      },
+      "overview": {
+        "title": "<i class=\"fas fa-info-circle\"></i> Project Overview",
+        "text": "The E-games application is a web application that allows users to purchase video games online through a modern e-commerce platform dedicated to video game sales developed with Django. This complete solution offers a smooth shopping experience with user management, product catalog, shopping cart, payment system, and advanced administration interface. The objective of this project is to create a user-friendly and intuitive platform offering various features to facilitate the search, selection, and purchase of video games."
+      },
+      "tech": {
+        "title": "<i class=\"fas fa-tools\"></i> Technologies Used"
+      },
+      "features": {
+        "title": "<i class=\"fas fa-tasks\"></i> Developed Features",
+        "auth": "Authentication system and user management",
+        "catalog": "Game catalog with advanced search and filters",
+        "cart": "Shopping cart with session management",
+        "orders": "Order system and purchase history",
+        "admin": "Administration interface for inventory management",
+        "reviews": "Review and rating system",
+        "payment": "Secure payment system integration",
+        "api": "REST API for future integrations"
+      },
+      "achievements": {
+        "title": "<i class=\"fas fa-trophy\"></i> Project Highlights",
+        "catalog": "Rich Catalog",
+        "catalog.text": "Complete game database",
+        "ecommerce": "Complete E-commerce",
+        "ecommerce.text": "End-to-end purchasing cycle",
+        "security": "Advanced Security",
+        "security.text": "Data and payment protection",
+        "responsive": "Responsive Design",
+        "responsive.text": "Compatible with all devices"
+      },
+      "architecture": {
+        "title": "<i class=\"fas fa-sitemap\"></i> Technical Architecture",
+        "text": "<p>The E-games application follows a Model-View-Template (MVT) architecture to ensure a clear separation of responsibilities and promote code maintainability and scalability. Here is a description of each component of the architecture:</p><div class=\"tech-detail\"><h4><i class=\"fas fa-database\"></i> Models</h4><p>Models represent the application's data layer. In the case of the E-games application, the \"Game\" model is used to store information about the games available for purchase, such as name, price, console, etc. The \"User\" model is used to manage registered user information, such as first and last name, email address, etc. The \"Purchase\" model stores the details of each purchase made, such as the user, the game purchased, the price, the date, etc.</p></div><div class=\"tech-detail\"><h4><i class=\"fas fa-cog\"></i> Views</h4><p>Views manage the application logic and define how data is presented to users. In the E-games application, different views are developed, such as the homepage view, the game list view, the game details view, the store availability view, the registration form view, and the purchase confirmation view. Each view retrieves the necessary data from the models, performs the appropriate processing, and returns the results to the templates.</p></div><div class=\"tech-detail\"><h4><i class=\"fas fa-palette\"></i> Templates</h4><p>Templates are responsible for displaying data and the visual presentation of the application. In the E-games application, corresponding templates are developed for each view. For example, there is a template for the home page, another for the game list, another for game details, and so on. Templates use tags and variables to display dynamic data from the views. They also help organize the structure and style of the user interface.</p></div><p><strong>The MVT architecture allows for a clear separation of concerns by isolating the application's business logic, presentation, and data. This approach promotes code reusability, facilitates testing, and improves the overall maintainability of the E-games project.</strong></p>"
+      },
+      "keyfeatures": {
+        "title": "<i class=\"fas fa-star\"></i> Key Features",
+        "home": "Home Page",
+        "home.text": "Main platform interface presenting available games",
+        "details": "Game Details",
+        "details.text": "Detailed pages displaying complete information and compatible consoles",
+        "signup": "User Registration",
+        "signup.text": "Registration form with validation and functionality testing",
+        "admin": "Administration",
+        "admin.text": "Administration interface allowing the addition of new games"
+      },
+      "metrics": {
+        "title": "<i class=\"fas fa-chart-line\"></i> Project Metrics",
+        "interfaces": "Developed interfaces",
+        "modules": "Main modules",
+        "workflow": "Functional workflow",
+        "architecture": "Django architecture"
+      },
+      "gallery": {
+        "title": "<i class=\"fas fa-images\"></i> Project Album",
+        "home": "E-Games platform home page",
+        "details": "Detailed game page with compatible console",
+        "registration": "User registration interface",
+        "registrationValidation": "Registration form validation",
+        "adminAddGame": "Administration interface - Adding games",
+        "gameAdded": "Game addition confirmation",
+        "gameAvailable": "Game available for purchase on the platform",
+        "scroll": "Scroll to see more images →"
+      }
+    },
+    "gymtrace": {
+      "title": "GymTrace - Aymane Tajani",
+      "heading": "GymTrace - Personal Fitness Activity Tracking Application",
+      "subheading": "Personal Project",
+      "date": "December 2024",
+      "projectType": "Personal Project",
+      "appType": "Mobile Application",
+      "overview": "GymTrace is a fitness mobile app developed with Flutter, designed to help users track their workouts and progress efficiently. The app allows users to save their workouts, track their progress over time, and view detailed exercise history. With an intuitive and modern interface, GymTrace offers a personalized experience to optimize athletic performance and keep users motivated on their fitness journey.",
+      "tech": {
+        "flutter": "Flutter",
+        "dart": "Dart",
+        "firebase": "Firebase",
+        "firestore": "Firestore",
+        "charts": "Charts & Analytics",
+        "datetime": "Date/Time Management"
+      },
+      "features": {
+        "auth": "User authentication system with login interface",
+        "homepage": "Home page with intuitive navigation",
+        "menu": "Feature menu accessible via AppBar",
+        "profile": "Customizable user profile interface",
+        "saveWorkout": "Workout saving system",
+        "progress": "Progress tracking with graphical visualizations",
+        "history": "Detailed exercise history by muscle",
+        "tracking": "Temporal tracking of monthly performances"
+      },
+      "keyFeatures": {
+        "auth": {
+          "title": "Authentication",
+          "desc": "Secure login interface with user data validation and session management"
+        },
+        "home": {
+          "title": "Home Page",
+          "desc": "Main dashboard with intuitive navigation to all application features"
+        },
+        "menu": {
+          "title": "Feature Menu",
+          "desc": "AppBar with quick access to different sections of the fitness application"
+        },
+        "profile": {
+          "title": "User Profile",
+          "desc": "Management of personal information and user settings"
+        },
+        "save": {
+          "title": "Workout Save",
+          "desc": "Detailed recording of training sessions with exercises and performances"
+        },
+        "progress": {
+          "title": "Progress Tracking",
+          "desc": "Graphical visualization and history of sports performances by period"
+        }
+      },
+      "achievements": {
+        "auth": {
+          "title": "Authentication",
+          "desc": "Secure and intuitive login system"
+        },
+        "save": {
+          "title": "Workout Save",
+          "desc": "Detailed session recording"
+        },
+        "progress": {
+          "title": "Progress Tracking",
+          "desc": "Graphical visualization of performances"
+        },
+        "history": {
+          "title": "Detailed History",
+          "desc": "Precise tracking by muscle group"
+        }
+      },
+      "architecture": {
+        "intro": "<p>GymTrace's architecture is based on Flutter with Firebase for a native mobile experience and cloud data management:</p><ul><li><strong>Flutter Frontend:</strong> User interface developed with Material Design for a native and fluid mobile experience.</li><li><strong>Firebase Backend:</strong> Uses the Firebase ecosystem for secure authentication and cloud service management.</li><li><strong>Firestore Database:</strong> Cloud Firestore for real-time storage and synchronization of workout data, user profiles, and history.</li><li><strong>Firebase Authentication:</strong> Secure login system with user session management via Firebase Auth.</li><li><strong>Flutter Navigation:</strong> Optimized navigation system with custom AppBar and routing between different pages.</li><li><strong>Visualization:</strong> Implementation of graphs and charts for progress tracking with Data synchronized from Firestore.</li></ul>"
+      },
+      "impact": {
+        "interfaces": {
+          "number": "8",
+          "label": "Developed interfaces"
+        },
+        "modules": {
+          "number": "4",
+          "label": "Main modules"
+        },
+        "operational": {
+          "number": "100%",
+          "label": "Operational functionality"
+        }
+      },
+      "gallery": {
+        "login": "GymTrace login interface",
+        "home": "Application home page",
+        "menu": "Main features menu",
+        "profile": "User profile interface",
+        "save": "Workout save interface",
+        "progress": "Progress tracking interface",
+        "chest": "Chest exercise history",
+        "chestAugust": "Detailed chest history - August"
+      }
+    },
+    "quicksoum": {
+      "title": "QuickSoum - Aymane Tajani",
+      "backBtn": "<i class=\"fas fa-arrow-left\"></i> Back to portfolio",
+      "projectTitle": "QuickSoum - Quick Quote Application",
+      "company": "Personal Project",
+      "meta": {
+        "duration": "In Development",
+        "location": "Personal Project",
+        "type": "Mobile Application"
+      },
+      "devNotice": {
+        "title": "Project in Development",
+        "message": "The QuickSoum application is under development. Come back soon for more details.",
+        "technologiesLabel": "Planned technologies:",
+        "technologies": "Flutter, Firebase, Dart",
+        "objectiveLabel": "Objective:",
+        "objective": "Quick quote generation application for businesses"
+      }
     }
   }
   
