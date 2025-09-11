@@ -15,12 +15,12 @@
     },
     "hero": {
       "title": "AYMANE TAJANI",
-      "engineerTitle": "Ingénieur d'états",
-      "tagline": "Développeur Full Stack | Développeur Mobile | Résolveur de Problèmes | Passionné de Technologie"
+      "engineerTitle": "Ingénieur d'état",
+      "tagline": "Junior Ingénieur Software | Consultant technique Junior | Développeur Full Stack | Développeur Mobile"
     },
     "profile": {
       "title": "Profile",
-      "content": "Ingénieur d’états en Informatique et Réseaux avec spécialisation en MIAGE à l'EMSI. Créatif, dynamique, et collaboratif, je travaille avec efficacité au sein d'équipe et suis capable de m'adapter à des contextes techniques variés."
+      "content": "Ingénieur d’état récemment diplômé spécialisé en MIAGE, orienté développement full‑stack et intégration (Sage X3). Rigoureux, autonome et habitué aux méthodes Agile, je conçois et développe des solutions robustes (web & mobile) et j'assure leur intégration avec des services externes."
     },
     "education": {
       "title": "FORMATIONS ACADEMIQUES",
@@ -106,8 +106,8 @@
     "personalProjects": {
       "title": "PROJETS PERSONNELS",
       "item1": {
-        "title": "QuickSoum - Application de Devis Rapide",
-        "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Projet Personnel - En développement",
+        "title": "QuickSoum - Application de Devis & Factures Rapide",
+        "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Projet Personnel - En développement",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
@@ -833,7 +833,7 @@
     "quicksoum": {
       "title": "QuickSoum - Aymane Tajani",
       "backBtn": "<i class=\"fas fa-arrow-left\"></i> Retour au portfolio",
-      "projectTitle": "QuickSoum - Application de Devis Rapide",
+      "projectTitle": "QuickSoum - Application de Devis & Factures Rapide",
       "company": "Projet Personnel",
       "meta": {
         "duration": "En développement",
@@ -844,9 +844,9 @@
         "title": "Projet en Développement",
         "message": "L'application QuickSoum est en cours de développement. Revenez prochainement pour plus de détails.",
         "technologiesLabel": "Technologies prévues :",
-        "technologies": "Flutter, Firebase, Dart",
+        "technologies": "Flutter, SQLite, Cloudinary",
         "objectiveLabel": "Objectif :",
-        "objective": "Application de génération de devis rapide pour entreprises"
+        "objective": "Application de génération de devis et factures rapide pour entreprises"
       }
     }
   }

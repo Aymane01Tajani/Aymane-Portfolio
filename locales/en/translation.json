@@ -16,11 +16,11 @@
     "hero": {
       "title": "AYMANE TAJANI",
       "engineerTitle": "State Engineer",
-      "tagline": "Full Stack Developer | Mobile Developer | Problem Solver | Tech Enthusiast"
+      "tagline": "Junior Software Engineer | Junior Technical Consultant | Full Stack Developer | Mobile Developer"
     },
     "profile": {
       "title": "Profile",
-      "content": "State engineer in Computer Engineering and Networks with a specialization in MIAGE at EMSI. Creative, dynamic, and collaborative, I work efficiently within teams and can adapt to various technical contexts."
+      "content": "Recently graduated state engineer specializing in MIAGE, focused on full-stack development and integration (Sage X3). Rigorous, autonomous and accustomed to Agile methods, I design and develop robust solutions (web & mobile) and ensure their integration with external services."
     },
     "education": {
       "title": "Education",
@@ -106,8 +106,8 @@
     "personalProjects": {
     "title": "PERSONAL PROJECTS",
     "item1": {
-    "title": "QuickSoum - Quick Quote App",
-    "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Personal Project - In Development",
+    "title": "QuickSoum - Quick Quote & Invoice App",
+    "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Personal Project - In Development",
     "techLabel": "Technologies:",
     "typeLabel": "Type:"
     },
@@ -833,7 +833,7 @@
     "quicksoum": {
       "title": "QuickSoum - Aymane Tajani",
       "backBtn": "<i class=\"fas fa-arrow-left\"></i> Back to portfolio",
-      "projectTitle": "QuickSoum - Quick Quote Application",
+      "projectTitle": "QuickSoum - Quick Quote and Invoice Application",
       "company": "Personal Project",
       "meta": {
         "duration": "In Development",
@@ -844,9 +844,9 @@
         "title": "Project in Development",
         "message": "The QuickSoum application is under development. Come back soon for more details.",
         "technologiesLabel": "Planned technologies:",
-        "technologies": "Flutter, Firebase, Dart",
+        "technologies": "Flutter, SQLite, Cloudinary",
         "objectiveLabel": "Objective:",
-        "objective": "Quick quote generation application for businesses"
+        "objective": "Quick quote and invoice generation application for businesses"
       }
     }
   }
