@@ -884,20 +884,39 @@
     }
 
     function updateContent() {
-      console.log('Updating content with language:', i18next.language);
+      console.log('=== UPDATING CONTENT ===');
+      console.log('Current language:', i18next.language);
+      console.log('Available resources:', Object.keys(i18next.store.data));
+      
+      const elementsUpdated = [];
+      const elementsWithErrors = [];
+      
       document.querySelectorAll('[data-i18n]').forEach(function(element) {
         var key = element.getAttribute('data-i18n');
         try {
           const translation = i18next.t(key);
+          console.log(`Translating key "${key}": "${translation}"`);
+          
           if (translation && translation !== key) {
             element.innerHTML = translation;
+            elementsUpdated.push({ key, translation });
           } else {
             console.warn('Missing translation for key:', key);
+            elementsWithErrors.push({ key, reason: 'Missing translation' });
           }
         } catch (error) {
           console.error('Error translating key:', key, error);
+          elementsWithErrors.push({ key, reason: error.message });
         }
       });
+      
+      console.log('Elements updated:', elementsUpdated.length);
+      console.log('Elements with errors:', elementsWithErrors.length);
+      if (elementsWithErrors.length > 0) {
+        console.log('Error details:', elementsWithErrors);
+      }
+      console.log('========================');
+      
       updateCVDownloadLink();
     }
 
@@ -916,36 +935,58 @@
       });
     }
 
-    // Initialize i18next with proper path handling
+    // Initialize i18next with comprehensive debugging
     const isGitHubPages = window.location.hostname.includes('github.io');
     const basePath = isGitHubPages ? '' : './';
+    const cacheBreaker = Date.now(); // Add timestamp to break cache
     
-    console.log('Initializing i18next...');
+    console.log('=== I18NEXT DEBUG INFO ===');
+    console.log('Current URL:', window.location.href);
+    console.log('Hostname:', window.location.hostname);
     console.log('Is GitHub Pages:', isGitHubPages);
     console.log('Base path:', basePath);
-    console.log('Translation path:', basePath + 'locales/{{lng}}/translation.json');
+    console.log('Cache breaker:', cacheBreaker);
+    console.log('Translation path:', basePath + 'locales/{{lng}}/translation.json?v=' + cacheBreaker);
+    console.log('========================');
     
     i18next
       .use(i18nextHttpBackend)
       .use(i18nextBrowserLanguageDetector)
       .init({
         fallbackLng: 'fr',
-        debug: !isGitHubPages,
+        debug: true, // Always enable debug to see what's happening
         lng: localStorage.getItem('i18nextLng') || 'fr',
         backend: {
-          loadPath: basePath + 'locales/{{lng}}/translation.json'
+          loadPath: basePath + 'locales/{{lng}}/translation.json?v=' + cacheBreaker,
+          crossDomain: true,
+          // Add cache busting for GitHub Pages
+          requestOptions: {
+            cache: 'no-cache',
+            headers: {
+              'Cache-Control': 'no-cache, no-store, must-revalidate',
+              'Pragma': 'no-cache',
+              'Expires': '0'
+            }
+          }
         },
         detection: {
           order: ['localStorage', 'navigator'],
           caches: ['localStorage']
         }
       }, function(err, t) {
+        console.log('=== I18NEXT INITIALIZATION RESULT ===');
         if (err) {
           console.error('Translation loading error:', err);
+          console.error('Error details:', err.message);
+          console.error('Error stack:', err.stack);
         } else {
           console.log('i18next initialized successfully');
           console.log('Current language:', i18next.language);
+          console.log('Available languages:', i18next.languages);
+          console.log('Resource store:', i18next.store.data);
         }
+        console.log('=====================================');
+        
         updateLanguageButtons(i18next.language || 'fr');
         updateContent();
         updateCVDownloadLink();
@@ -953,8 +994,22 @@
 
     // Add event listener for language changes
     i18next.on('languageChanged', function(lng) {
+      console.log('Language changed to:', lng);
       updateCVDownloadLink();
     });
+
+    // Add a manual test function accessible from browser console
+    window.testTranslations = function() {
+      console.log('=== TRANSLATION TEST ===');
+      const testKeys = ['title', 'hero.title', 'hero.engineerTitle', 'nav.profile'];
+      testKeys.forEach(key => {
+        const translation = i18next.t(key);
+        console.log(`${key}: "${translation}"`);
+      });
+      console.log('Current language:', i18next.language);
+      console.log('Store data:', i18next.store.data);
+      console.log('========================');
+    };
   </script>
 </body>
 </html>
