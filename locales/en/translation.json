@@ -107,7 +107,7 @@
     "title": "PERSONAL PROJECTS",
     "item1": {
     "title": "QuickSoum - Quick Quote & Invoice App",
-    "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Personal Project - In Development",
+    "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Personal Project - September 2025",
     "techLabel": "Technologies:",
     "typeLabel": "Type:"
     },
@@ -833,21 +833,72 @@
     "quicksoum": {
       "title": "QuickSoum - Aymane Tajani",
       "backBtn": "<i class=\"fas fa-arrow-left\"></i> Back to portfolio",
-      "projectTitle": "QuickSoum - Quick Quote and Invoice Application",
+      "projectTitle": "QuickSoum - Quick Quote Application",
       "company": "Personal Project",
       "meta": {
-        "duration": "In Development",
+        "date": "September 2025",
         "location": "Personal Project",
         "type": "Mobile Application"
       },
-      "devNotice": {
-        "title": "Project in Development",
-        "message": "The QuickSoum application is under development. Come back soon for more details.",
-        "technologiesLabel": "Planned technologies:",
-        "technologies": "Flutter, SQLite, Cloudinary",
-        "objectiveLabel": "Objective:",
-        "objective": "Quick quote and invoice generation application for businesses"
-      }
+      "overviewTitle": "Project Overview",
+      "overviewText": "QuickSoum is an innovative and comprehensive mobile application for managing quotes and invoices. Designed to digitize and automate the process, it allows you to create, manage, and track your quotes and invoices professionally, while maintaining an organized customer database. Thanks to its intuitive interface and advanced features, QuickSoum optimizes the productivity of sales teams and simplifies the daily management of businesses.",
+      "techTitle": "Technologies Used",
+      "techtools": "Technologies and tools used in the QuickSoum project",
+      "techDiagram": "Technical architecture of QuickSoum",
+      "featuresTitle": "Developed Features",
+      "feature1": "Quick creation of personalized quotes & invoices",
+      "feature2": "Client management",
+      "feature3": "Automatic VAT and discount calculations",
+      "feature4": "Professional PDF generation",
+      "feature5": "Quote & invoice status tracking",
+      "feature6": "Real-time synchronization",
+      "feature7": "Quote & invoice customization",
+      "feature8": "Intuitive and responsive interface",
+      "feature9": "Quote & invoice history and analytics",
+      "strengthsTitle": "Key Strengths",
+      "strength1": {
+        "title": "Mobile Solution",
+        "text": "Cross-platform application accessible everywhere"
+      },
+      "strength2": {
+        "title": "Speed",
+        "text": "Quote creation in less than 3 minutes"
+      },
+      "strength3": {
+        "title": "Direct Sharing",
+        "text": "Share quotes or invoices via WhatsApp or email directly with clients"
+      },
+      "archTitle": "Technical Architecture",
+      "archText1": "QuickSoum's architecture is based on a modern and scalable approach:",
+      "archItem1": "<strong>Flutter Frontend:</strong> Cross-platform user interface developed with Material Design for a native mobile experience.",
+      "archItem2": "<strong>Services Layer:</strong> Application core (business logic, providers, state).",
+      "archItem3": "<strong>Local DB:</strong> Offline persistence (SQLite/IndexedDB).",
+      "archItem4": "<strong>Cloudinary:</strong> External image storage (logo/signature).",
+      "archItem5": "<strong>SMTP:</strong> Sending quotes/invoices & password recovery via email.",
+      "archItem6": "<strong>PDF Generator:</strong> PDF generation for quotes and invoices.",
+      "impactTitle": "Impact and Results",
+      "stat1": "Quote creation time reduction",
+      "stat2": "Real-time synchronization",
+      "stat3": "Target user satisfaction",
+      "galleryTitle": "Project Album",
+      "gallery1": "Login interface",
+      "gallery2": "Registration interface",
+      "gallery3": "Application home page",
+      "gallery4": "Main navigation menu",
+      "gallery5": "Client addition interface",
+      "gallery6": "Quote creation - Client selection",
+      "gallery7": "Quote creation - Adding items",
+      "gallery8": "Quote creation - Details configuration",
+      "gallery9": "Quote creation - Finalization",
+      "gallery10": "Quote history and management",
+      "gallery11": "Invoice creation interface",
+      "gallery12": "Quote PDF generation",
+      "gallery13": "Invoice PDF generation",
+      "gallery14": "Quote status updates",
+      "gallery15": "Reports and statistics",
+      "gallery16": "User profile interface",
+      "gallery17": "Password reset",
+      "scrollHint": "Scroll to see more images →"
     }
   }
   

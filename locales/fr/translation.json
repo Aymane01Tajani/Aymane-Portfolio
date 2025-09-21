@@ -107,7 +107,7 @@
       "title": "PROJETS PERSONNELS",
       "item1": {
         "title": "QuickSoum - Application de Devis & Factures Rapide",
-        "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Projet Personnel - En développement",
+        "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Projet Personnel - Septembre 2025",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
@@ -833,20 +833,71 @@
     "quicksoum": {
       "title": "QuickSoum - Aymane Tajani",
       "backBtn": "<i class=\"fas fa-arrow-left\"></i> Retour au portfolio",
-      "projectTitle": "QuickSoum - Application de Devis & Factures Rapide",
+      "projectTitle": "QuickSoum - Application de Devis Rapide",
       "company": "Projet Personnel",
       "meta": {
-        "duration": "En développement",
+        "date": "Septembre 2025",
         "location": "Projet Personnel",
         "type": "Application Mobile"
       },
-      "devNotice": {
-        "title": "Projet en Développement",
-        "message": "L'application QuickSoum est en cours de développement. Revenez prochainement pour plus de détails.",
-        "technologiesLabel": "Technologies prévues :",
-        "technologies": "Flutter, SQLite, Cloudinary",
-        "objectiveLabel": "Objectif :",
-        "objective": "Application de génération de devis et factures rapide pour entreprises"
-      }
+      "overviewTitle": "Aperçu du Projet",
+      "overviewText": "QuickSoum est une application mobile innovante et complète pour la gestion de devis et factures. Conçue pour digitaliser et automatiser le processus, elle permet de créer, gérer et suivre vos devis et factures de manière professionnelle, tout en maintenant une base de données clients organisée. Grâce à son interface intuitive et à ses fonctionnalités avancées, QuickSoum optimise la productivité des équipes commerciales et simplifie la gestion quotidienne des entreprises.",
+      "techTitle": "Technologies Utilisées",
+      "techtools": "Technologies et outils utilisés dans le projet QuickSoum",
+      "techDiagram": "Architecture technique de QuickSoum",
+      "featuresTitle": "Fonctionnalités développées",
+      "feature1": "Création rapide de devis & factures personnalisés",
+      "feature2": "Gestion des clients",
+      "feature3": "Calculs automatiques TVA et remises",
+      "feature4": "Génération PDF professionnelle",
+      "feature5": "Suivi statut devis & factures",
+      "feature6": "Synchronisation en temps-réel",
+      "feature7": "Personnalisation des devis & factures",
+      "feature8": "Interface intuitive et responsive",
+      "feature9": "Historique et analytics des devis & factures",
+      "strengthsTitle": "Points forts du projet",
+      "strength1": {
+        "title": "Solution Mobile",
+        "text": "Application cross-platform accessible partout"
+      },
+      "strength2": {
+        "title": "Rapidité",
+        "text": "Création de devis en moins de 3 minutes"
+      },
+      "strength3": {
+        "title": "Partage Direct",
+        "text": "Partage du devis ou facture par WhatsApp ou email directement avec le client"
+      },
+      "archTitle": "Architecture technique",
+      "archText1": "L'architecture de QuickSoum repose sur une approche moderne et scalable :",
+      "archItem1": "<strong>Frontend Flutter :</strong> Interface utilisateur cross-platform développée avec Material Design pour une expérience native sur mobile.",
+      "archItem2": "<strong>Services Layer :</strong> cœur applicatif (business logic, providers, state).",
+      "archItem3": "<strong>Local DB :</strong> persistance offline (SQLite/IndexedDB).",
+      "archItem4": "<strong>Cloudinary :</strong> stockage externe des images (logo/signature).",
+      "archItem5": "<strong>SMTP :</strong> envoi des devis/factures & restauration du mot de passe par email.",
+      "archItem6": "<strong>PDF Generator :</strong> génération de PDF pour les devis et factures.",
+      "impactTitle": "Impact et résultats",
+      "stat1": "Réduction temps création devis",
+      "stat2": "Synchronisation temps réel",
+      "stat3": "Satisfaction utilisateur visée",
+      "galleryTitle": "Album du projet",
+      "gallery1": "Interface de connexion",
+      "gallery2": "Interface d'inscription",
+      "gallery3": "Page d'accueil de l'application",
+      "gallery4": "Menu de navigation principal",
+      "gallery5": "Interface d'ajout de client",
+      "gallery6": "Création de devis - Sélection du client",
+      "gallery7": "Création de devis - Ajout des articles",
+      "gallery8": "Création de devis - Configuration des détails",
+      "gallery9": "Création de devis - Finalisation",
+      "gallery10": "Historique et gestion des devis",
+      "gallery11": "Interface de création de facture",
+      "gallery12": "Génération PDF du devis",
+      "gallery13": "Génération PDF de la facture",
+      "gallery14": "Mise à jour des statuts de devis",
+      "gallery15": "Rapports et statistiques",
+      "gallery16": "Interface de profil utilisateur",
+      "gallery17": "Réinitialisation du mot de passe",
+      "scrollHint": "Faites défiler pour voir plus d'images →"
     }
   }

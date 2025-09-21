@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../assets/images/profile-placeholder.jpg" type="image/x-icon">
+    <link rel="icon" href="../../assets/images/name.jpg" type="image/x-icon">
     <title data-i18n="quicksoum.title">QuickSoum - Aymane Tajani</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,8 +16,7 @@
     <!-- Header with back button -->
     <header class="experience-detail-header">
         <div class="container">
-            <a href="../../index.html#personal-projects" class="back-btn" data-i18n="quicksoum.backBtn">
-                <i class="fas fa-arrow-left"></i> Retour au portfolio
+            <a href="../../index.html#personal-projects" class="back-btn"></i> <span data-i18n="quicksoum.backBtn">Retour au portfolio</span>
             </a>
         </div>
     </header>
@@ -34,7 +33,7 @@
                         <h1 data-i18n="quicksoum.projectTitle">QuickSoum - Application de Devis Rapide</h1>
                         <h2 data-i18n="quicksoum.company">Projet Personnel</h2>
                         <div class="experience-meta">
-                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="quicksoum.meta.duration">En développement</span></span>
+                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="quicksoum.meta.date">Septembre 2025</span></span>
                             <span class="location"><i class="fas fa-code"></i> <span data-i18n="quicksoum.meta.location">Projet Personnel</span></span>
                             <span class="type"><i class="fas fa-mobile-alt"></i> <span data-i18n="quicksoum.meta.type">Application Mobile</span></span>
                         </div>
@@ -42,18 +41,175 @@
                 </div>
 
                 <div class="experience-detail-content">
-                    <section class="development-notice">
-                        <div class="notice-container">
-                            <div class="notice-icon">
-                                <i class="fas fa-code fa-4x"></i>
+                    <section class="overview-section">
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="quicksoum.overviewTitle">Aperçu du projet</span></h3>
+                        <p data-i18n="quicksoum.overviewText">
+                            QuickSoum est une application mobile innovante et complète pour la gestion de devis et factures. Conçue pour digitaliser et automatiser le processus, elle permet de créer, gérer et suivre vos devis et factures de manière professionnelle, tout en maintenant une base de données clients organisée. Grâce à son interface intuitive et à ses fonctionnalités avancées, QuickSoum optimise la productivité des équipes commerciales et simplifie la gestion quotidienne des entreprises.
+                    </section>
+
+                    <section class="technologies-section">
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="quicksoum.techTitle">Technologies utilisées</span></h3>
+                        <div class="tools-diagram">
+                            <img src="../../assets/images/PFA/Personnel/QuickSoum/Liste_outils.png" alt="Liste des outils et technologies utilisés" class="tools-img">
+                            <p class="diagram-caption" data-i18n="quicksoum.techDiagram">Technologies et outils utilisés dans le projet QuickSoum</p>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Cloudinary</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </section>
+
+                    <section class="responsibilities-section">
+                        <h3><i class="fas fa-tasks"></i> <span data-i18n="quicksoum.featuresTitle">Fonctionnalités développées</span></h3>
+                        <ul class="responsibilities-list">
+                            <li data-i18n="quicksoum.feature1">Création rapide de devis & factures personnalisés</li>
+                            <li data-i18n="quicksoum.feature2">Gestion des clients</li>
+                            <li data-i18n="quicksoum.feature3">Calculs automatiques TVA et remises</li>
+                            <li data-i18n="quicksoum.feature4">Génération PDF professionnelle</li>
+                            <li data-i18n="quicksoum.feature5">Suivi statut devis & factures</li>
+                            <li data-i18n="quicksoum.feature6">Synchronisation en temps-réel</li>
+                            <li data-i18n="quicksoum.feature7">Personnalisation des devis & factures</li>
+                            <li data-i18n="quicksoum.feature8">Interface intuitive et responsive</li>
+                            <li data-i18n="quicksoum.feature9">Historique et analytics des devis & factures</li>
+                        </ul>
+                    </section>
+
+                    <section class="achievements-section">
+                        <h3><i class="fas fa-trophy"></i> <span data-i18n="quicksoum.strengthsTitle">Points forts du projet</span></h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4 data-i18n="quicksoum.strength1.title">Solution Mobile</h4>
+                                <p data-i18n="quicksoum.strength1.text">Application cross-platform accessible partout</p>
                             </div>
-                            <h3 data-i18n="quicksoum.devNotice.title">Projet en Développement</h3>
-                            <p class="notice-message" data-i18n="quicksoum.devNotice.message">
-                                L'application QuickSoum est en cours de développement. Revenez prochainement pour plus de détails.
-                            </p>
-                            <div class="notice-details">
-                                <p><strong data-i18n="quicksoum.devNotice.technologiesLabel">Technologies prévues :</strong> <span data-i18n="quicksoum.devNotice.technologies">Flutter, Firebase, Dart</span></p>
-                                <p><strong data-i18n="quicksoum.devNotice.objectiveLabel">Objectif :</strong> <span data-i18n="quicksoum.devNotice.objective">Application de génération de devis rapide pour entreprises</span></p>
+                            <div class="achievement-item">
+                                <i class="fas fa-bolt"></i>
+                                <h4 data-i18n="quicksoum.strength2.title">Rapidité</h4>
+                                <p data-i18n="quicksoum.strength2.text">Création de devis en moins de 3 minutes</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-share-alt"></i>
+                                <h4 data-i18n="quicksoum.strength3.title">Partage Direct</h4>
+                                <p data-i18n="quicksoum.strength3.text">Partage du devis ou facture par WhatsApp ou email directement avec le client</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="architecture-section">
+                        <h3><i class="fas fa-sitemap"></i> <span data-i18n="quicksoum.archTitle">Architecture technique</span></h3>
+                        <div class="tools-diagram">
+                            <img src="../../assets/images/PFA/Personnel/QuickSoum/Ar-tech.png" alt="Architechture technique" class="tools-img">
+                            <p class="diagram-caption" data-i18n="quicksoum.techDiagram">Architecture technique de QuickSoum</p>
+                        </div>
+                        <div class="architecture-note">
+                            <p data-i18n="quicksoum.archText1">L'architecture de QuickSoum repose sur une approche moderne et scalable :</p>
+                            <ul>
+                                <li data-i18n="quicksoum.archItem1"><strong>Frontend Flutter :</strong> Interface utilisateur cross-platform développée avec Material Design pour une expérience native sur mobile.</li>
+                                <li data-i18n="quicksoum.archItem2"><strong>Services Layer :</strong> cœur applicatif (business logic, providers, state).</li>
+                                <li data-i18n="quicksoum.archItem3"><strong>Local DB :</strong> persistance offline (SQLite/IndexedDB).</li>
+                                <li data-i18n="quicksoum.archItem4"><strong>Cloudinary :</strong> stockage externe des images (logo/signature).</li>
+                                <li data-i18n="quicksoum.archItem5"><strong>SMTP :</strong> envoi des devis/factures & restauration du mot de passe par email.</li>
+                                <li data-i18n="quicksoum.archItem6"><strong>PDF Generator :</strong> génération de PDF pour les devis et factures.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="impact-section">
+                        <h3><i class="fas fa-chart-line"></i> <span data-i18n="quicksoum.impactTitle">Impact et résultats</span></h3>
+                        <div class="impact-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">80%</span>
+                                <span class="stat-label" data-i18n="quicksoum.stat1">Réduction temps création devis</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label" data-i18n="quicksoum.stat2">Synchronisation temps réel</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label" data-i18n="quicksoum.stat3">Satisfaction utilisateur visée</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="gallery-section">
+                        <h3><i class="fas fa-images"></i> <span data-i18n="quicksoum.galleryTitle">Album du projet</span></h3>
+                        <div class="scrollable-album">
+                            <div class="album-container">
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Login.png" alt="Interface de connexion">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery1">Interface de connexion</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Register.png" alt="Interface d'inscription">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery2">Interface d'inscription</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Homepage.png" alt="Page d'accueil">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery3">Page d'accueil de l'application</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Drawer.png" alt="Menu de navigation">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery4">Menu de navigation principal</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Ajout_Client.png" alt="Ajout de client">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery5">Interface d'ajout de client</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/E1_Devis.png" alt="Création de devis - Étape 1">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery6">Création de devis - Sélection du client</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/E2_Devis.png" alt="Création de devis - Étape 2">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery7">Création de devis - Ajout des articles</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/E3_Devis.png" alt="Création de devis - Étape 3">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery8">Création de devis - Configuration des détails</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/E4_Devis.png" alt="Création de devis - Étape 4">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery9">Création de devis - Finalisation</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/H_Devis.png" alt="Historique des devis">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery10">Historique et gestion des devis</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Interface_fac.png" alt="Interface de facturation">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery11">Interface de création de facture</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/PDF_Devis.png" alt="PDF de devis">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery12">Génération PDF du devis</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/PDF_facture.png" alt="PDF de facture">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery13">Génération PDF de la facture</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Update_Statuts.png" alt="Mise à jour des statuts">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery14">Mise à jour des statuts de devis</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Rapp_Stats.png" alt="Rapports et statistiques">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery15">Rapports et statistiques</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/Profile.png" alt="Profil utilisateur">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery16">Interface de profil utilisateur</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Personnel/QuickSoum/MDPO.png" alt="Réinitialisation du mot de passe">
+                                    <div class="album-caption" data-i18n="quicksoum.gallery17">Réinitialisation du mot de passe</div>
+                                </div>
+                            </div>
+                            <div class="album-scroll-indicator">
+                                <span data-i18n="quicksoum.scrollHint">Faites défiler pour voir plus d'images →</span>
                             </div>
                         </div>
                     </section>
