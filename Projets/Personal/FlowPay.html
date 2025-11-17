@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/images/name.jpg" type="image/x-icon">
+    <title data-i18n="flowpay.title">FlowPay - Aymane Tajani</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Inclusion des bibliothèques i18next -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
+    <style>
+        .coming-soon-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            margin: 40px 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .coming-soon-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.05) 10px,
+                rgba(255, 255, 255, 0.05) 20px
+            );
+            animation: slide 20s linear infinite;
+        }
+        
+        @keyframes slide {
+            0% { transform: translateX(-50px) translateY(-50px); }
+            100% { transform: translateX(50px) translateY(50px); }
+        }
+        
+        .coming-soon-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .coming-soon-icon {
+            font-size: 4rem;
+            margin-bottom: 30px;
+            color: #ffd700;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .coming-soon-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .coming-soon-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .coming-soon-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+        
+        .development-progress {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            backdrop-filter: blur(10px);
+        }
+        
+        .progress-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        .progress-label {
+            font-weight: 500;
+            flex: 1;
+        }
+        
+        .progress-status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        
+        .status-completed {
+            background: #28a745;
+            color: white;
+        }
+        
+        .status-in-progress {
+            background: #ffc107;
+            color: #333;
+        }
+        
+        .status-planned {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .notification-signup {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .signup-form {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .email-input {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            min-width: 250px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .notify-btn {
+            padding: 12px 25px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .notify-btn:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .coming-soon-title {
+                font-size: 2.5rem;
+            }
+            
+            .coming-soon-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .email-input {
+                min-width: 200px;
+            }
+            
+            .progress-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with back button -->
+    <header class="experience-detail-header">
+        <div class="container">
+            <a href="../../index.html#personal-projects" class="back-btn">
+            <span data-i18n="flowpay.backBtn">Retour au portfolio</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="experience-detail-main">
+        <div class="container">
+            <div class="experience-detail-card">
+                <div class="experience-detail-header-content">
+                    <div class="company-logo">
+                        <img src="../../assets/images/PFA/Personnel/FlowPay/Logo_Flowpay.png" alt="FlowPay Logo">
+                    </div>
+                    <div class="experience-detail-info">
+                        <h1 data-i18n="flowpay.projectTitle">FlowPay - Application de Caisse</h1>
+                        <h2 data-i18n="flowpay.company">Projet Personnel</h2>
+                        <div class="experience-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="flowpay.meta.date">En cours de développement</span></span>
+                            <span class="location"><i class="fas fa-code"></i> <span data-i18n="flowpay.meta.location">Projet Personnel</span></span>
+                            <span class="type"><i class="fas fa-desktop"></i> <span data-i18n="flowpay.meta.type">Application Web & Mobile</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-detail-content">
+                    <!-- Coming Soon Section -->
+                    <section class="coming-soon-section">
+                        <div class="coming-soon-content">
+                            <i class="fas fa-rocket coming-soon-icon"></i>
+                            <h2 class="coming-soon-title" data-i18n="flowpay.comingSoon.title">Bientôt Disponible</h2>
+                            <p class="coming-soon-subtitle" data-i18n="flowpay.comingSoon.subtitle">Une révolution dans la gestion de caisse arrive...</p>
+                            <p class="coming-soon-description" data-i18n="flowpay.comingSoon.description">
+                                FlowPay est en cours de développement intensif. Cette application révolutionnaire transformera 
+                                la façon dont vous gérez votre caisse, vos paiements et vos transactions commerciales. 
+                                Restez connecté pour découvrir une solution complète qui simplifiera votre activité.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Project Overview -->
+                    <section class="overview-section">
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="flowpay.overviewTitle">Aperçu du projet</span></h3>
+                        <p data-i18n="flowpay.overviewText">
+                            FlowPay sera une application de caisse moderne et intuitive, développée avec les dernières technologies 
+                            (Java, Spring Boot, Angular, Firebase et Cloudinary). Elle offrira une gestion complète des transactions, 
+                            un système de paiement sécurisé, et des analyses en temps réel pour optimiser votre activité commerciale.
+                        </p>
+                    </section>
+
+                    <!-- Technologies Section -->
+                    <section class="technologies-section">
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="flowpay.techTitle">Technologies utilisées</span></h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Cloudinary</span>
+                            <span class="tech-tag">REST API</span>
+                        </div>
+                    </section>
+
+                    <!-- Development Progress -->
+                    <section class="development-progress">
+                        <h3><i class="fas fa-tasks"></i> <span data-i18n="flowpay.progressTitle">Avancement du développement</span></h3>
+                        <div class="progress-item">
+                            <span class="progress-label" data-i18n="flowpay.progress.analysis">Analyse des besoins et conception</span>
+                            <span class="progress-status status-completed" data-i18n="flowpay.status.completed">Terminé</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label" data-i18n="flowpay.progress.backend">Développement Backend (Spring Boot)</span>
+                            <span class="progress-status status-in-progress" data-i18n="flowpay.status.inProgress">En cours</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label" data-i18n="flowpay.progress.frontend">Interface utilisateur (Angular)</span>
+                            <span class="progress-status status-in-progress" data-i18n="flowpay.status.inProgress">En cours</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label" data-i18n="flowpay.progress.integration">Intégration paiements</span>
+                            <span class="progress-status status-planned" data-i18n="flowpay.status.planned">Planifié</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label" data-i18n="flowpay.progress.testing">Tests et optimisation</span>
+                            <span class="progress-status status-planned" data-i18n="flowpay.status.planned">Planifié</span>
+                        </div>
+                    </section>
+
+                    <!-- Features Preview -->
+                    <section class="achievements-section">
+                        <h3><i class="fas fa-star"></i> <span data-i18n="flowpay.featuresTitle">Fonctionnalités à venir</span></h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-item">
+                                <i class="fas fa-cash-register"></i>
+                                <h4 data-i18n="flowpay.feature1.title">Gestion de Caisse</h4>
+                                <p data-i18n="flowpay.feature1.text">Interface intuitive pour la gestion des transactions quotidiennes</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-credit-card"></i>
+                                <h4 data-i18n="flowpay.feature2.title">Paiements Sécurisés</h4>
+                                <p data-i18n="flowpay.feature2.text">Système de paiement multi-méthodes sécurisé</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-chart-line"></i>
+                                <h4 data-i18n="flowpay.feature3.title">Analytics Temps Réel</h4>
+                                <p data-i18n="flowpay.feature3.text">Analyses et rapports détaillés de votre activité</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-users"></i>
+                                <h4 data-i18n="flowpay.feature4.title">Gestion Client</h4>
+                                <p data-i18n="flowpay.feature4.text">Base de données clients intégrée avec historique</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4 data-i18n="flowpay.feature5.title">Multi-plateforme</h4>
+                                <p data-i18n="flowpay.feature5.text">Accessible sur web, mobile et tablette</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-cloud"></i>
+                                <h4 data-i18n="flowpay.feature6.title">Synchronisation Cloud</h4>
+                                <p data-i18n="flowpay.feature6.text">Sauvegarde automatique et accès partout</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Notification Signup -->
+                    <section class="notification-signup">
+                        <h3><i class="fas fa-bell"></i> <span data-i18n="flowpay.notification.title">Restez informé du lancement</span></h3>
+                        <p data-i18n="flowpay.notification.description">
+                            Soyez le premier à découvrir FlowPay lors de son lancement officiel. 
+                            Inscrivez-vous pour recevoir les dernières actualités du projet.
+                        </p>
+                        <div class="signup-form">
+                            <input type="email" class="email-input" placeholder="Votre adresse email" data-i18n-placeholder="flowpay.notification.emailPlaceholder">
+                            <button class="notify-btn" data-i18n="flowpay.notification.button">M'informer du lancement</button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.text" style="color: white;">&copy; 2025 Aymane Tajani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                var key = element.getAttribute('data-i18n');
+                const translation = i18next.t(key);
+                if (translation && translation !== key) {
+                    element.innerHTML = translation;
+                }
+            });
+            
+            // Update placeholder
+            const emailInput = document.querySelector('.email-input');
+            if (emailInput) {
+                const placeholderKey = emailInput.getAttribute('data-i18n-placeholder');
+                if (placeholderKey) {
+                    emailInput.placeholder = i18next.t(placeholderKey);
+                }
+            }
+        }
+
+        function updateLanguageButtons(currentLang) {
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                button.classList.toggle('active', lang === currentLang);
+            });
+        }
+
+        function changeLanguage(lng) {
+            localStorage.setItem('i18nextLng', lng);
+            i18next.changeLanguage(lng, function() {
+                updateContent();
+                updateLanguageButtons(lng);
+            });
+        }
+
+        // Initialize i18next with proper path handling
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = isGitHubPages ? '../../' : '../../';
+
+        console.log('Initializing i18next for FlowPay page...');
+        
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'fr',
+                debug: !isGitHubPages,
+                lng: localStorage.getItem('i18nextLng') || 'fr',
+                backend: {
+                    loadPath: basePath + 'locales/{{lng}}/translation.json'
+                },
+                detection: {
+                    order: ['localStorage', 'navigator'],
+                    caches: ['localStorage']
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('Translation loading error:', err);
+                } else {
+                    console.log('i18next initialized successfully');
+                }
+                updateContent();
+            });
+
+        // Notification signup functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const notifyBtn = document.querySelector('.notify-btn');
+            const emailInput = document.querySelector('.email-input');
+            
+            if (notifyBtn && emailInput) {
+                notifyBtn.addEventListener('click', function() {
+                    const email = emailInput.value.trim();
+                    if (email && email.includes('@')) {
+                        alert('Merci ! Vous serez informé du lancement de FlowPay.');
+                        emailInput.value = '';
+                    } else {
+                        alert('Veuillez entrer une adresse email valide.');
+                    }
+                });
+                
+                emailInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        notifyBtn.click();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

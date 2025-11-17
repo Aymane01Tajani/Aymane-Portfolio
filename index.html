@@ -325,6 +325,25 @@
             <div class="card carousel-slide">
               <div class="project-content">
                 <div class="project-text">
+                  <h3 data-i18n="personalProjects.item4.title">
+                    FlowPay - Application de caisse
+                  </h3>
+                  <p data-i18n="personalProjects.item4.details">
+                    <strong data-i18n="personalProjects.item4.techLabel">Technologies:</strong> Java, Spring Boot, Angular, Firebase et Cloudinary<br />
+                    <strong data-i18n="personalProjects.item4.typeLabel">Type:</strong> Projet Personnel - En cours de développement
+                  </p>
+                </div>
+                <div class="project-image-card">
+                  <img src="assets/images/PFA/Personnel/FlowPay/Logo_Flowpay.png" alt="FlowPay - Application de caisse" onError="this.src='assets/images/PFA/Personnel/FlowPay/Logo_Flowpay.png'">
+                </div>
+                <a href="Projets/Personal/FlowPay.html" class="more-details-btn">
+                  <span data-i18n="moreDetailsBtn">Plus de détails</span>
+                </a>
+              </div>
+            </div>
+            <div class="card carousel-slide">
+              <div class="project-content">
+                <div class="project-text">
                   <h3 data-i18n="personalProjects.item1.title">
                     QuickSoum - Application de Devis Rapide
                   </h3>
@@ -356,6 +375,25 @@
                   <img src="assets/images/PFA/Personnel/GymTrace/logo-gymtrace.jpg" alt="GymTrace Application" onError="this.src='assets/images/PFA/PFA-4.jpg'">
                 </div>
                 <a href="Projets/Personal/GymTrace.html" class="more-details-btn">
+                  <span data-i18n="moreDetailsBtn">Plus de détails</span>
+                </a>
+              </div>
+            </div>
+            <div class="card carousel-slide">
+              <div class="project-content">
+                <div class="project-text">
+                  <h3 data-i18n="personalProjects.item3.title">
+                    APPLICATION WEB E-COMMERCE
+                  </h3>
+                  <p data-i18n="personalProjects.item3.details">
+                    <strong data-i18n="personalProjects.item3.techLabel">Technologies:</strong> C#, ASP.NET<br />
+                    <strong data-i18n="personalProjects.item3.typeLabel">Type:</strong> Projet Personnel - Novembre 2024
+                  </p>
+                </div>
+                <div class="project-image-card">
+                  <img src="assets/images/PFA/Personnel/E-com/Logo-demo.png" alt="APPLICATION WEB E-COMMERCE" onError="this.src='assets/images/PFA/Personnel/E-com/Logo-demo.png'">
+                </div>
+                <a href="Projets/Personal/Ecom.html" class="more-details-btn">
                   <span data-i18n="moreDetailsBtn">Plus de détails</span>
                 </a>
               </div>
@@ -853,14 +891,48 @@
           <img src="assets/images/QR_Portfolio.png" alt="Portfolio QR Code" class="qr-code-image">
         </div>
         <div class="cv-download">
-          <a href="assets/docs/TAJANI-AYMANE-CV.pdf" class="download-btn" download="TAJANI-AYMANE-CV.pdf">
+          <button class="download-btn" onclick="openCVModal()">
             <i class="fas fa-download"></i>
             <span data-i18n="contact.downloadCV">Télécharger mon CV</span>
-          </a>
+          </button>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- CV Selection Modal -->
+  <div id="cvModal" class="cv-modal">
+    <div class="cv-modal-content">
+      <div class="cv-modal-header">
+        <h3 data-i18n="cvModal.title">Choisir le type de CV</h3>
+        <span class="cv-modal-close">&times;</span>
+      </div>
+      <div class="cv-modal-body">
+        <div class="cv-options">
+          <button class="cv-option-btn" onclick="downloadCV('generique')">
+            <i class="fas fa-file-alt"></i>
+            <span data-i18n="cvModal.generic">CV Générique</span>
+          </button>
+          <button class="cv-option-btn" onclick="downloadCV('java')">
+            <i class="fab fa-java"></i>
+            <span data-i18n="cvModal.java">CV JAVA</span>
+          </button>
+          <button class="cv-option-btn" onclick="downloadCV('dotnet')">
+            <i class="fab fa-microsoft"></i>
+            <span data-i18n="cvModal.dotnet">CV .NET</span>
+          </button>
+          <button class="cv-option-btn" onclick="downloadCV('mobile')">
+            <i class="fas fa-mobile-alt"></i>
+            <span data-i18n="cvModal.mobile">CV Mobile</span>
+          </button>
+          <button class="cv-option-btn" onclick="downloadCV('ia')">
+            <i class="fas fa-brain"></i>
+            <span data-i18n="cvModal.ai">CV IA</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">

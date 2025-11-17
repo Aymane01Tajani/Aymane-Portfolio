@@ -184,19 +184,96 @@ function updateContent() {
 }
 
 function updateCVDownloadLink() {
-  const downloadBtn = document.querySelector('.cv-download .download-btn');
-  if (downloadBtn) {
-    const currentLang = i18next.language || 'fr';
-    const fileName = `TAJANI-AYMANE-CV${currentLang === 'en' ? '-ANG' : ''}.pdf`;
-    downloadBtn.setAttribute('href', `assets/docs/${fileName}`);
-    downloadBtn.setAttribute('download', fileName);
+  // This function is no longer needed for direct download
+  // Modal functionality will handle CV downloads
+}
+
+function downloadCV(cvType) {
+  const currentLang = i18next.language || 'fr';
+  const languageFolder = currentLang === 'en' ? 'ANG' : 'FR';
+  let fileName = '';
+  
+  switch(cvType) {
+    case 'generique':
+      fileName = 'TAJANI-AYMANE-CV.pdf';
+      break;
+    case 'java':
+      fileName = 'TAJANI-AYMANE-CV-JAVA.pdf';
+      break;
+    case 'dotnet':
+      fileName = 'TAJANI-AYMANE-CV-DOTNET.pdf';
+      break;
+    case 'mobile':
+      fileName = 'TAJANI-AYMANE-CV-MOBILE.pdf';
+      break;
+    case 'ia':
+      fileName = 'TAJANI-AYMANE-CV-IA.pdf';
+      break;
+    default:
+      fileName = 'TAJANI-AYMANE-CV.pdf';
+  }
+  
+  // Create a temporary download link
+  const link = document.createElement('a');
+  link.href = `assets/docs/${languageFolder}/${fileName}`;
+  link.download = fileName;
+  link.style.display = 'none';
+  
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  
+  // Close the modal after download
+  closeCVModal();
+}
+
+// CV Modal Functions
+function openCVModal() {
+  const modal = document.getElementById('cvModal');
+  if (modal) {
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    
+    // Add escape key listener
+    document.addEventListener('keydown', handleEscapeKey);
   }
 }
 
-function downloadCV(event) {
-  // Remove this function as we're no longer customizing the download
-  return true;
+function closeCVModal() {
+  const modal = document.getElementById('cvModal');
+  if (modal) {
+    modal.classList.remove('show');
+    document.body.style.overflow = ''; // Restore scrolling
+    
+    // Remove escape key listener
+    document.removeEventListener('keydown', handleEscapeKey);
+  }
 }
+
+function handleEscapeKey(event) {
+  if (event.key === 'Escape') {
+    closeCVModal();
+  }
+}
+
+// Initialize modal event listeners
+document.addEventListener('DOMContentLoaded', () => {
+  // Modal close button event
+  const closeBtn = document.querySelector('.cv-modal-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeCVModal);
+  }
+  
+  // Click outside modal to close
+  const modal = document.getElementById('cvModal');
+  if (modal) {
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeCVModal();
+      }
+    });
+  }
+});
 
 // Carousel functionality
 function initializeCarousels() {

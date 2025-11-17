@@ -2847,3 +2847,234 @@ body, html {
         gap: 15px;
     }
 }
+
+/* CV Modal Styles */
+.cv-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.cv-modal.show {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translate(-50%, -50%) scale(0.7);
+        opacity: 0;
+    }
+    to { 
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.cv-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease-out;
+}
+
+.cv-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px 15px;
+    border-bottom: 2px solid #e5e7eb;
+    position: relative;
+}
+
+.cv-modal-header::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 30px;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 1px;
+}
+
+.cv-modal-header h3 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.cv-modal-close {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.cv-modal-close:hover {
+    color: #dc2626;
+    background: rgba(220, 38, 38, 0.1);
+    transform: scale(1.1);
+}
+
+.cv-modal-body {
+    padding: 30px;
+}
+
+.cv-options {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.cv-option-btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 25px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 2px solid #e5e7eb;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cv-option-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.cv-option-btn:hover::before {
+    left: 100%;
+}
+
+.cv-option-btn:hover {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    border-color: #6366f1;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+}
+
+.cv-option-btn i {
+    font-size: 1.3rem;
+    color: #6366f1;
+    transition: color 0.3s ease;
+    min-width: 20px;
+}
+
+.cv-option-btn:hover i {
+    color: #ffffff;
+}
+
+.cv-option-btn span {
+    transition: color 0.3s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cv-modal-content {
+        width: 95%;
+        max-width: none;
+        margin: 20px;
+        max-height: 85vh;
+    }
+    
+    .cv-modal-header {
+        padding: 20px 25px 15px;
+    }
+    
+    .cv-modal-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .cv-modal-body {
+        padding: 25px;
+    }
+    
+    .cv-option-btn {
+        padding: 15px 20px;
+        font-size: 0.95rem;
+        gap: 12px;
+    }
+    
+    .cv-option-btn i {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-modal-content {
+        width: 98%;
+        margin: 10px;
+    }
+    
+    .cv-modal-header {
+        padding: 18px 20px 12px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .cv-modal-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .cv-modal-body {
+        padding: 20px;
+    }
+    
+    .cv-options {
+        gap: 12px;
+    }
+    
+    .cv-option-btn {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+}

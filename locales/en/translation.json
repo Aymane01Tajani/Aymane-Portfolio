@@ -116,7 +116,19 @@
     "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Personal Project - December 2024",
     "techLabel": "Technologies:",
     "typeLabel": "Type:"
-    }
+    },
+    "item3": {
+        "title": "E-COMMERCE WEB APPLICATION",
+        "details": "<strong>Technologies:</strong> C#, ASP.NET, MySQL<br /><strong>Type:</strong>  Personal Project - November 2024",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
+      },
+    "item4": {
+        "title": "FlowPay - Cash Register Application",
+        "details": "<strong>Technologies:</strong> Java, Spring Boot, Angular, Firebase and Cloudinary<br /><strong>Type:</strong> Personal Project - In development",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
+      }
     },
     "skills": {
       "title": "SKILLS",
@@ -247,6 +259,14 @@
       "linkedinLabel": "LinkedIn:",
       "qrTitle": "Scan My Portfolio QR Code",
       "downloadCV": "Download my CV"
+    },
+    "cvModal": {
+      "title": "Choose CV Type",
+      "generic": "CV Generic",
+      "java": "CV JAVA",
+      "dotnet": "CV .NET",
+      "mobile": "CV Mobile",
+      "ai": "CV AI"
     },
     "footer": {
       "text": "&copy; 2025 Aymane Tajani. All rights reserved."
@@ -899,6 +919,130 @@
       "gallery16": "User profile interface",
       "gallery17": "Password reset",
       "scrollHint": "Scroll to see more images →"
+    },
+    "onlineshop": {
+      "title": "Online Shop - Aymane Tajani",
+      "backBtn": "<i class=\"fas fa-arrow-left\"></i> Back to portfolio",
+      "projectTitle": "Online Shop - E-COMMERCE WEB APPLICATION",
+      "company": "Personal Project",
+      "meta": {
+        "date": "November 2024",
+        "location": "Personal Project",
+        "type": "WEB Application"
+      },
+      "overviewTitle": "Project Overview",
+      "overviewText": "OnlineShop is a modern and intuitive e-commerce web platform developed in C# with ASP.NET MVC, built on an Entity Framework Core Code First architecture. Designed to provide a smooth user experience, the site integrates a complete product catalog, detailed pages allowing direct ordering via WhatsApp, as well as a secure administrator space offering complete article management through CRUD operations. Combining performance, ease of use and task automation, OnlineShop constitutes an effective solution for digitalizing sales and optimizing daily business management.",
+      "techTitle": "Technologies Used",
+      "techDiagram": "Technologies and tools used in the OnlineShop project",
+      "featuresTitle": "Developed Features",
+      "feature1": "Complete product catalog with images and descriptions",
+      "feature2": "Advanced search and filtering system",
+      "feature3": "Interactive product detail pages",
+      "feature4": "Direct WhatsApp ordering integration",
+      "feature5": "Secure administrator space",
+      "feature6": "Complete product management (CRUD)",
+      "feature7": "Category and subcategory management",
+      "feature8": "Responsive and intuitive interface",
+      "feature9": "Real-time notification system",
+      "strengthsTitle": "Project Strengths",
+      "strength1": {
+        "title": "Complete E-commerce",
+        "text": "Complete e-commerce platform with product catalog"
+      },
+      "strength2": {
+        "title": "WhatsApp Ordering",
+        "text": "Direct WhatsApp ordering integration"
+      },
+      "strength3": {
+        "title": "Admin Dashboard",
+        "text": "Complete administrator interface for product management"
+      },
+      "archTitle": "Technical Architecture",
+      "archText1": "OnlineShop's architecture is based on a modern and scalable approach:",
+      "archItem1": "<strong>ASP.NET MVC Frontend:</strong> Responsive user interface developed with Bootstrap and Razor Views for an optimal experience.",
+      "archItem2": "<strong>C# Backend:</strong> Robust business logic with MVC controllers and services.",
+      "archItem3": "<strong>Entity Framework Core:</strong> Code First ORM for database management.",
+      "archItem4": "<strong>SQL Server:</strong> Relational database for data persistence.",
+      "archItem5": "<strong>WhatsApp API:</strong> Integration for direct WhatsApp ordering.",
+      "archItem6": "<strong>Admin Dashboard:</strong> Administration interface for complete product management.",
+      "impactTitle": "Impact and Results",
+      "stat1": "Responsive interface",
+      "stat2": "Order time reduction",
+      "stat3": "Target user satisfaction",
+      "galleryTitle": "Project Album",
+      "gallery1": "E-commerce website homepage",
+      "gallery2": "Alternative homepage view",
+      "gallery3": "Complete product catalog",
+      "gallery4": "Detailed product description page",
+      "gallery5": "Product category management",
+      "gallery6": "Administrator authentication interface",
+      "gallery7": "Administrator dashboard",
+      "gallery8": "New product addition interface",
+      "gallery9": "Product modification interface",
+      "scrollHint": "Scroll to see more images →"
+    },
+    "flowpay": {
+      "title": "FlowPay - Aymane Tajani",
+      "backBtn": "<i class=\"fas fa-arrow-left\"></i> Back to portfolio",
+      "projectTitle": "FlowPay - Cash Register Application",
+      "company": "Personal Project",
+      "meta": {
+        "date": "In Development",
+        "location": "Personal Project",
+        "type": "Web & Mobile Application"
+      },
+      "comingSoon": {
+        "title": "Coming Soon",
+        "subtitle": "A revolution in cash management is coming...",
+        "description": "FlowPay is under intensive development. This revolutionary application will transform the way you manage your cash register, payments, and business transactions. Stay connected to discover a complete solution that will simplify your business."
+      },
+      "overviewTitle": "Project Overview",
+      "overviewText": "FlowPay will be a modern and intuitive cash register application, developed with the latest technologies (Java, Spring Boot, Angular, Firebase and Cloudinary). It will offer complete transaction management, a secure payment system, and real-time analytics to optimize your business activity.",
+      "techTitle": "Technologies Used",
+      "progressTitle": "Development Progress",
+      "progress": {
+        "analysis": "Requirements analysis and design",
+        "backend": "Backend Development (Spring Boot)",
+        "frontend": "User Interface (Angular)",
+        "integration": "Payment Integration",
+        "testing": "Testing and optimization"
+      },
+      "status": {
+        "completed": "Completed",
+        "inProgress": "In Progress",
+        "planned": "Planned"
+      },
+      "featuresTitle": "Upcoming Features",
+      "feature1": {
+        "title": "Cash Management",
+        "text": "Intuitive interface for daily transaction management"
+      },
+      "feature2": {
+        "title": "Secure Payments",
+        "text": "Multi-method secure payment system"
+      },
+      "feature3": {
+        "title": "Real-Time Analytics",
+        "text": "Detailed analysis and reports of your activity"
+      },
+      "feature4": {
+        "title": "Client Management",
+        "text": "Integrated client database with history"
+      },
+      "feature5": {
+        "title": "Multi-platform",
+        "text": "Accessible on web, mobile and tablet"
+      },
+      "feature6": {
+        "title": "Cloud Synchronization",
+        "text": "Automatic backup and access everywhere"
+      },
+      "notification": {
+        "title": "Stay informed about the launch",
+        "description": "Be the first to discover FlowPay when it officially launches. Sign up to receive the latest project updates.",
+        "emailPlaceholder": "Your email address",
+        "button": "Notify me of launch"
+      }
     }
   }
   

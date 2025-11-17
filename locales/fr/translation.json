@@ -116,6 +116,18 @@
         "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong>  Projet Personnel - Décembre 2024",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
+      },
+      "item3": {
+        "title": " APPLICATION WEB E-COMMERCE",
+        "details": "<strong>Technologies:</strong> C#, ASP.NET, MySQL<br /><strong>Type:</strong>  Projet Personnel - Novembre 2024",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
+      },
+      "item4": {
+        "title": "FlowPay - Application de caisse",
+        "details": "<strong>Technologies:</strong> Java, Spring Boot, Angular, Firebase et Cloudinary<br /><strong>Type:</strong> Projet Personnel - En cours de développement",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
       }
     },
     "skills": {
@@ -247,6 +259,14 @@
       "linkedinLabel": "LinkedIn:",
       "qrTitle": "Scan Mon Portfolio QR Code",
       "downloadCV": "Télécharger mon CV"
+    },
+    "cvModal": {
+      "title": "Choisir le type de CV",
+      "generic": "CV Générique",
+      "java": "CV JAVA",
+      "dotnet": "CV .NET",
+      "mobile": "CV Mobile",
+      "ai": "CV IA"
     },
     "footer": {
       "text": "&copy; 2025 Aymane Tajani. All rights reserved."
@@ -899,5 +919,129 @@
       "gallery16": "Interface de profil utilisateur",
       "gallery17": "Réinitialisation du mot de passe",
       "scrollHint": "Faites défiler pour voir plus d'images →"
+    },
+    "onlineshop": {
+      "title": "Online Shop - Aymane Tajani",
+      "backBtn": "<i class=\"fas fa-arrow-left\"></i> Retour au portfolio",
+      "projectTitle": "Online Shop - APPLICATION WEB E-COMMERCE",
+      "company": "Projet Personnel",
+      "meta": {
+        "date": "Novembre 2024",
+        "location": "Projet Personnel",
+        "type": "Application WEB"
+      },
+      "overviewTitle": "Aperçu du projet",
+      "overviewText": "OnlineShop est une plateforme web e-commerce moderne et intuitive développée en C# avec ASP.NET MVC, reposant sur une architecture Entity Framework Core en Code First. Conçu pour offrir une expérience fluide aux utilisateurs, le site intègre un catalogue complet de produits, une page de détails permettant de passer commande directement via WhatsApp, ainsi qu'un espace administrateur sécurisé offrant la gestion complète des articles grâce aux opérations CRUD. Alliant performance, simplicité d'utilisation et automatisation des tâches, OnlineShop constitue une solution efficace pour digitaliser les ventes et optimiser la gestion commerciale au quotidien.",
+      "techTitle": "Technologies utilisées",
+      "techDiagram": "Technologies et outils utilisés dans le projet OnlineShop",
+      "featuresTitle": "Fonctionnalités développées",
+      "feature1": "Catalogue complet de produits avec images et descriptions",
+      "feature2": "Système de recherche et filtrage avancé",
+      "feature3": "Pages de détails produits interactives",
+      "feature4": "Commande directe via WhatsApp intégrée",
+      "feature5": "Espace administrateur sécurisé",
+      "feature6": "Gestion complète des produits (CRUD)",
+      "feature7": "Gestion des catégories et sous-catégories",
+      "feature8": "Interface responsive et intuitive",
+      "feature9": "Système de notifications en temps réel",
+      "strengthsTitle": "Points forts du projet",
+      "strength1": {
+        "title": "E-commerce Complet",
+        "text": "Plateforme e-commerce complète avec catalogue produits"
+      },
+      "strength2": {
+        "title": "Commande WhatsApp",
+        "text": "Commande directe via WhatsApp intégrée"
+      },
+      "strength3": {
+        "title": "Admin Dashboard",
+        "text": "Interface administrateur complète pour la gestion des produits"
+      },
+      "archTitle": "Architecture technique",
+      "archText1": "L'architecture de OnlineShop repose sur une approche moderne et scalable :",
+      "archItem1": "<strong>Frontend ASP.NET MVC :</strong> Interface utilisateur responsive développée avec Bootstrap et Razor Views pour une expérience optimale.",
+      "archItem2": "<strong>Backend C# :</strong> Logique métier robuste avec contrôleurs MVC et services.",
+      "archItem3": "<strong>Entity Framework Core :</strong> ORM Code First pour la gestion de base de données.",
+      "archItem4": "<strong>SQL Server :</strong> Base de données relationnelle pour la persistance des données.",
+      "archItem5": "<strong>WhatsApp API :</strong> Intégration pour les commandes directes via WhatsApp.",
+      "archItem6": "<strong>Admin Dashboard :</strong> Interface d'administration pour la gestion complète des produits.",
+      "impactTitle": "Impact et résultats",
+      "stat1": "Interface responsive",
+      "stat2": "Réduction temps de commande",
+      "stat3": "Satisfaction utilisateur visée",
+      "galleryTitle": "Album du projet",
+      "gallery1": "Page d'accueil du site e-commerce",
+      "gallery2": "Vue alternative de la page d'accueil",
+      "gallery3": "Catalogue complet de produits",
+      "gallery4": "Page de description détaillée d'un produit",
+      "gallery5": "Gestion des catégories de produits",
+      "gallery6": "Interface d'authentification administrateur",
+      "gallery7": "Tableau de bord administrateur",
+      "gallery8": "Interface d'ajout de nouveau produit",
+      "gallery9": "Interface de modification de produit",
+      "scrollHint": "Faites défiler pour voir plus d'images →"
+    },
+    "flowpay": {
+      "title": "FlowPay - Aymane Tajani",
+      "backBtn": "<i class=\"fas fa-arrow-left\"></i> Retour au portfolio",
+      "projectTitle": "FlowPay - Application de Caisse",
+      "company": "Projet Personnel",
+      "meta": {
+        "date": "En cours de développement",
+        "location": "Projet Personnel",
+        "type": "Application Web & Mobile"
+      },
+      "comingSoon": {
+        "title": "Bientôt Disponible",
+        "subtitle": "Une révolution dans la gestion de caisse arrive...",
+        "description": "FlowPay est en cours de développement intensif. Cette application révolutionnaire transformera la façon dont vous gérez votre caisse, vos paiements et vos transactions commerciales. Restez connecté pour découvrir une solution complète qui simplifiera votre activité."
+      },
+      "overviewTitle": "Aperçu du projet",
+      "overviewText": "FlowPay sera une application de caisse moderne et intuitive, développée avec les dernières technologies (Java, Spring Boot, Angular, Firebase et Cloudinary). Elle offrira une gestion complète des transactions, un système de paiement sécurisé, et des analyses en temps réel pour optimiser votre activité commerciale.",
+      "techTitle": "Technologies utilisées",
+      "progressTitle": "Avancement du développement",
+      "progress": {
+        "analysis": "Analyse des besoins et conception",
+        "backend": "Développement Backend (Spring Boot)",
+        "frontend": "Interface utilisateur (Angular)",
+        "integration": "Intégration paiements",
+        "testing": "Tests et optimisation"
+      },
+      "status": {
+        "completed": "Terminé",
+        "inProgress": "En cours",
+        "planned": "Planifié"
+      },
+      "featuresTitle": "Fonctionnalités à venir",
+      "feature1": {
+        "title": "Gestion de Caisse",
+        "text": "Interface intuitive pour la gestion des transactions quotidiennes"
+      },
+      "feature2": {
+        "title": "Paiements Sécurisés",
+        "text": "Système de paiement multi-méthodes sécurisé"
+      },
+      "feature3": {
+        "title": "Analytics Temps Réel",
+        "text": "Analyses et rapports détaillés de votre activité"
+      },
+      "feature4": {
+        "title": "Gestion Client",
+        "text": "Base de données clients intégrée avec historique"
+      },
+      "feature5": {
+        "title": "Multi-plateforme",
+        "text": "Accessible sur web, mobile et tablette"
+      },
+      "feature6": {
+        "title": "Synchronisation Cloud",
+        "text": "Sauvegarde automatique et accès partout"
+      },
+      "notification": {
+        "title": "Restez informé du lancement",
+        "description": "Soyez le premier à découvrir FlowPay lors de son lancement officiel. Inscrivez-vous pour recevoir les dernières actualités du projet.",
+        "emailPlaceholder": "Votre adresse email",
+        "button": "M'informer du lancement"
+      }
     }
   }
