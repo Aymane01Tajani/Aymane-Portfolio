@@ -3018,8 +3018,12 @@ body, html {
     .cv-modal-content {
         width: 95%;
         max-width: none;
-        margin: 20px;
+        margin: 20px auto;
         max-height: 85vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
     .cv-modal-header {
@@ -3047,21 +3051,27 @@ body, html {
 
 @media (max-width: 480px) {
     .cv-modal-content {
-        width: 98%;
-        margin: 10px;
+        width: 90%;
+        margin: 10px auto;
+        max-height: 90vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     
     .cv-modal-header {
         padding: 18px 20px 12px;
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
     }
     
     .cv-modal-close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
+        position: relative;
+        top: 0;
+        right: 0;
     }
     
     .cv-modal-body {
@@ -3076,5 +3086,9 @@ body, html {
         padding: 12px 15px;
         font-size: 0.9rem;
         gap: 10px;
+    }
+    
+    .cv-option-btn i {
+        font-size: 1.1rem;
     }
 }
