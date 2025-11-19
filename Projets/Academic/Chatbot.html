@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/images/profile-placeholder.jpg" type="image/x-icon">
+    <title data-i18n="chatbot.title">Chatbot IA & RAG - Aymane Tajani</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Inclusion des bibliothèques i18next -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
+</head>
+<body>
+    <!-- Header with back button -->
+    <header class="experience-detail-header">
+        <div class="container">
+            <a href="../../index.html#projects" class="back-btn">
+                <i class="fas fa-arrow-left"></i> <span data-i18n="backPortfolio">Retour au portfolio</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="experience-detail-main">
+        <div class="container">
+            <div class="experience-detail-card">
+                <div class="experience-detail-header-content">
+                    <div class="company-logo">
+                        <img src="../../assets/images/PFA/Academic/Chatbot/logo.png" alt="Chatbot IA Logo" onError="this.src='../../assets/images/PFA/Academic/Chatbot/logo.png'">
+                    </div>
+                    <div class="experience-detail-info">
+                        <h1 data-i18n="chatbot.projectTitle">Chatbot IA & Système RAG - Intelligence Artificielle Conversationnelle</h1>
+                        <h2 data-i18n="chatbot.projectType">Projet Académique</h2>
+                        <div class="experience-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> <span data-i18n="chatbot.date">Décembre 2024</span></span>
+                            <span class="location"><i class="fas fa-graduation-cap"></i> <span data-i18n="chatbot.school">EMSI Casablanca</span></span>
+                            <span class="type"><i class="fas fa-robot"></i> <span data-i18n="chatbot.category">Intelligence Artificielle</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-detail-content">
+                    <section class="overview-section">
+                        <h3><i class="fas fa-info-circle"></i> <span data-i18n="overview.title">Aperçu du projet</span></h3>
+                        <p data-i18n="chatbot.overview">
+                            Ce projet présente deux applications d'intelligence artificielle sophistiquées développées avec Python et Streamlit. 
+                            La première est un système RAG (Retrieval Augmented Generation) pour l'analyse de documents PDF, permettant de poser 
+                            des questions sur le contenu avec citations des sources. La seconde est un chatbot EMSI configurable avec support de 
+                            multiples modèles IA et paramètres ajustables. Ces applications exploitent les dernières avancées en IA conversationnelle 
+                            et traitement de langage naturel pour offrir des interactions intelligentes et contextuelles.
+                        </p>
+                    </section>
+
+                    <section class="technologies-section">
+                        <h3><i class="fas fa-tools"></i> <span data-i18n="technologies.title">Technologies utilisées</span></h3>
+                        
+                        <div class="tech-diagram">
+                            <img src="../../assets/images/PFA/Academic/Chatbot/Liste_outils.png" alt="Technologies utilisées dans le projet Chatbot" onError="this.style.display='none'">
+                            <div class="tech-caption" data-i18n="chatbot.techDiagram">Technologies et outils utilisés dans le projet Chatbot IA & RAG</div>
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">Ollama</span>
+                            <span class="tech-tag">HuggingFace</span>
+                            <span class="tech-tag">ChromaDB</span>
+                            <span class="tech-tag">PyPDF</span>
+                            <span class="tech-tag">Sentence Transformers</span>
+                        </div>
+                    </section>
+
+                    <!-- Applications Section -->
+                    <section class="applications-section">
+                        <h3><i class="fas fa-cogs"></i> <span data-i18n="chatbot.applicationsTitle">Applications développées</span></h3>
+                        
+                        <!-- RAG Application -->
+                        <div class="application-card">
+                            <div class="app-header">
+                                <i class="fas fa-file-pdf"></i>
+                                <h4 data-i18n="chatbot.rag.title">1. Application PDF-RAG</h4>
+                                <span class="status-badge running" data-i18n="chatbot.status.running">✅ En cours d'exécution</span>
+                            </div>
+                            <div class="app-details">
+                                <p data-i18n="chatbot.rag.purpose"><strong>Objectif:</strong> Système avancé de questions-réponses sur PDF utilisant RAG</p>
+                                <ul class="feature-list">
+                                    <li data-i18n="chatbot.rag.feature1">Upload et traitement de documents PDF</li>
+                                    <li data-i18n="chatbot.rag.feature2">Création d'embeddings vectoriels via HuggingFace</li>
+                                    <li data-i18n="chatbot.rag.feature3">Stockage dans base de données vectorielle Chroma</li>
+                                    <li data-i18n="chatbot.rag.feature4">Questions sur contenu PDF avec citations sources</li>
+                                    <li data-i18n="chatbot.rag.feature5">Modèle: Ollama llama3.2</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- EMSI Chatbot -->
+                        <div class="application-card">
+                            <div class="app-header">
+                                <i class="fas fa-comments"></i>
+                                <h4 data-i18n="chatbot.emsi.title">2. Chatbot EMSI</h4>
+                                <span class="status-badge running" data-i18n="chatbot.status.running">✅ En cours d'exécution</span>
+                            </div>
+                            <div class="app-details">
+                                <p data-i18n="chatbot.emsi.purpose"><strong>Objectif:</strong> Interface chatbot IA configurable</p>
+                                <ul class="feature-list">
+                                    <li data-i18n="chatbot.emsi.feature1">Support multi-modèles (qwen:0.5b, llama3.2:1b)</li>
+                                    <li data-i18n="chatbot.emsi.feature2">Paramètres ajustables (temperature, top_p, top_k, max_tokens)</li>
+                                    <li data-i18n="chatbot.emsi.feature3">Historique de conversation persistant</li>
+                                    <li data-i18n="chatbot.emsi.feature4">Réponses en streaming temps réel</li>
+                                    <li data-i18n="chatbot.emsi.feature5">Interface utilisateur intuitive</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Technical Features -->
+                    <section class="responsibilities-section">
+                        <h3><i class="fas fa-tasks"></i> <span data-i18n="chatbot.featuresTitle">Fonctionnalités techniques développées</span></h3>
+                        <ul class="responsibilities-list">
+                            <li data-i18n="chatbot.feature1">Intégration de modèles IA via Ollama (llama3.2, qwen:0.5b)</li>
+                            <li data-i18n="chatbot.feature2">Système RAG avec embeddings vectoriels HuggingFace</li>
+                            <li data-i18n="chatbot.feature3">Base de données vectorielle ChromaDB pour recherche sémantique</li>
+                            <li data-i18n="chatbot.feature4">Interface Streamlit responsive et interactive</li>
+                            <li data-i18n="chatbot.feature5">Traitement de documents PDF avec PyPDF</li>
+                            <li data-i18n="chatbot.feature6">Configuration dynamique des paramètres IA</li>
+                            <li data-i18n="chatbot.feature7">Streaming de réponses en temps réel</li>
+                            <li data-i18n="chatbot.feature8">Gestion persistante des conversations</li>
+                        </ul>
+                    </section>
+
+                    <section class="achievements-section">
+                        <h3><i class="fas fa-trophy"></i> <span data-i18n="chatbot.highlightsTitle">Points forts du projet</span></h3>
+                        <div class="achievements-grid">
+                            <div class="achievement-item">
+                                <i class="fas fa-brain"></i>
+                                <h4 data-i18n="chatbot.highlight1.title">IA Avancée</h4>
+                                <p data-i18n="chatbot.highlight1.text">Modèles Llama3.2 et Qwen optimisés</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-search"></i>
+                                <h4 data-i18n="chatbot.highlight2.title">RAG Intelligent</h4>
+                                <p data-i18n="chatbot.highlight2.text">Recherche sémantique dans documents</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-cogs"></i>
+                                <h4 data-i18n="chatbot.highlight3.title">Multi-Configurable</h4>
+                                <p data-i18n="chatbot.highlight3.text">Paramètres IA ajustables</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-bolt"></i>
+                                <h4 data-i18n="chatbot.highlight4.title">Temps Réel</h4>
+                                <p data-i18n="chatbot.highlight4.text">Streaming de réponses instantané</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="architecture-section">
+                        <h3><i class="fas fa-sitemap"></i> <span data-i18n="chatbot.archTitle">Architecture technique</span></h3>
+                        <div class="architecture-note">
+                            <p data-i18n="chatbot.archText1">L'architecture du projet repose sur une approche modulaire et scalable :</p>
+                            <ul class="architecture-list">
+                                <li data-i18n="chatbot.archItem1"><strong>Frontend Streamlit :</strong> Interface utilisateur interactive et responsive pour les deux applications</li>
+                                <li data-i18n="chatbot.archItem2"><strong>Moteur IA Ollama :</strong> Orchestration des modèles llama3.2 et qwen:0.5b en local</li>
+                                <li data-i18n="chatbot.archItem3"><strong>Pipeline RAG :</strong> LangChain + HuggingFace pour le traitement et l'embedding de documents</li>
+                                <li data-i18n="chatbot.archItem4"><strong>Base Vectorielle :</strong> ChromaDB pour stockage et recherche sémantique optimisée</li>
+                                <li data-i18n="chatbot.archItem5"><strong>Traitement PDF :</strong> PyPDF pour extraction et segmentation de contenu</li>
+                                <li data-i18n="chatbot.archItem6"><strong>Streaming Engine :</strong> Réponses en temps réel avec gestion d'état persistant</li>
+                            </ul>
+                            <p data-i18n="chatbot.archText2"><strong>Configuration Système :</strong> Python 3.12.3 avec déploiement local multi-ports (8501/8502) permettant l'exécution simultanée des deux applications.</p>
+                        </div>
+                    </section>
+
+                    <section class="impact-section">
+                        <h3><i class="fas fa-chart-line"></i> <span data-i18n="chatbot.impactTitle">Impact et résultats</span></h3>
+                        <div class="impact-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label" data-i18n="chatbot.stat1">Applications IA opérationnelles</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label" data-i18n="chatbot.stat2">Modèles IA intégrés</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label" data-i18n="chatbot.stat3">Fonctionnement local</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="setup-section">
+                        <h3><i class="fas fa-rocket"></i> <span data-i18n="chatbot.setupTitle">Configuration et déploiement</span></h3>
+                        <div class="setup-status">
+                            <h4 data-i18n="chatbot.prerequisites">✅ Prérequis installés :</h4>
+                            <ul class="setup-list">
+                                <li>✅ <strong>Python 3.12.3</strong> - Environnement de développement</li>
+                                <li>✅ <strong>Ollama</strong> - Avec modèles: llama3.2:latest, qwen:0.5b, llama3.2:1b</li>
+                                <li>✅ <strong>Packages Python</strong> - streamlit, keras, langchain, langchain-community, pypdf, sentence-transformers, chromadb, ollama</li>
+                            </ul>
+                            
+                        </div>
+                    </section>
+
+                    <!-- Gallery Section (if images are available) -->
+                    <section class="gallery-section">
+                        <h3><i class="fas fa-images"></i> <span data-i18n="chatbot.galleryTitle">Aperçu des applications</span></h3>
+                        <div class="scrollable-album">
+                            <div class="album-container">
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Academic/Chatbot/rag-interface.png" alt="Interface RAG" onError="this.style.display='none'">
+                                    <div class="album-caption" data-i18n="chatbot.gallery1">Interface application RAG PDF</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Academic/Chatbot/chatbot-interface.png" alt="Interface Chatbot" onError="this.style.display='none'">
+                                    <div class="album-caption" data-i18n="chatbot.gallery2">Interface Chatbot EMSI</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Academic/Chatbot/pdf-upload.png" alt="Upload PDF" onError="this.style.display='none'">
+                                    <div class="album-caption" data-i18n="chatbot.gallery3">Système d'upload de documents PDF</div>
+                                </div>
+                                <div class="album-item">
+                                    <img src="../../assets/images/PFA/Academic/Chatbot/ai-config.png" alt="Configuration IA" onError="this.style.display='none'">
+                                    <div class="album-caption" data-i18n="chatbot.gallery4">Configuration des paramètres IA</div>
+                                </div>
+                            </div>
+                            <p class="scroll-hint" data-i18n="chatbot.scrollHint">Faites défiler pour voir plus d'images →</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.text" style="color: white;">&copy; 2025 Aymane Tajani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Styles for Applications Section -->
+    <style>
+        .applications-section {
+            margin: 40px 0;
+        }
+
+        .application-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .app-header i {
+            font-size: 1.5rem;
+            color: #ffd700;
+        }
+
+        .app-header h4 {
+            margin: 0;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .status-badge {
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        .status-badge.running {
+            background: #28a745;
+            color: white;
+        }
+
+        .app-details {
+            margin-top: 15px;
+        }
+
+        .app-urls {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .url-label {
+            font-weight: bold;
+            color: #ffd700;
+            margin-right: 10px;
+        }
+
+        .app-urls a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .app-urls a:hover {
+            color: #ffd700;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .feature-list li:before {
+            content: "⚡ ";
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .setup-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 15px;
+            padding: 30px;
+            color: white;
+            margin: 40px 0;
+        }
+
+        .setup-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .setup-list li {
+            padding: 8px 0;
+            font-size: 1.05rem;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .status-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .status-card h5 {
+            margin: 0 0 10px 0;
+            color: #ffd700;
+        }
+
+        .status-running {
+            color: #90EE90;
+            font-weight: bold;
+        }
+
+        .tech-diagram {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-diagram img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .tech-diagram img:hover {
+            transform: scale(1.02);
+        }
+
+        .tech-caption {
+            color: white;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 1.1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .app-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .status-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script>
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                var key = element.getAttribute('data-i18n');
+                const translation = i18next.t(key);
+                if (translation && translation !== key) {
+                    element.innerHTML = translation;
+                }
+            });
+        }
+
+        function updateLanguageButtons(currentLang) {
+            document.querySelectorAll('.language-switcher button').forEach(button => {
+                const lang = button.getAttribute('onclick').match(/'([^']+)'/)[1];
+                button.classList.toggle('active', lang === currentLang);
+            });
+        }
+
+        function changeLanguage(lng) {
+            localStorage.setItem('i18nextLng', lng);
+            i18next.changeLanguage(lng, function() {
+                updateContent();
+                updateLanguageButtons(lng);
+            });
+        }
+
+        // Initialize i18next with proper path handling
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = isGitHubPages ? '../../' : '../../';
+
+        console.log('Initializing i18next for Chatbot page...');
+        
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'fr',
+                debug: !isGitHubPages,
+                lng: localStorage.getItem('i18nextLng') || 'fr',
+                backend: {
+                    loadPath: basePath + 'locales/{{lng}}/translation.json'
+                },
+                detection: {
+                    order: ['localStorage', 'navigator'],
+                    caches: ['localStorage']
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('Translation loading error:', err);
+                } else {
+                    console.log('i18next initialized successfully');
+                }
+                updateContent();
+            });
+    </script>
+</body>
+</html>

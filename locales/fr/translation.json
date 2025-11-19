@@ -101,6 +101,12 @@
         "details": "<strong>Technologies:</strong> Python ET DJANGO (Architecture MVT)<br /><strong>Type:</strong> PROJET DE FIN D'ANNEE (3ème année) – Juin 2023",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
+      },
+      "item4": {
+        "title": "AI RAG & Chatbot applications",
+        "details": "<strong>Technologies:</strong> Python, Streamlit, LangChain, Ollama, HuggingFace, ChromaDB, PyPDF, Sentence Transformers<br /><strong>Type:</strong> Projet Académique – Décembre 2024",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
       }
     },
     "personalProjects": {
@@ -1043,5 +1049,85 @@
         "emailPlaceholder": "Votre adresse email",
         "button": "M'informer du lancement"
       }
+    },
+    "chatbot": {
+      "title": "Chatbot IA & RAG - Aymane Tajani",
+      "projectTitle": "Chatbot IA & Système RAG - Intelligence Artificielle Conversationnelle",
+      "projectType": "Projet Académique",
+      "date": "Décembre 2024",
+      "school": "EMSI Casablanca",
+      "category": "Intelligence Artificielle",
+      "overview": "Ce projet présente deux applications d'intelligence artificielle sophistiquées développées avec Python et Streamlit. La première est un système RAG (Retrieval Augmented Generation) pour l'analyse de documents PDF, permettant de poser des questions sur le contenu avec citations des sources. La seconde est un chatbot EMSI configurable avec support de multiples modèles IA et paramètres ajustables. Ces applications exploitent les dernières avancées en IA conversationnelle et traitement de langage naturel pour offrir des interactions intelligentes et contextuelles.",
+      "applicationsTitle": "Applications développées",
+      "rag": {
+        "title": "1. Application PDF-RAG",
+        "purpose": "Objectif: Système avancé de questions-réponses sur PDF utilisant RAG",
+        "feature1": "Upload et traitement de documents PDF",
+        "feature2": "Création d'embeddings vectoriels via HuggingFace",
+        "feature3": "Stockage dans base de données vectorielle Chroma",
+        "feature4": "Questions sur contenu PDF avec citations sources",
+        "feature5": "Modèle: Ollama llama3.2"
+      },
+      "emsi": {
+        "title": "2. Chatbot EMSI",
+        "purpose": "Objectif: Interface chatbot IA configurable",
+        "feature1": "Support multi-modèles (qwen:0.5b, llama3.2:1b)",
+        "feature2": "Paramètres ajustables (temperature, top_p, top_k, max_tokens)",
+        "feature3": "Historique de conversation persistant",
+        "feature4": "Réponses en streaming temps réel",
+        "feature5": "Interface utilisateur intuitive"
+      },
+      "status": {
+        "running": "✅ En cours d'exécution",
+        "active": "En fonctionnement"
+      },
+      "featuresTitle": "Fonctionnalités techniques développées",
+      "feature1": "Intégration de modèles IA via Ollama (llama3.2, qwen:0.5b)",
+      "feature2": "Système RAG avec embeddings vectoriels HuggingFace",
+      "feature3": "Base de données vectorielle ChromaDB pour recherche sémantique",
+      "feature4": "Interface Streamlit responsive et interactive",
+      "feature5": "Traitement de documents PDF avec PyPDF",
+      "feature6": "Configuration dynamique des paramètres IA",
+      "feature7": "Streaming de réponses en temps réel",
+      "feature8": "Gestion persistante des conversations",
+      "highlightsTitle": "Points forts du projet",
+      "highlight1": {
+        "title": "IA Avancée",
+        "text": "Modèles Llama3.2 et Qwen optimisés"
+      },
+      "highlight2": {
+        "title": "RAG Intelligent",
+        "text": "Recherche sémantique dans documents"
+      },
+      "highlight3": {
+        "title": "Multi-Configurable",
+        "text": "Paramètres IA ajustables"
+      },
+      "highlight4": {
+        "title": "Temps Réel",
+        "text": "Streaming de réponses instantané"
+      },
+      "archTitle": "Architecture technique",
+      "archText1": "L'architecture du projet repose sur une approche modulaire et scalable :",
+      "archItem1": "Frontend Streamlit : Interface utilisateur interactive et responsive pour les deux applications",
+      "archItem2": "Moteur IA Ollama : Orchestration des modèles llama3.2 et qwen:0.5b en local",
+      "archItem3": "Pipeline RAG : LangChain + HuggingFace pour le traitement et l'embedding de documents",
+      "archItem4": "Base Vectorielle : ChromaDB pour stockage et recherche sémantique optimisée",
+      "archItem5": "Traitement PDF : PyPDF pour extraction et segmentation de contenu",
+      "archItem6": "Streaming Engine : Réponses en temps réel avec gestion d'état persistant",
+      "archText2": "Configuration Système : Python 3.12.3 avec déploiement local multi-ports (8501/8502) permettant l'exécution simultanée des deux applications.",
+      "impactTitle": "Impact et résultats",
+      "stat1": "Applications IA opérationnelles",
+      "stat2": "Modèles IA intégrés",
+      "stat3": "Fonctionnement local",
+      "setupTitle": "Configuration et déploiement",
+      "prerequisites": "✅ Prérequis installés :",
+      "galleryTitle": "Aperçu des applications",
+      "gallery1": "Interface application RAG PDF",
+      "gallery2": "Interface Chatbot EMSI",
+      "gallery3": "Système d'upload de documents PDF",
+      "gallery4": "Configuration des paramètres IA",
+      "scrollHint": "Faites défiler pour voir plus d'images →",
+      "techDiagram": "Technologies et outils utilisés dans le projet Chatbot IA & RAG"
     }
   }
