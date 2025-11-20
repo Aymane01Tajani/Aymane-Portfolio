@@ -204,7 +204,7 @@ function downloadCV(cvType) {
       fileName = 'TAJANI-AYMANE-CV-DOTNET.pdf';
       break;
     case 'mobile':
-      fileName = 'TAJANI-AYMANE-CV-MOBILE.pdf';
+      fileName = 'TAJANI-AYMANE-CV-Mobile.pdf';
       break;
     case 'ia':
       fileName = 'TAJANI-AYMANE-CV-IA.pdf';
