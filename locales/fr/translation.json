@@ -15,32 +15,38 @@
     },
     "hero": {
       "title": "AYMANE TAJANI",
-      "engineerTitle": "Ingénieur d'état",
-      "tagline": "Junior Ingénieur Software | Consultant technique Junior | Développeur Full Stack | Développeur Mobile"
+      "engineerTitle": "Ingénieur d'état - Consultant Technico-Fonctionnel Odoo",
+      "tagline": "Junior Ingénieur Software | Consultant Technico-Fonctionnel Junior | Développeur Full Stack | Développeur Mobile"
     },
-    "profile": {
-      "title": "Profile",
-      "content": "Ingénieur d’état récemment diplômé spécialisé en MIAGE, orienté développement full‑stack et intégration (Sage X3). Rigoureux, autonome et habitué aux méthodes Agile, je conçois et développe des solutions robustes (web & mobile) et j'assure leur intégration avec des services externes."
-    },
+"profile": {
+  "title": "Profile",
+  "content": "Ingénieur d’État en MIAGE et Consultant Technico-Fonctionnel Odoo, j’accompagne les entreprises dans la digitalisation et l’optimisation de leurs processus métiers en alliant expertise technique et vision fonctionnelle. J’interviens de bout en bout : analyse des besoins, implémentation, personnalisation et intégration de solutions (ERP, APIs, applications web & mobile), avec pour objectif de délivrer des solutions efficaces et orientées résultats. Rigoureux et habitué aux méthodes Agile, je conçois des solutions robustes tout en assurant une communication fluide entre les équipes IT et métiers.",
+  "yearsExp": "Années d’expérience",
+  "projects": "Projets réalisés",
+  "techStack": "Full Stack & ERP"
+},
     "education": {
       "title": "FORMATIONS ACADEMIQUES",
       "item1": {
         "title": "Ingénierie Informatique et Réseaux (MIAGE)",
         "details": "<strong>École:</strong> École MAROCCAINE DES SCIENCES D'INGENIEURS<br /><strong>Durée:</strong> Oct 2021 - Juill 2025",
         "schoolLabel": "École:",
-        "durationLabel": "Durée:"
+        "durationLabel": "Durée:",
+        "school": "École MAROCAINE DES SCIENCES D'INGÉNIEURS"
       },
       "item2": {
         "title": "2 ANS EN CPGE - Classes préparatoires scientifiques (MP)",
         "details": "<strong>École:</strong> Yassamine Californie<br /><strong>Durée:</strong> Sept 2019 - Mai 2021",
         "schoolLabel": "École:",
-        "durationLabel": "Durée:"
+        "durationLabel": "Durée:",
+        "school": "Yassamine Californie"
       },
       "item3": {
         "title": "BACCALAURÉAT OPTION SCIENCES PHYSIQUES",
         "details": "<strong>École:</strong> LYCÉE ABDELKHALEK TORRES<br /><strong>Date:</strong> Juin 2019",
         "schoolLabel": "École:",
-        "dateLabel": "Date:"
+        "dateLabel": "Date:",
+        "school": "LYCÉE ABDELKHALEK TORRES"
       }
     },
     "experiences": {
@@ -52,7 +58,8 @@
         "typeLabel": "Type:",
         "durationLabel": "Durée:",
         "infoLabel": "Détails:",
-        "regionLabel": "Région:"
+        "regionLabel": "Région:",
+        "shortDesc": "Développement Web Services GraphQL sur Sage X3 + Application mobile Flutter."
       },
       "item2": {
         "title": "Conception & Mise en place d'une application de déclaration et de gestion des flux CCG.",
@@ -61,7 +68,8 @@
         "typeLabel": "Type:",
         "durationLabel": "Durée:",
         "infoLabel": "Détails:",
-        "regionLabel": "Région:"
+        "regionLabel": "Région:",
+        "shortDesc": "Frontend et Backend avec .NET pour application bancaire web."
       },
       "item3": {
         "title": "Développement sur Symfony d'un générateur MVC d'applications en mode SaaS.",
@@ -70,7 +78,8 @@
         "typeLabel": "Type:",
         "dateLabel": "Date:",
         "infoLabel": "Détails:",
-        "regionLabel": "Région:"
+        "regionLabel": "Région:",
+        "shortDesc": "Générateur d'applications de gestion avec Symfony."
       },
       "item4": {
         "title": "Développement d'un site web pour la société.",
@@ -79,31 +88,47 @@
         "typeLabel": "Type:",
         "durationLabel": "Durée:",
         "infoLabel": "Détails:",
-        "regionLabel": "Région:"
+        "regionLabel": "Région:",
+        "shortDesc": "Site web avec HTML, CSS et Bootstrap."
+      },
+      "item5": {
+        "title": "Consultant Technico-Fonctionnel Odoo",
+        "shortDesc": "Participation aux réunions de cadrage pour analyser les besoins métiers, rôle d'interface entre équipes fonctionnelles et techniques, configuration et développement sur Odoo (Odoo Studio), conception de maquettes et livrables, ainsi qu'accompagnement post mise en production et formation des utilisateurs."
       }
     },
     "projects": {
       "title": "PROJETS ACADEMIQUES",
+      "exploreBtn": "EXPLORER",
+      "viewProject": "Voir projet",
       "item1": {
         "title": "Conception et développement d'un Système de Pointage Digital intelligent via Application Cross-Platform",
+        "badge": "PROJET FINAL • 2025",
+        "subtitle": "Système de Pointage Digital Intelligent",
+        "description": "Application Cross-Platform révolutionnaire avec reconnaissance intelligente, géolocalisation et tableaux de bord analytiques en temps réel.",
         "details": "<strong>Technologies:</strong> Flutter (Dart) et Firebase<br /><strong>Type:</strong> PROJET DE FIN D'ANNEE (5ème année) – Janvier 2025",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item2": {
         "title": "Conception et développement d'une application mobile dédiée à la pratique religieuse musulmane : Étude de cas et mise en oeuvre.",
+        "cardTitle": "Ratib - App Religieuse",
+        "cardDesc": "Application mobile dédiée à la pratique religieuse",
         "details": "<strong>Technologies:</strong> Java<br /><strong>Type:</strong> PROJET DE FIN D'ANNEE (4ème année) – Juin 2024",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item3": {
         "title": "Application web E-Games pour l'achat de jeux vidéo.",
+        "cardTitle": "E-Games Platform",
+        "cardDesc": "Plateforme e-commerce pour jeux vidéo",
         "details": "<strong>Technologies:</strong> Python ET DJANGO (Architecture MVT)<br /><strong>Type:</strong> PROJET DE FIN D'ANNEE (3ème année) – Juin 2023",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item4": {
         "title": "AI RAG & Chatbot applications",
+        "cardTitle": "AI Chatbot & RAG",
+        "cardDesc": "Chatbot intelligent avec Retrieval-Augmented Generation",
         "details": "<strong>Technologies:</strong> Python, Streamlit, LangChain, Ollama, HuggingFace, ChromaDB, PyPDF, Sentence Transformers<br /><strong>Type:</strong> Projet Académique – Décembre 2024",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
@@ -111,29 +136,51 @@
     },
     "personalProjects": {
       "title": "PROJETS PERSONNELS",
+      "subtitle": "Des idées transformées en applications réelles",
+      "seeDetails": "Voir détails",
+      "visitBtn": "Visiter",
       "item1": {
         "title": "QuickSoum - Application de Devis & Factures Rapide",
+        "tagline": "Application de Devis Rapide",
+        "description": "Créez des devis professionnels en quelques clics avec templates personnalisables.",
         "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Projet Personnel - Septembre 2025",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item2": {
-        "title": " GymTrace - Application pour le Suivi personnel des Activités Sportives",
-        "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong>  Projet Personnel - Décembre 2024",
+        "title": "GymTrace - Application pour le Suivi personnel des Activités Sportives",
+        "tagline": "Suivi des Activités Sportives",
+        "description": "Suivez vos entraînements, analysez vos performances et atteignez vos objectifs.",
+        "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Projet Personnel - Décembre 2024",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item3": {
-        "title": " APPLICATION WEB E-COMMERCE",
-        "details": "<strong>Technologies:</strong> C#, ASP.NET, MySQL<br /><strong>Type:</strong>  Projet Personnel - Novembre 2024",
+        "title": "APPLICATION WEB E-COMMERCE",
+        "tagline": "Application Web E-Commerce",
+        "description": "Plateforme e-commerce complète avec panier, paiements et gestion des commandes.",
+        "details": "<strong>Technologies:</strong> C#, ASP.NET, MySQL<br /><strong>Type:</strong> Projet Personnel - Novembre 2024",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item4": {
         "title": "FlowPay - Application de caisse",
+        "tagline": "Application de caisse nouvelle génération",
+        "description": "Système de point de vente moderne avec gestion des stocks et analytics.",
         "details": "<strong>Technologies:</strong> Java, Spring Boot, Angular, Firebase et Cloudinary<br /><strong>Type:</strong> Projet Personnel - En cours de développement",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
+      },
+      "item5": {
+        "title": "Tixoras",
+        "tagline": "TMS - Ticket Management System",
+        "description": "PWA multi-plateforme pour la gestion centralisée des tickets. Dashboard temps réel, KPI automatiques, chat intégré, notifications push et analytics avancés.",
+        "plansBtn": "Plans & Tarifs"
+      },
+      "item6": {
+        "title": "Ladies Coaching",
+        "tagline": "Site Web pour Cliente",
+        "description": "Site vitrine professionnel pour un studio de coaching sportif 100% féminin à Casablanca."
       }
     },
     "skills": {
@@ -146,6 +193,7 @@
         "title": "Conception des Systèmes d'Information",
         "details": "Software Architecture / Design, UML"
       },
+      "softwareArch": "Architecture Logicielle",
       "item3": {
         "title": "Langages de Programmation",
         "details": "C, C++, C#, Python, Java"
@@ -159,7 +207,7 @@
         "details": "Docker, Kubernetes, Git, GitHub"
       },
       "item6": {
-        "title": "Databases",
+        "title": "Bases de Données",
         "details": "SQL, PL/SQL, Transact-SQL, Oracle Administration"
       },
       "item7": {
@@ -173,6 +221,14 @@
     },
     "certifications": {
         "title": "CERTIFICATIONS",
+        "subtitle": "18 certifications obtenues en développement, cloud, IA et ERP",
+        "inProgress": " En cours",
+        "certified": " Certifié",
+        "new": " Nouveau",
+        "featured": {
+          "title": "Certification Fonctionnelle Odoo 19",
+          "desc": "Certification officielle Odoo validant la maîtrise fonctionnelle complète de la suite ERP Odoo 19 — modules métiers, flux de travail, configuration et déploiement."
+        },
         "item1": {
           "text": "Software Design and Architecture Specialization – En cours (University of Alberta)",
           "id": "Identifiant de la certification: En cours"
@@ -244,9 +300,18 @@
     },
     "languages": {
       "title": "Langues",
-      "item1": "<strong>Arabe</strong> Native",
-      "item2": "<strong>Français</strong> Courant",
-      "item3": "<strong>Anglais</strong> Intermédiaire"
+      "item1": {
+        "name": "Arabe",
+        "level": "<strong>Arabe</strong> Natif"
+      },
+      "item2": {
+        "name": "Français",
+        "level": "<strong>Français</strong> Courant"
+      },
+      "item3": {
+        "name": "Anglais",
+        "level": "<strong>Anglais</strong> Intermédiaire"
+      }
     },
     "interests": {
       "title": "Intérêts",

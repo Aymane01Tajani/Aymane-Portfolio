@@ -15,12 +15,15 @@
     },
     "hero": {
       "title": "AYMANE TAJANI",
-      "engineerTitle": "State Engineer",
-      "tagline": "Junior Software Engineer | Junior Technical Consultant | Full Stack Developer | Mobile Developer"
+      "engineerTitle": "State Engineer - Odoo Technical-Functional Consultant",
+      "tagline": "Junior Software Engineer | Junior Technical-Functional Consultant | Full Stack Developer | Mobile Developer"
     },
     "profile": {
       "title": "Profile",
-      "content": "Recently graduated state engineer specializing in MIAGE, focused on full-stack development and integration (Sage X3). Rigorous, autonomous and accustomed to Agile methods, I design and develop robust solutions (web & mobile) and ensure their integration with external services."
+      "content": "As a State engineer in Computer Science Applied to Business Management (MIAGE) and an Odoo Technical-Functional Consultant, I support companies in the digitalization and optimization of their business processes by combining technical expertise with a functional perspective. I provide end-to-end support: needs analysis, implementation, customization, and integration of solutions (ERP, APIs, web & mobile applications), with the goal of delivering effective and results-oriented solutions. Rigorous and experienced in Agile methodologies, I design robust solutions while ensuring seamless communication between IT and business teams.",
+      "yearsExp": "Years of Experience",
+      "projects": "Projects Completed",
+      "techStack": "Full Stack & ERP"
     },
     "education": {
       "title": "Education",
@@ -28,19 +31,22 @@
         "title": "Computer Engineering and Networks (MIAGE)",
         "details": "<strong>School:</strong> Moroccan School of Engineering Sciences<br /><strong>Duration:</strong> Oct 2021 - Jul 2025",
         "schoolLabel": "School:",
-        "durationLabel": "Duration:"
+        "durationLabel": "Duration:",
+        "school": "Moroccan School of Engineering Sciences"
       },
       "item2": {
         "title": "2 Years in CPGE - Scientific Prep Classes (MP)",
         "details": "<strong>School:</strong> Yassamine Californie<br /><strong>Duration:</strong> Sept 2019 - May 2021",
         "schoolLabel": "School:",
-        "durationLabel": "Duration:"
+        "durationLabel": "Duration:",
+        "school": "Yassamine Californie"
       },
       "item3": {
         "title": "Baccalaureate in Physical Sciences",
         "details": "<strong>School:</strong> Abdelkhalek Torres High School<br /><strong>Date:</strong> June 2019",
         "schoolLabel": "School:",
-        "dateLabel": "Date:"
+        "dateLabel": "Date:",
+        "school": "Abdelkhalek Torres High School"
       }
     },
     "experiences": {
@@ -52,7 +58,8 @@
         "typeLabel": "Type:",
         "durationLabel": "Duration:",
         "infoLabel": "Details:",
-        "regionLabel": "Region:"
+        "regionLabel": "Region:",
+        "shortDesc": "GraphQL Web Services development on Sage X3 + Flutter mobile application."
       },
       "item2": {
         "title": "Design & Implementation of a Web Application for Declaring and Managing CCG Flows.",
@@ -61,7 +68,8 @@
         "typeLabel": "Type:",
         "durationLabel": "Duration:",
         "infoLabel": "Details:",
-        "regionLabel": "Region:"
+        "regionLabel": "Region:",
+        "shortDesc": "Frontend and Backend with .NET for web banking application."
       },
       "item3": {
         "title": "Development on Symfony of an MVC Generator for SaaS Applications.",
@@ -70,7 +78,8 @@
         "typeLabel": "Type:",
         "dateLabel": "Date:",
         "infoLabel": "Details:",
-        "regionLabel": "Region:"
+        "regionLabel": "Region:",
+        "shortDesc": "Management application generator with Symfony."
       },
       "item4": {
         "title": "Development of a Company Website.",
@@ -79,61 +88,99 @@
         "typeLabel": "Type:",
         "durationLabel": "Duration:",
         "infoLabel": "Details:",
-        "regionLabel": "Region:"
+        "regionLabel": "Region:",
+        "shortDesc": "Website with HTML, CSS and Bootstrap."
+      },
+      "item5": {
+        "title": "Odoo Technical-Functional Consultant",
+        "shortDesc": "Participation in scoping meetings to analyze business needs, acting as interface between functional and technical teams, configuration and development on Odoo (Odoo Studio), design of mockups and deliverables, as well as post-production support and user training."
       }
     },
     "projects": {
       "title": "ACADEMIC PROJECTS",
+      "exploreBtn": "EXPLORE",
+      "viewProject": "View Project",
       "item1": {
         "title": "Design and Development of a Digital Attendance System via a Cross-Platform Application",
+        "badge": "FINAL YEAR PROJECT • 2025",
+        "subtitle": "Intelligent Digital Attendance System",
+        "description": "Revolutionary Cross-Platform application with intelligent recognition, geolocation and real-time analytical dashboards.",
         "details": "<strong>Technologies:</strong> Flutter (Dart) and Firebase<br /><strong>Type:</strong> FINAL YEAR PROJECT (5th year) – January 2025",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item2": {
         "title": "Design and Development of a Mobile Application Dedicated to Muslim Religious Practice: Case Study and Implementation.",
+        "cardTitle": "Ratib - Religious App",
+        "cardDesc": "Mobile application dedicated to religious practice",
         "details": "<strong>Technologies:</strong> Java<br /><strong>Type:</strong> FINAL YEAR PROJECT (4th year) – June 2024",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item3": {
         "title": "E-Games Web Application for Purchasing Video Games.",
+        "cardTitle": "E-Games Platform",
+        "cardDesc": "E-commerce platform for video games",
         "details": "<strong>Technologies:</strong> Python and DJANGO (MVT Architecture)<br /><strong>Type:</strong> FINAL YEAR PROJECT (3rd year) – June 2023",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
       "item4": {
         "title": "AI RAG & Chatbot applications",
+        "cardTitle": "AI Chatbot & RAG",
+        "cardDesc": "Intelligent chatbot with Retrieval-Augmented Generation",
         "details": "<strong>Technologies:</strong> Python, Streamlit, LangChain, Ollama, HuggingFace, ChromaDB, PyPDF, Sentence Transformers<br /><strong>Type:</strong> Academic Project – December 2024",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       }
     },
     "personalProjects": {
-    "title": "PERSONAL PROJECTS",
-    "item1": {
-    "title": "QuickSoum - Quick Quote & Invoice App",
-    "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Personal Project - September 2025",
-    "techLabel": "Technologies:",
-    "typeLabel": "Type:"
-    },
-    "item2": {
-    "title": "GymTrace - Personal Activity Tracking App",
-    "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Personal Project - December 2024",
-    "techLabel": "Technologies:",
-    "typeLabel": "Type:"
-    },
-    "item3": {
-        "title": "E-COMMERCE WEB APPLICATION",
-        "details": "<strong>Technologies:</strong> C#, ASP.NET, MySQL<br /><strong>Type:</strong>  Personal Project - November 2024",
+      "title": "PERSONAL PROJECTS",
+      "subtitle": "Ideas transformed into real applications",
+      "seeDetails": "See Details",
+      "visitBtn": "Visit",
+      "item1": {
+        "title": "QuickSoum - Quick Quote & Invoice App",
+        "tagline": "Quick Quote App",
+        "description": "Create professional quotes in a few clicks with customizable templates.",
+        "details": "<strong>Technologies:</strong> Flutter, SQLite, Cloudinary<br /><strong>Type:</strong> Personal Project - September 2025",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
       },
-    "item4": {
+      "item2": {
+        "title": "GymTrace - Personal Activity Tracking App",
+        "tagline": "Sport Activity Tracking",
+        "description": "Track your workouts, analyze your performance and reach your goals.",
+        "details": "<strong>Technologies:</strong> Flutter, Firebase, Dart<br /><strong>Type:</strong> Personal Project - December 2024",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
+      },
+      "item3": {
+        "title": "E-COMMERCE WEB APPLICATION",
+        "tagline": "E-Commerce Web Application",
+        "description": "Complete e-commerce platform with cart, payments and order management.",
+        "details": "<strong>Technologies:</strong> C#, ASP.NET, MySQL<br /><strong>Type:</strong> Personal Project - November 2024",
+        "techLabel": "Technologies:",
+        "typeLabel": "Type:"
+      },
+      "item4": {
         "title": "FlowPay - Cash Register Application",
+        "tagline": "Next-Gen Cash Register Application",
+        "description": "Modern point of sale system with inventory management and analytics.",
         "details": "<strong>Technologies:</strong> Java, Spring Boot, Angular, Firebase and Cloudinary<br /><strong>Type:</strong> Personal Project - In development",
         "techLabel": "Technologies:",
         "typeLabel": "Type:"
+      },
+      "item5": {
+        "title": "Tixoras",
+        "tagline": "TMS - Ticket Management System",
+        "description": "Multi-platform PWA for centralized ticket management. Real-time dashboard, automatic KPIs, integrated chat, push notifications and advanced analytics.",
+        "plansBtn": "Plans & Pricing"
+      },
+      "item6": {
+        "title": "Ladies Coaching",
+        "tagline": "Client Website",
+        "description": "Professional showcase website for a 100% women's sports coaching studio in Casablanca."
       }
     },
     "skills": {
@@ -146,6 +193,7 @@
         "title": "Information Systems Design",
         "details": "Software Architecture/Design, UML"
       },
+      "softwareArch": "Software Architecture",
       "item3": {
         "title": "Programming Languages",
         "details": "C, C++, C#, Python, Java"
@@ -173,6 +221,14 @@
     },
     "certifications": {
         "title": "CERTIFICATIONS",
+        "subtitle": "18 certifications in development, cloud, AI and ERP",
+        "inProgress": " In Progress",
+        "certified": " Certified",
+        "new": " New",
+        "featured": {
+          "title": "Odoo 19 Functional Certification",
+          "desc": "Official Odoo certification validating complete functional mastery of the Odoo 19 ERP suite — business modules, workflows, configuration and deployment."
+        },
         "item1": {
           "text": "Software Design and Architecture Specialization – Ongoing (University of Alberta)",
           "id": "Certification ID: To be filled"
@@ -244,9 +300,18 @@
       },
     "languages": {
       "title": "Languages",
-      "item1": "<strong>Arabic</strong> Native",
-      "item2": "<strong>French</strong> Fluent",
-      "item3": "<strong>English</strong> Intermediate"
+      "item1": {
+        "name": "Arabic",
+        "level": "<strong>Arabic</strong> Native"
+      },
+      "item2": {
+        "name": "French",
+        "level": "<strong>French</strong> Fluent"
+      },
+      "item3": {
+        "name": "English",
+        "level": "<strong>English</strong> Intermediate"
+      }
     },
     "interests": {
       "title": "Interests",

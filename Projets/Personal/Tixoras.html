@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/images/name.jpg" type="image/x-icon">
+    <title data-i18n="tixoras.title">Tixoras - Aymane Tajani</title>
+    <!-- Google Fonts - Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Inclusion des bibliothèques i18next -->
+    <script src="https://unpkg.com/i18next@23.4.6/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@7.0.1/i18nextBrowserLanguageDetector.min.js"></script>
+    <style>
+        .tixoras-hero {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+            padding: 60px 20px;
+            border-radius: 24px;
+            margin: 40px 0;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+
+        .tixoras-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 40%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(6, 182, 212, 0.15));
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            border-radius: 30px;
+            color: #10b981;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .hero-badge .pulse {
+            width: 10px;
+            height: 10px;
+            background: #10b981;
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            50% { opacity: 0.5; box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, #8b5cf6 50%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+
+        .hero-tagline {
+            font-size: 1.4rem;
+            color: #06b6d4;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn.primary {
+            background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+            color: white;
+        }
+
+        .cta-btn.primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(139, 92, 246, 0.4);
+        }
+
+        .cta-btn.secondary {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .cta-btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(139, 92, 246, 0.5);
+        }
+
+        /* Features Grid */
+        .features-section {
+            margin: 50px 0;
+        }
+
+        .features-section h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--text-primary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: linear-gradient(145deg, rgba(20, 20, 35, 0.9), rgba(15, 15, 25, 0.95));
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(139, 92, 246, 0.5);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.15));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card:nth-child(1) .feature-icon { color: #8b5cf6; }
+        .feature-card:nth-child(2) .feature-icon { color: #06b6d4; }
+        .feature-card:nth-child(3) .feature-icon { color: #10b981; }
+        .feature-card:nth-child(4) .feature-icon { color: #ec4899; }
+        .feature-card:nth-child(5) .feature-icon { color: #f59e0b; }
+        .feature-card:nth-child(6) .feature-icon { color: #ef4444; }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Tech Stack */
+        .tech-section {
+            background: linear-gradient(145deg, rgba(20, 20, 35, 0.8), rgba(15, 15, 25, 0.9));
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 24px;
+            padding: 40px;
+            margin: 50px 0;
+        }
+
+        .tech-section h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .tech-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(139, 92, 246, 0.05);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            background: rgba(139, 92, 246, 0.1);
+            transform: translateX(5px);
+        }
+
+        .tech-item i {
+            font-size: 2rem;
+            width: 40px;
+            text-align: center;
+        }
+
+        .tech-item .tech-info h5 {
+            color: var(--text-primary);
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .tech-item .tech-info span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Use Cases */
+        .usecases-section {
+            margin: 50px 0;
+        }
+
+        .usecases-section h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .usecases-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .usecases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .usecase-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(139, 92, 246, 0.05));
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 12px;
+        }
+
+        .usecase-item i {
+            font-size: 1.5rem;
+            color: #06b6d4;
+        }
+
+        .usecase-item span {
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            margin: 50px 0;
+        }
+
+        .gallery-section h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            aspect-ratio: 16/10;
+            background: rgba(20, 20, 35, 0.5);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: var(--text-muted);
+        }
+
+        .gallery-placeholder i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.1rem;
+            }
+
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with back button -->
+    <header class="experience-detail-header">
+        <div class="container">
+            <a href="../../index.html#personal-projects" class="back-btn">
+                <span data-i18n="tixoras.backBtn">Retour au portfolio</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="experience-detail-main">
+        <div class="container">
+            <div class="experience-detail-card">
+                <div class="experience-detail-header-content">
+                    <div class="company-logo">
+                        <img src="../../assets/images/PFA/Personnel/Tixoras/logo-tixoras.png" alt="Tixoras Logo">
+                    </div>
+                    <div class="experience-detail-info">
+                        <h1>Tixoras - TMS Ticket Management System</h1>
+                        <h2>Projet Personnel</h2>
+                        <div class="experience-meta">
+                            <span class="duration"><i class="fas fa-calendar"></i> MVP Live - Mars 2026</span>
+                            <span class="location"><i class="fas fa-globe"></i> PWA Web & Mobile</span>
+                            <span class="type"><i class="fas fa-ticket-alt"></i> SaaS B2B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-detail-content">
+                    <!-- Hero Section -->
+                    <section class="tixoras-hero">
+                        <div class="hero-content">
+                            <div class="hero-badge">
+                                <span class="pulse"></span>
+                                <span>MVP Live</span>
+                            </div>
+                            <h2 class="hero-title">Tixoras</h2>
+                            <p class="hero-tagline">Ticket Management System - Centralisez tout</p>
+                            <p class="hero-description">
+                                Une solution PWA complète pour la gestion des tickets et demandes internes. 
+                                Fini les demandes dispersées par email, WhatsApp et appels — tout est centralisé 
+                                avec une vue à 360°, des KPI automatiques et un chat intégré.
+                            </p>
+                            <div class="hero-cta">
+                                <a href="https://aymane01tajani.github.io/Plans-d-Abonnement-Tixoras/" target="_blank" class="cta-btn primary">
+                                    <i class="fas fa-rocket"></i>
+                                    Voir les plans
+                                </a>
+                                <a href="#gallery" class="cta-btn secondary">
+                                    <i class="fas fa-images"></i>
+                                    Voir les captures
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Key Features -->
+                    <section class="features-section">
+                        <h3><i class="fas fa-star"></i> Fonctionnalités Clés</h3>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                                <h4>Dashboard Avancé</h4>
+                                <p>Vue complète des tickets avec statistiques en temps réel, indicateurs TTR et taux de résolution automatiques.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-ticket-alt"></i></div>
+                                <h4>Gestion des Tickets</h4>
+                                <p>Création, modification, recherche avancée et filtres intelligents pour une gestion optimale.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-users-cog"></i></div>
+                                <h4>Gestion Utilisateurs</h4>
+                                <p>Attribution des rôles (Admin, Superviseur, Agent), gestion des accès et reset de mot de passe.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                                <h4>Chat Intégré</h4>
+                                <p>Communication en temps réel avec historique complet, commentaires et notifications push.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-file-export"></i></div>
+                                <h4>Export & Rapports</h4>
+                                <p>Export CSV, KPI par département, rapports détaillés et historique complet.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                                <h4>Multi-Plateforme</h4>
+                                <p>PWA responsive disponible sur Web et Mobile avec mode offline et installation facile.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Tech Stack -->
+                    <section class="tech-section">
+                        <h3><i class="fas fa-layer-group"></i> Stack Technique</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">
+                                <i class="fab fa-flutter" style="color: #02569b;"></i>
+                                <div class="tech-info">
+                                    <h5>Flutter</h5>
+                                    <span>Framework UI Cross-Platform</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-fire" style="color: #ffca28;"></i>
+                                <div class="tech-info">
+                                    <h5>Firebase</h5>
+                                    <span>Backend as a Service</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-database" style="color: #ff9800;"></i>
+                                <div class="tech-info">
+                                    <h5>Cloud Firestore</h5>
+                                    <span>Base de données NoSQL</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-shield-alt" style="color: #4caf50;"></i>
+                                <div class="tech-info">
+                                    <h5>Firebase Auth</h5>
+                                    <span>Authentification sécurisée</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-cloud-upload-alt" style="color: #2196f3;"></i>
+                                <div class="tech-info">
+                                    <h5>Firebase Hosting</h5>
+                                    <span>Hébergement PWA</span>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-bell" style="color: #e91e63;"></i>
+                                <div class="tech-info">
+                                    <h5>Cloud Messaging</h5>
+                                    <span>Notifications Push</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Use Cases -->
+                    <section class="usecases-section">
+                        <h3><i class="fas fa-building"></i> Cas d'Usage</h3>
+                        <p class="usecases-subtitle">Tixoras s'adapte à tous les secteurs d'activité</p>
+                        <div class="usecases-grid">
+                            <div class="usecase-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>ESN & Agences digitales</span>
+                            </div>
+                            <div class="usecase-item">
+                                <i class="fas fa-headset"></i>
+                                <span>MSP & Centres de support</span>
+                            </div>
+                            <div class="usecase-item">
+                                <i class="fas fa-tools"></i>
+                                <span>Maintenance & Services</span>
+                            </div>
+                            <div class="usecase-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Écoles & Universités</span>
+                            </div>
+                            <div class="usecase-item">
+                                <i class="fas fa-store"></i>
+                                <span>Retail & Commerce</span>
+                            </div>
+                            <div class="usecase-item">
+                                <i class="fas fa-building"></i>
+                                <span>Immobilier & Facility</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Gallery Section -->
+                    <section id="gallery" class="gallery-section">
+                        <h3><i class="fas fa-images"></i> Captures d'écran</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Dashboard Admin</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Gestion Tickets</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Chat Intégré</span>
+                                </div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="gallery-placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <span>Vue Mobile</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA Section -->
+                    <section class="tixoras-hero" style="margin-top: 50px;">
+                        <div class="hero-content">
+                            <h2 class="hero-title" style="font-size: 2.5rem;">Intéressé par Tixoras?</h2>
+                            <p class="hero-description">
+                                Découvrez nos différents plans d'abonnement adaptés à la taille de votre équipe.
+                                De 10 à 50 utilisateurs, avec tickets illimités et toutes les fonctionnalités.
+                            </p>
+                            <div class="hero-cta">
+                                <a href="https://aymane01tajani.github.io/Plans-d-Abonnement-Tixoras/" target="_blank" class="cta-btn primary">
+                                    <i class="fas fa-tag"></i>
+                                    Voir les tarifs
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.text" style="color: white;">&copy; 2025 Aymane Tajani. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(function(element) {
+                var key = element.getAttribute('data-i18n');
+                const translation = i18next.t(key);
+                if (translation && translation !== key) {
+                    element.innerHTML = translation;
+                }
+            });
+        }
+
+        function changeLanguage(lng) {
+            localStorage.setItem('i18nextLng', lng);
+            i18next.changeLanguage(lng, function() {
+                updateContent();
+            });
+        }
+
+        const isGitHubPages = window.location.hostname.includes('github.io');
+        const basePath = '../../';
+
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'fr',
+                debug: !isGitHubPages,
+                lng: localStorage.getItem('i18nextLng') || 'fr',
+                backend: {
+                    loadPath: basePath + 'locales/{{lng}}/translation.json'
+                },
+                detection: {
+                    order: ['localStorage', 'navigator'],
+                    caches: ['localStorage']
+                }
+            }, function(err, t) {
+                if (err) {
+                    console.error('Translation loading error:', err);
+                }
+                updateContent();
+            });
+    </script>
+</body>
+</html>
