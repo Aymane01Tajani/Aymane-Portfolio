@@ -59,7 +59,7 @@
         "durationLabel": "Duration:",
         "infoLabel": "Details:",
         "regionLabel": "Region:",
-        "shortDesc": "GraphQL Web Services development on Sage X3 + Flutter mobile application."
+        "shortDesc": "REST Web Services development on Sage X3 + Flutter mobile application."
       },
       "item2": {
         "title": "Design & Implementation of a Web Application for Declaring and Managing CCG Flows.",
@@ -340,7 +340,7 @@
       "ai": "CV AI"
     },
     "footer": {
-      "text": "&copy; 2025 Aymane Tajani. All rights reserved."
+      "text": "&copy; 2026 Aymane Tajani. All rights reserved."
     },
     "aberdeen": {
       "title": "Aberdeen - Aymane Tajani",
@@ -1194,6 +1194,51 @@
       "gallery4": "AI parameter configuration",
       "scrollHint": "Scroll to see more images →",
       "techDiagram": "Technologies and tools used in the Chatbot AI & RAG project"
+    },
+    "blackswan": {
+      "sectorsTitle": "Client Industry Sectors",
+      "sectorsIntro": "I have accompanied companies from diverse sectors (industry, construction, energy, retail, logistics, events…) in digitalizing their processes via Odoo, working on key modules ranging from CRM to accounting, including production and logistics management.",
+      "sector1": { "title": "Construction & Civil Engineering" },
+      "sector2": { "title": "Industrial Equipment Distribution / Trade" },
+      "sector3": { "title": "Energy & Power Solutions" },
+      "sector4": { "title": "Glass Industry & Processing" },
+      "sector5": { "title": "Outdoor Landscaping & Synthetic Turf" },
+      "sector6": { "title": "Pharmaceutical & Veterinary Industry" },
+      "sector7": { "title": "Trade Marketing / Retail Audit / Field Data" },
+      "sector8": { "title": "Water Treatment / Filtration / Hydraulic Solutions" },
+      "sector9": { "title": "Logistics / Warehousing / 3PL Distribution" },
+      "sector10": { "title": "Events & Artistic Production" },
+      "sector11": { "title": "Multi-sector Group (Food Service, Real Estate, Purchasing)" },
+      "modulesTitle": "Mastered Odoo Modules",
+      "modCat1": {
+        "title": "Functional Modules",
+        "mod1": "CRM & Lead Management",
+        "mod2": "Sales & Commercial Cycle",
+        "mod3": "Purchasing & Vendor Management",
+        "mod4": "Inventory & Stock Management",
+        "mod5": "Invoicing & Accounting"
+      },
+      "modCat2": {
+        "title": "Advanced Business Modules",
+        "mod1": "Manufacturing (MRP)",
+        "mod2": "Fleet Management",
+        "mod3": "Project Management & Approval Workflows",
+        "mod4": "Workshop Management",
+        "mod5": "Barcode Systems",
+        "mod6": "Mockup & Customization with Odoo Studio"
+      },
+      "modCat3": {
+        "title": "Reporting & Internal Management",
+        "mod1": "Dashboards & Reporting",
+        "mod2": "Expense Management",
+        "mod3": "Employee Management (HR)"
+      },
+      "modCat4": {
+        "title": "Marketing & Automation",
+        "mod1": "Social Marketing",
+        "mod2": "WhatsApp Integration",
+        "mod3": "Business Process Automation"
+      }
     }
   }
   

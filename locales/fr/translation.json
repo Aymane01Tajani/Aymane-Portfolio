@@ -59,7 +59,7 @@
         "durationLabel": "Durée:",
         "infoLabel": "Détails:",
         "regionLabel": "Région:",
-        "shortDesc": "Développement Web Services GraphQL sur Sage X3 + Application mobile Flutter."
+        "shortDesc": "Développement Web Services REST sur Sage X3 + Application mobile Flutter."
       },
       "item2": {
         "title": "Conception & Mise en place d'une application de déclaration et de gestion des flux CCG.",
@@ -340,7 +340,7 @@
       "ai": "CV IA"
     },
     "footer": {
-      "text": "&copy; 2025 Aymane Tajani. All rights reserved."
+      "text": "&copy; 2026 Aymane Tajani. All rights reserved."
     },
     "aberdeen": {
       "title": "Aberdeen - Aymane Tajani",
@@ -1194,5 +1194,50 @@
       "gallery4": "Configuration des paramètres IA",
       "scrollHint": "Faites défiler pour voir plus d'images →",
       "techDiagram": "Technologies et outils utilisés dans le projet Chatbot IA & RAG"
+    },
+    "blackswan": {
+      "sectorsTitle": "Secteurs d'activité des clients accompagnés",
+      "sectorsIntro": "J'ai accompagné des entreprises issues de secteurs variés (industrie, BTP, énergie, retail, logistique, événementiel…) dans la digitalisation de leurs processus via Odoo, en intervenant sur des modules clés allant du CRM jusqu'à la comptabilité, en passant par la production et la gestion logistique.",
+      "sector1": { "title": "BTP / Travaux publics" },
+      "sector2": { "title": "Distribution d'équipements industriels / Négoce" },
+      "sector3": { "title": "Énergie & Solutions Énergétiques" },
+      "sector4": { "title": "Industrie du Verre / Transformation verrière" },
+      "sector5": { "title": "Aménagement Extérieur / Gazon synthétique / Landscaping" },
+      "sector6": { "title": "Industrie Pharmaceutique & Vétérinaire" },
+      "sector7": { "title": "Trade Marketing / Audit Retail / Data terrain" },
+      "sector8": { "title": "Traitement de l'Eau / Filtration / Solutions hydrauliques" },
+      "sector9": { "title": "Logistique / Entreposage / Distribution 3PL" },
+      "sector10": { "title": "Événementiel / Production artistique" },
+      "sector11": { "title": "Groupe Multi-sectoriel (Restauration, Immobilier, Centrale d'achat)" },
+      "modulesTitle": "Modules Odoo maîtrisés",
+      "modCat1": {
+        "title": "Modules fonctionnels",
+        "mod1": "CRM & Gestion des leads",
+        "mod2": "Ventes (Sales) & cycle commercial",
+        "mod3": "Achats & gestion fournisseurs",
+        "mod4": "Inventaire & gestion de stock",
+        "mod5": "Facturation & comptabilité"
+      },
+      "modCat2": {
+        "title": "Modules métiers avancés",
+        "mod1": "Fabrication (MRP)",
+        "mod2": "Gestion de parc automobile",
+        "mod3": "Gestion de projets & validation workflows",
+        "mod4": "Gestion d'atelier",
+        "mod5": "Systèmes de codes-barres",
+        "mod6": "Maquettage avec Odoo Studio"
+      },
+      "modCat3": {
+        "title": "Pilotage & gestion interne",
+        "mod1": "Tableaux de bord & reporting",
+        "mod2": "Gestion des dépenses",
+        "mod3": "Gestion des employés (RH)"
+      },
+      "modCat4": {
+        "title": "Marketing & automatisation",
+        "mod1": "Marketing social",
+        "mod2": "Intégration WhatsApp",
+        "mod3": "Automatisation des processus métier"
+      }
     }
   }
